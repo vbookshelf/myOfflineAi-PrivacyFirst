@@ -32,7 +32,7 @@ Open source, offline, privacy-first AI solves this problem. The data never leave
 - Supports image and pdf input
 - Html, CSS, JS and Python code are all on one page - makes it easy to audit the code.
 - The user can create custom Ai tools - similar to Gemini Gems and OpenAi GPTs.
-- Customizable codebase - Easy for to user to use Ai to make code changes and add features using ChatGPT, Gemini or Claude
+- Customizable - Because its a single-file app, it's easy for to user to use ChatGPT, Gemini or Claude to make code changes and add features. In the AI age, software no longer has to be one-size-fits-all.
 
 <br>
 
