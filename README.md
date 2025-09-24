@@ -1,4 +1,4 @@
-# myOfflineAi
+# myOfflineAi Ollama UI
 Simple offline Ai access for those who need extreme data privacy. 
 - Chat with Ollama models
 - Create multimodal Ai tools
