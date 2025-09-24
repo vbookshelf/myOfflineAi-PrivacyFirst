@@ -4,7 +4,7 @@ Simple offline Ai access for those who need extreme data privacy.
 - Create multimodal Ai tools
 - Local. Transparent. Free.
 
-myOfflineAi is a single-file Flask app - HTML, CSS, JS and Python code are all in one file. This makes the code easy for Ai to modify and to audit.
+myOfflineAi is a single-file Flask app - HTML, CSS, JS and Python code are all in one file (app.py). This makes the code easy to audit. It also makes it easy for Ai models like Gemini, ChatGPT and Claude to modify the app to add new features.
 
 <br>
 
