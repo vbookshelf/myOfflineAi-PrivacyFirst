@@ -29,13 +29,13 @@ Open source, offline, privacy-first AI solves this problem. The data never leave
 
 ## Features
 
-- Uses Ollama models
-- Runs locally and offline - ensuring data privacy
-- Does not save anything
-- Supports image and pdf input
-- Html, CSS, JS and Python code are all on one page - makes it easy to audit the code.
-- The user can create custom Ai tools - similar to Gemini Gems and OpenAi GPTs.
-- Customizable - Because its a single-file app, it's easy for to user to use ChatGPT, Gemini or Claude to make code changes and add features.
+- Single-File app: Html, CSS, JS and Python code are all in one file named app.py
+- Full transparency: No black box. Users can inspect the code themselves or give the app.py file to an LLM and ask it to explain exactly what the code does.
+- Customizable: Because its a single-file app, it's easy to use ChatGPT, Gemini or Claude to make code changes and add features.
+- Data privacy: Uses on-device Ollama models. Runs offline. Does not save anything.
+- Multimodal: Supports image and pdf input. Processes pdf pages as images for greater accuracy.
+- Custom tools: The user can create custom Ai tools - similar to Gemini Gems and OpenAi GPTs.
+
 <br>
 
 ## Limitations
