@@ -12,7 +12,7 @@ myOfflineAi is a single-file Flask app - HTML, CSS, JS and Python code are all i
 
 ## What problem does this solve?
 
-Most of us take it for granted that we can drop a document into Google Translate or ChatGPT without a second thought. But what if that document is your grandmother’s secret recipe, guarded for generations? Or a client’s legal brief? Or a patient’s medical chart? For many people, uploading such things to the cloud isn’t a convenience—it’s a risk. A single upload could expose private family history, waive attorney–client privilege, or violate medical privacy laws. And that fear prevents many from benefiting from the power of AI.
+Most of us take it for granted that we can drop a document into Google Translate or ChatGPT without a second thought. But what if that document is your grandmother’s secret recipe? Or a client’s legal brief? Or a patient’s medical chart? For many people, uploading such things to the cloud isn’t a convenience—it’s a risk. A single upload could expose private family history, waive attorney–client privilege, or violate medical privacy laws. And that fear prevents many from benefiting from the power of AI.
 
 Large firms can buy their way out of this problem with costly, enterprise-grade privacy systems. But the solo lawyer, the therapist in private practice, the small nonprofit cannot.
 
