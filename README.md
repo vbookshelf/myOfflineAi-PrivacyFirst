@@ -5,6 +5,7 @@ Transparent offline Ai access for those who need extreme data privacy and peace 
 - Chat with Ollama models
 - Create multimodal Ai tools
 - Local. Transparent. Free.
+- Users don't need to trust, because they have complete control.
 
 myOfflineAi is a single-file Flask app - HTML, CSS, JS and Python code are all in one file (app.py). This makes the code easy to audit. 
 
