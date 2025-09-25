@@ -1,6 +1,6 @@
 # myOfflineAi - A Flask UI for Ollama
 
-Transparent offline Ai access for those who need extreme data privacy and peace of mind.
+Transparent offline Ai access for those who need extreme data privacy, but don't want to blindly trust the software developer.
 
 - Chat with Ollama models
 - Create multimodal Ai tools
