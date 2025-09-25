@@ -29,7 +29,7 @@ Open source, offline, privacy-first AI solves this problem. The data never leave
 
 ## What is myOfflineAi?
 
-myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has complete control and there's total transparency. The app runs offline. CSS and JS code is stored locally. Therefore, the internet connection can be switched off. Additionally, the Ollama app that serves the model can be put in Airplane mode. This ensures data privacy. The user has complete control and does not need to blindly trust the software developers privacy assurances.
+myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has complete control and there's total transparency. The app runs offline. CSS and JS code is stored locally. Therefore, the internet connection can be switched off. Additionally, the Ollama app that serves the model can be put in Airplane mode. This ensures data privacy. The user has complete control and does not need to blindly trust the software developer's privacy assurances.
 
 ## Features
 
