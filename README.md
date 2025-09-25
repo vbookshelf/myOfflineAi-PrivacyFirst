@@ -22,14 +22,14 @@ It also makes it easy for Ai models like Gemini, ChatGPT and Claude to modify th
 
 <img src="https://github.com/vbookshelf/myOfflineAi/blob/main/images/image2.png" alt="Grandmother using a laptop" height="300">
 
-Most of us take it for granted that we can drop a document into Google Translate or ChatGPT without a second thought. But what if that document is your grandmother’s secret recipe? Or a client’s legal brief? Or a patient’s medical chart? For many people, uploading such things to the cloud is a a risk. A single upload could expose sensitive data, waive attorney–client privilege, or violate medical privacy laws. That fear prevents many from benefiting from the power of AI to help them be more productive and to serve more people.
+Most of us take it for granted that we can drop a document into Google Translate or ChatGPT without a second thought. But what if that document is your grandmother’s secret recipe? Or a client’s legal brief? Or a patient’s medical chart? For many people, uploading such things to the cloud is a risk. A single upload could expose sensitive data, waive attorney–client privilege, or violate medical privacy laws. That fear prevents many from benefiting from the power of AI to help them be more productive and to serve more people.
 
 Large firms can buy their way out of this problem with costly, enterprise-grade privacy systems. But the solo lawyer, the therapist in private practice, the small nonprofit cannot.
 Open source, offline, privacy-first AI solves this problem. The data never leaves the user’s computer. And there's full transparency - all the underlying code for the app can be audited for data privacy compliance. Also, the user's internet connection can be disconnected while the app is being used - creating trust and peace of mind.
 
 ## What is myOfflineAi?
 
-myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has complete control and there's total transparency. The app runs offline. CSS and JS code is stored locally. Therefore, the internet connection can be switched off. Additionally, the Ollama app that serves the model can be put in Airplane mode. This ensures data privacy.
+myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has complete control and there's total transparency. The app runs offline. CSS and JS code is stored locally. Therefore, the internet connection can be switched off. Additionally, the Ollama app that serves the model can be put in Airplane mode. This ensures data privacy. The user has complete control and does not need to blindly trust the software developers privacy assurances.
 
 ## Features
 
