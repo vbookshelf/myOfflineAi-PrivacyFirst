@@ -42,6 +42,8 @@ myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has compl
 
 <br>
 
+## Build it. Release it. Forget it.
+
 ## Limitations
 
 ## How to Install
