@@ -20,8 +20,6 @@ It also makes it easy for Ai models like Gemini, ChatGPT and Claude to modify th
 
 ## What problem does this solve?
 
-<img src="https://github.com/vbookshelf/myOfflineAi/blob/main/images/image2.png" alt="Grandmother using a laptop" height="300">
-
 Most of us take it for granted that we can drop a document into Google Translate or ChatGPT without a second thought. But what if that document is your grandmother’s secret recipe? Or a client’s legal brief? Or a patient’s medical chart? For many people, uploading such things to the cloud is a risk. A single upload could expose sensitive data, waive attorney–client privilege, or violate medical privacy laws. That fear prevents many from benefiting from the power of AI to help them be more productive and to serve more people.
 
 Large firms can buy their way out of this problem with costly, enterprise-grade privacy systems. But the solo lawyer, the therapist in private practice, the small nonprofit cannot.
