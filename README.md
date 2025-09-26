@@ -46,7 +46,7 @@ myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has compl
 
 ## Limitations
 - Hallucinations
-- Slow speed when processing pdf documents and images
+- Slow response time to first message when processing pdf documents and images
 - Limited to using small models
 
 
