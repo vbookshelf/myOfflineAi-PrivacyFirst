@@ -59,15 +59,18 @@ myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has compl
 ## How to Install
 
 System Requirements
-- The app has the following models that you can select:
-gemma3:4b - Text and Images, 128k context, 3.3GB
-gemma3:12b - Text and Images, 128k context, 8.1GB (Recommended)
-qwen3:4b - Text only, Thinking, 256k context, 2.5GB
-qwen3:14b - Text only, Thinking, 40k context, 9.3GB
+
+The app has the following models that you can select:
+- gemma3:4b - Text and Images, 128k context, 3.3GB
+- gemma3:12b - Text and Images, 128k context, 8.1GB (Recommended)
+- qwen3:4b - Text only, Thinking, 256k context, 2.5GB
+- qwen3:14b - Text only, Thinking, 40k context, 9.3GB
 
 The amount of RAM that your machine has needs to exceed the sizes shown above.
 For example, if your computer has 8GB of AM then you should select the gemma3:4b because
 this is 3.3GB. 
+
+The models run on the CPU. The speed at which the models run will depend on how fast your computer is.
 
 ```
 1. Download and install Ollama
@@ -111,8 +114,22 @@ Windows:
 start-app.bat
 
 5. Notes on selecting and using models.
-- When you first start the app you will only be able to use the gemma3:4b model because it's been downloaded.
-To use the other models
+When you first start the app you will only be able to use the gemma3:4b model because you've downloaded it already.
+To use the other models first make sure your computer has enough RAM to run them. Then download the model using the same procedure explained above.
+
+The app can run all Ollama models, but not all models are included in the dropdown.
+To run a model that not included in the dropdown, to need to manually add model name to the dropdown.
+To do this open the app.py file with a text editor and change one line of code. Then save the file.
+model_list = ['gemma3:4b', 'gemma3:12b', 'qwen3:4b', 'qwen3:14b']
+
+For example if you wanted to add the gpt-oss:20b model this is the change you should make:
+model_list = ['gemma3:4b', 'gemma3:12b', 'qwen3:4b', 'qwen3:14b', 'gpt-oss:20b]
+
+Now, it will appear in the dropdown.
+if you have downloaded gpt-oss:20b you will be able to use it in the app.
+
+A full list of Ollama models and their details can be found here:
+https://ollama.com/search
 
 ```
 
