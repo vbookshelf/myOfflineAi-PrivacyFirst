@@ -83,11 +83,13 @@ https://ollama.com/
 
 2. Download an Ollama model
 The models used in the app need to be downloaded using Ollama.
-To start, let's download the gemma3:4b model (2.5GB).
-There are two ways:
+If you have a good intenet connection download the gemma3:4b model (2.5GB). This model can handle both text and images.
+If you have a slow connection then download the smaller gemma3:270m model (292MB). This model can handle text only.
+
+There are two ways to downoad:
 Method 1- Open your terminal and type this:
-ollama pull gemma3:4b
-Method 2- Open the Ollama app. Select the model from the dropdown in the bottom right. Then type any message e.g. Hi.
+ollama pull gemma3:270m
+Method 2- Open the Ollama app. Paste the model name into the dropdown in the bottom right. Then type any message e.g. Hi.
 The model will start to auto download.
 
 3. Install UV
