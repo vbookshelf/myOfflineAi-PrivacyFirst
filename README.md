@@ -156,5 +156,10 @@ https://ollama.com/search
 ## Lessons learned
 
 ## Resources
+- Search Ollama models<br>
+https://ollama.com/search
+
+- Install UV<br>
+https://docs.astral.sh/uv/getting-started/installation/#installation-methods
 
 
