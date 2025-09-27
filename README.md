@@ -120,20 +120,28 @@ start-app.bat
 
 The app will open in your browser. The terminal will also open.
 
+5. Use the app
+Select the model that you downloaded from the dropdown in the top left.
+Click the AI Assistant.
+Type a mesage.
+If you downloaded the gemma3:4b you can also submit images and pdf documents.<br>
+The app converts pdf docs into images before processing.
+
+
 5. Future
 
-The set up process above only needs to be done once.
+This set up process above only needs to be done once.
 In future to start the app do the following:
 
 1- Launch Ollama
-2- Double-click the file:
+2- Double-click this file that's in the project folder:
 Mac:
 start-app.command
 Windows:
 start-app.bat
 
 The app will open in your browser. The terminal will also open.
-To shut everything down type Control+c in the terminal.
+To shut down the app from the terminal, type Crl+C on Mac or Alt+F4 on Windows.
 
 5. Notes on selecting and using models.
 When you first start the app you will only be able to use the gemma3:4b model because you've downloaded it already.
@@ -158,6 +166,7 @@ https://ollama.com/search
 ## How does the app work?
 - Ai Models
 - Inference process
+- How does pdf conversion work
 - Adding new tools
 - Click to run
 
