@@ -68,9 +68,9 @@ The app has the following models that you can select:
 
 The amount of RAM that your machine has needs to exceed the sizes shown above.
 For example, if your computer has 8GB of AM then you should select the gemma3:4b because
-this is 3.3GB. 
+this is 3.3GB. On an M series Mac with 16GB RAM, models with a size of approx. 10 GB tend to run well.
 
-The models run on the CPU. The speed at which the models run will depend on how fast your computer is.
+The speed at which the models run will also depend on how fast your computer is because models run on the CPU. 
 
 ```
 1. Download and install Ollama
