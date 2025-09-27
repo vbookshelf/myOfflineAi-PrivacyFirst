@@ -64,7 +64,8 @@ The app has the following models that you can select:
 - gemma3:4b - Text and Images, 128k context, 3.3GB
 - gemma3:12b - Text and Images, 128k context, 8.1GB (Recommended)
 - qwen3:4b - Text only, Thinking, 256k context, 2.5GB
-- qwen3:14b - Text only, Thinking, 40k context, 9.3GB
+
+Other Ollama models can be easily added.
 
 The amount of RAM that your machine has needs to exceed the sizes shown above.
 For example, if your computer has 8GB of AM then you should select the gemma3:4b because
