@@ -140,7 +140,7 @@ To run a model that not included in the dropdown, to need to manually add model 
 To do this open the app.py file with a text editor and change one line of code. Then save the file.
 model_list = ['gemma3:4b', 'gemma3:12b', 'qwen3:4b', 'qwen3:14b']
 
-For example if you wanted to add the gpt-oss:20b model this is the change you should make:
+For example if you wanted to add the OpenAi gpt-oss:20b model this is the change you should make:
 model_list = ['gemma3:4b', 'gemma3:12b', 'qwen3:4b', 'qwen3:14b', 'gpt-oss:20b]
 
 Now, it will appear in the dropdown.
@@ -156,10 +156,14 @@ https://ollama.com/search
 ## Lessons learned
 
 ## Resources
+
 - Search Ollama models<br>
 https://ollama.com/search
 
 - Install UV<br>
 https://docs.astral.sh/uv/getting-started/installation/#installation-methods
+
+- How to create a single-file flask app<br>
+https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 
