@@ -190,7 +190,7 @@ No it's not essential. By design, no data leaves your device. But I recommend pu
 
 3- I've found a bug, how do I fix it?
 
-3- How do I add features/make changes to the app?
+4- How do I add features/make changes to the app?
 
 ## Lessons learned
 
