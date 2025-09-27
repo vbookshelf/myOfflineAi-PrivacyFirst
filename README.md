@@ -58,6 +58,8 @@ myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has compl
 
 ## How to Install and Run the app
 
+In this section you will be installing the requirements. You will also be downloading a model thats 3.3GB. You'll need to have a computer with approx. 8GB of RAM. You will also need to have a good internet connection. If you have one of the newer M series Macs with 16GB RAM, you will be fine.
+
 There's a few steps that you need to follow when first installing. Normally you only need to make sure Ollama is running, and then double-click a file to launch the app.
 
 System Requirements
@@ -192,6 +194,9 @@ No it's not essential. By design, no data leaves your device. But I recommend pu
 This is a single-file app thats designed to be reviewed and modified by Ai. All the code is in one file so the Ai sees the entire design. Simply take the app.py file and upload it to Gemini 2.5 Pro, Claude Sonnet or GPT-5. Tell it what changes or new features you want. Also tell it to output all the code on one page so you can copy and paste it. When the Ai outputs the revised code, copy it and replace all the code in the app.py file. Then put the app.py file back inside the project folder. Launch the app and check if your changes have been made.
 
 ## Lessons learned
+- Ollama models have a default context size of 4096. Knowing this will help you get much better results.
+- When using Gemma models images come before text.
+- The best coding models are Gemini 2.5 Pro and Claude Sonnet.
 
 ## Resources
 
