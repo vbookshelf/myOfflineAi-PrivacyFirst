@@ -188,9 +188,8 @@ No it's not essential. By design, no data leaves your device. But I recommend pu
 
 2- How do I audit the code for privacy?
 
-3- I've found a bug, how do I fix it?
-
-4- How do I add features/make changes to the app?
+3- How do I add features, make changes or fix a bug?
+This is a single-file app thats designed to be reviewed and modified by Ai. All the code is in one file so the Ai sees the entire design. Simply take the app.py file and upload it to Gemini 2.5 Pro, Claude Sonnet or GPT-5. Tell it what changes or new features you want. Also tell it to output all the code on one page so you can copy and paste it. When the Ai outputs the revised code, copy it and replace all the code in the app.py file. Then put the app.py file back inside the project folder. Launch the app and check if your changes have been made.
 
 ## Lessons learned
 
