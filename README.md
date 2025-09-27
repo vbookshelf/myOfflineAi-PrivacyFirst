@@ -9,6 +9,12 @@ Transparent offline Ai access for those who need extreme data privacy and don't 
 - Chat histories are not saved
 - Built to be transparent - easy to audit the code
 
+<br>
+
+<img src="https://github.com/vbookshelf/myOfflineAi/blob/main/images/image1.png" alt="App screenshot" height="500">
+
+<br>
+
 myOfflineAi is a single-file Flask app - HTML, CSS, JS and Python code are all in one file (app.py). This makes the code easy to audit. 
 
 It also makes it easy for Ai models like Gemini, ChatGPT and Claude to modify the code to add new features to the app. Simply give the Ai model the app.py file and tell it what changes or what new feature you want. If you find a bug you can use Ai to immediately fix it.
@@ -21,12 +27,6 @@ That said, the most recent small models, like Gemma3, have very good qualities: 
 
 Trustworthy local Ai is not a reality yet, but the day when it will be is coming fast. myOfflineAi is designed so that when that day comes you can hit the ground running.
 
-
-<br>
-
-<img src="https://github.com/vbookshelf/myOfflineAi/blob/main/images/image1.png" alt="App screenshot" height="500">
-
-<br>
 
 ## What problem does this solve?
 
