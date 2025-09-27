@@ -151,6 +151,12 @@ https://ollama.com/search
 
 ```
 
+## How does the app work?
+- Ai Models
+- Inference process
+- Adding new tools
+- Click to run
+
 ## FAQ
 
 ## Lessons learned
