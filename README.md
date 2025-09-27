@@ -114,6 +114,23 @@ start-app.command
 Windows:
 start-app.bat
 
+The app will open in your browser. The terminal will also open.
+
+5. Future
+
+The set up process above only needs to be done once.
+In future to start the app do the following:
+
+1- Launch Ollama
+2- Double-click the file:
+Mac:
+start-app.command
+Windows:
+start-app.bat
+
+The app will open in your browser. The terminal will also open.
+To shut everything down type Control+c in the terminal.
+
 5. Notes on selecting and using models.
 When you first start the app you will only be able to use the gemma3:4b model because you've downloaded it already.
 To use the other models first make sure your computer has enough RAM to run them. Then download the model using the same procedure explained above.
