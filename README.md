@@ -63,6 +63,7 @@ There's a few steps that you need to follow when first installing. Normally you 
 System Requirements
 
 The app has the following models that you can select:
+- gemma3:270m - Text only, 32K context, 292MB
 - gemma3:4b - Text and Images, 128k context, 3.3GB
 - gemma3:12b - Text and Images, 128k context, 8.1GB (Recommended)
 - qwen3:4b - Text only, Thinking, 256k context, 2.5GB
@@ -70,10 +71,10 @@ The app has the following models that you can select:
 Other Ollama models can be easily added.
 
 The amount of RAM that your machine has needs to exceed the sizes shown above.
-For example, if your computer has 8GB of AM then you should select the gemma3:4b because
-this is 3.3GB. On an M series Mac with 16GB RAM, models with a size of approx. 10 GB tend to run well.
+For example, if your computer has 8GB of RAM then you should select the gemma3:4b because
+its size is 3.3GB. On an M series Mac with 16GB RAM, models with a size of approx. 10 GB tend to run well.
 
-The speed at which the models run will also depend on how fast your computer is because models run on the CPU. 
+The models run on the CPU. The speed at which the models run will depend on how fast your computer is. 
 
 ```
 1. Download and install Ollama
