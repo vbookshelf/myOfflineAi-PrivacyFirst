@@ -56,7 +56,9 @@ myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has compl
 - Limited to using small models
 
 
-## How to Install
+## How to Install and Run the app
+
+There's a few steps that you need to follow when first installing. Normally you only need to make sure Ollama is running, and then double-click a file to launch the app.
 
 System Requirements
 
