@@ -60,6 +60,8 @@ myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has compl
 
 ## How to Install and Run the app
 
+I tested the installation process on Mac OS. Please note that although I've included instructions for Windows, I haven't tested on Windows.
+
 In this section you will be installing the requirements. You will also be downloading a model thats 3.3GB. You'll need to have a computer with approx. 8GB of RAM. You will also need to have a good internet connection. If you have one of the newer M series Macs with 16GB RAM, you will be fine.
 
 There's a few steps that you need to follow when first installing. Normally you only need to make sure Ollama is running, and then double-click a file to launch the app.
