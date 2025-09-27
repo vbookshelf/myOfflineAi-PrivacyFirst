@@ -58,6 +58,64 @@ myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has compl
 
 ## How to Install
 
+System Requirements
+- The app has the following models that you can select:
+gemma3:4b - Text and Images, 128k context, 3.3GB
+gemma3:12b - Text and Images, 128k context, 8.1GB (Recommended)
+qwen3:4b - Text only, Thinking, 256k context, 2.5GB
+qwen3:14b - Text only, Thinking, 40k context, 9.3GB
+
+The amount of RAM that your machine has needs to exceed the sizes shown above.
+For example, if your computer has 8GB of AM then you should select the gemma3:4b because
+this is 3.3GB. 
+
+```
+1. Download and install Ollama
+For the app to work Ollama needs to be installed and running.
+This is the link to download Ollama. After downloading it install in on your computer.
+https://ollama.com/
+
+2. Download an Ollama model
+The models used in the app need to be downloaded using Ollama.
+To start, let's download the gemma3:4b model (2.5GB).
+There are two ways:
+Method 1- Open your terminal and type this:
+ollama pull gemma3:4b
+Method 2- Open the Ollama app. Select the model from the dropdown in the bottom right. Then type any message e.g. Hi.
+The model will start to auto download.
+
+3. Install UV
+UV is a new and fast python package manager.
+Here you will find the instructions to install uv on Mac and Windows:
+https://docs.astral.sh/uv/getting-started/installation/#installation-methods
+
+Open your terminal and type this command:
+
+Mac:
+wget -qO- https://astral.sh/uv/install.sh | sh
+
+Windows:
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+4. Download the project folder
+
+5. Open the folder and double-click a file.
+This will install all the python packages (first time only).
+Then it will start the app.
+The app will open in your browser.
+
+Mac:
+start-app.command
+
+Windows:
+start-app.bat
+
+5. Notes on selecting and using models.
+- When you first start the app you will only be able to use the gemma3:4b model because it's been downloaded.
+To use the other models
+
+```
+
 ## FAQ
 
 ## Lessons learned
