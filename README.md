@@ -150,16 +150,26 @@ To use the other models first make sure your computer has enough RAM to run them
 The app can run all Ollama models, but not all models are included in the dropdown.
 To run a model that not included in the dropdown, to need to manually add model name to the dropdown.
 To do this open the app.py file with a text editor and change one line of code. Then save the file.
-model_list = ['gemma3:4b', 'gemma3:12b', 'qwen3:4b', 'qwen3:14b']
+model_list = ['gemma3:270m', 'gemma3:4b', 'gemma3:12b']
 
 For example if you wanted to add the OpenAi gpt-oss:20b model this is the change you should make:
-model_list = ['gemma3:4b', 'gemma3:12b', 'qwen3:4b', 'qwen3:14b', 'gpt-oss:20b]
+model_list = ['gemma3:270m', 'gemma3:4b', 'gemma3:12b', 'gpt-oss:20b]
 
 Now, it will appear in the dropdown.
-if you have downloaded gpt-oss:20b you will be able to use it in the app.
+If you have downloaded gpt-oss:20b you will be able to use it in the app.
 
 A full list of Ollama models and their details can be found here:
 https://ollama.com/search
+
+6. How to set a default model
+
+The default model is the one that displays, in the dropdown, when you load the app.
+To make a model your default, open the app.py file.
+Change the number (model_list[0]) to match your models poition in the list e.g. 0 for gemma3:270m', 1 for gemma3:4b etc.
+model_list = ['gemma3:270m', 'gemma3:4b', 'gemma3:12b', 'qwen3:4b']
+MODEL_NAME = model_list[0]  # Set the Default model
+
+All the Ai Tools use the same model that's selected in the dropdown.
 
 ```
 
