@@ -2,10 +2,12 @@
 
 Transparent offline Ai access for those who need extreme data privacy and don't want to blindly trust cloud providers and software developers. In other words, it's local Ai access for those who are data privacy paranoid.
 
+- Ai access without an internet connection
+- Runs on the desktop.
 - Chat with Ollama models
-- Create multimodal Ai tools
-- Local. Transparent. Free.
-- Users don't need to trust, because they have complete control.
+- Create multimodal Ai tools - text, images, pdf
+- Chat histories are not saved
+- Built to be transparent - easy to audit the code
 
 myOfflineAi is a single-file Flask app - HTML, CSS, JS and Python code are all in one file (app.py). This makes the code easy to audit. 
 
