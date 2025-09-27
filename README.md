@@ -183,6 +183,9 @@ All the Ai Tools use the same model that's selected in the dropdown.
 
 ## FAQ
 
+1- Is it essential to switch off the internet connection?<br>
+No it's not essential. By design, no data leaves your device. But I recommend putting Ollama into Airplane mode. This can be done in the Ollama settings.
+
 ## Lessons learned
 
 ## Resources
