@@ -5,7 +5,7 @@ Transparent offline Ai access for those who need extreme data privacy and don't 
 - Ai access without an internet connection
 - Runs on the desktop.
 - Chat with Ollama models
-- Create multimodal Ai tools - text, images, pdf
+- Create custom multimodal Ai tools - text, images, pdf (Similar to Gemini Gemas and OpenAi GPTs)
 - Chat histories are not saved
 - Built to be transparent. Single-file flask app. Therefore, it's easy to audit the code.
 - No need to use the command line. Simply double click a file to launch the app in your browser.
@@ -32,19 +32,6 @@ Most of us take it for granted that we can drop a document into Google Translate
 
 Large firms can buy their way out of this problem with costly, enterprise-grade privacy systems. But the solo lawyer, the therapist in private practice, the small nonprofit cannot.
 Open source, offline, privacy-first AI solves this problem. The data never leaves the user’s computer. And there's full transparency - all the underlying code for the app can be audited for data privacy compliance. Also, the user's internet connection can be disconnected while the app is being used - creating peace of mind.
-
-## What is myOfflineAi?
-
-myOfflineAi is a privacy-first Flask UI for Ollama AI models. The user has complete control and there's total transparency. The app runs offline. CSS and JS code is stored locally. Therefore, the internet connection can be switched off. Additionally, the Ollama app that serves the model can be put in Airplane mode. This ensures data privacy. The user has complete control and does not need to blindly trust the software developer's privacy assurances.
-
-## Features
-
-- Single-File app: Html, CSS, JS and Python code are all in one file named app.py
-- Full transparency: No black box. Users can inspect the code themselves or give the app.py file to an LLM and ask it to explain exactly what the code does. For example: When you submit an image to a Gemma model and ask it what's on the image - does the code put your text question first or the image first? That order affects the quality of the Gemma model's response. (It should be image first.)
-- Customizable: Because its a single-file app, it's easy to use ChatGPT, Gemini or Claude to make code changes and add features.
-- Data privacy: Uses on-device Ollama models. Runs offline. Does not save anything.
-- Multimodal: Supports image and pdf input. Processes pdf pages as images, for greater accuracy.
-- Custom tools: The user can create custom Ai tools - similar to Gemini Gems and OpenAi GPTs.
 
 <br>
 
