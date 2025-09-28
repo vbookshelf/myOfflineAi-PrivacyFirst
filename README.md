@@ -81,20 +81,15 @@ its size is 3.3GB. On an M series Mac with 16GB RAM, models with a size of appro
 The models run on the CPU. The speed at which the models run will depend on how fast your computer is. 
 
 ```
-1. Download and install Ollama
-For the app to work Ollama needs to be installed and running.
+1. Download and install the Ollama desktop application
 This is the link to download Ollama. After downloading it install in on your computer.
 https://ollama.com/
 
 2. Download an Ollama model
-The models used in the app need to be downloaded using Ollama.
-If you have a good intenet connection download the gemma3:4b model (2.5GB). This model can handle both text and images.
+If you have a good intenet connection and at least 8GB RAM then download the gemma3:4b model (2.5GB). This model can handle both text and images.
 If you have a slow connection then download the smaller gemma3:270m model (292MB). This model can handle text only.
 
-There are two ways to downoad:
-Method 1- Open your terminal and type this:
-ollama pull gemma3:270m
-Method 2- Open the Ollama app. Paste the model name into the dropdown in the bottom right. Then type any message e.g. Hi.
+Open the Ollama desktop app. Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right. Then type any message e.g. Hi.
 The model will start to auto download.
 
 3. Install UV
@@ -102,7 +97,7 @@ UV is a new and fast python package manager.
 Here you will find the instructions to install uv on Mac and Windows:
 https://docs.astral.sh/uv/getting-started/installation/#installation-methods
 
-Open your terminal and type this command:
+Open your terminal and copy paste this command:
 
 Mac:
 wget -qO- https://astral.sh/uv/install.sh | sh
@@ -110,24 +105,23 @@ wget -qO- https://astral.sh/uv/install.sh | sh
 Windows:
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
-4. Download the project folder
+4. Download the project folder<br>
+Download the project folder from this repo.
 
 5. Open the folder and double-click a file.
 This will install all the python packages (first time only).
-Then it will start the app.
-The app will open in your browser.
+Then it will auto open the myOfflineAi web app in your browser.
+The terminal will also open.
 
 Mac:
-start-app.command
+Double-click start-app.command
 
 Windows:
-start-app.bat
-
-The app will open in your browser. The terminal will also open.
+Double-click start-app.bat
 
 5. Use the app
-Select the model that you downloaded from the dropdown in the top left.
-Click the AI Assistant.
+The name of the model you download will appear in the dropdown in the top left.
+Click on "AI Assistant"
 Type a mesage.
 If you downloaded the gemma3:4b you can also submit images and pdf documents.<br>
 The app converts pdf docs into images before processing.
@@ -138,7 +132,7 @@ The app converts pdf docs into images before processing.
 This set up process above only needs to be done once.
 In future to start the app do the following:
 
-1- Launch Ollama
+1- The Ollama desktop app auto launches when you start your computer.
 2- Double-click this file that's in the project folder:
 Mac:
 start-app.command
