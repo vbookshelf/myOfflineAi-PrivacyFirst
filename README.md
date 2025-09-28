@@ -209,4 +209,10 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
   Grace Leung<br>
   https://www.youtube.com/watch?v=-era_Orh3TM
 
+## Appendix
+
+1- How to load your own models into Ollama
+
+bartowski/google_medgemma-4b-it-GGUF<brr>
+https://huggingface.co/bartowski/google_medgemma-4b-it-GGUF
 
