@@ -19,9 +19,9 @@ myOfflineAi is a single-file Flask app - HTML, CSS, JS and Python code are all i
 
 It also makes it easy for Ai models like Gemini, ChatGPT and Claude to modify the code to add new features to the app. Simply give the Ai model the app.py file and tell it what changes or what new feature you want. If you find a bug you can use Ai to immediately fix it.
 
-## Designed for a future that's not yet a reality
+## Current state of small local Ai models
 
-Currently, if you want to run AI models locally you are restricted to using small models. The bottom line is that these models are not trustworthy. They are okay for non-crtical work like translation, summarization and brainstorming. But their ability to hallucinate makes them unsuitable for high precision work like extracting patient data from medical records.
+Currently, if you want to run AI models locally, say on a machine with 16GB RAM, you are restricted to using small models. The bottom line is that these models are not trustworthy. They are okay for non-crtical work like translation, summarization and brainstorming. But their ability to hallucinate makes them unsuitable for high precision work.
 
 That said, the most recent small models, like Gemma3, have very good qualities: They are multilingual. They are multimodal meaning that they can handle both text and images. And they run quite fast on a CPU. Some, like the Qwen3 models, also have the ability to reason internally i.e. they are thinking models.
 
