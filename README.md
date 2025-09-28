@@ -8,6 +8,7 @@ Transparent offline Ai access for those who need extreme data privacy and don't 
 - Create multimodal Ai tools - text, images, pdf
 - Chat histories are not saved
 - Built to be transparent - easy to audit the code
+- No need to use the command line. Simply double click a file to launch the app in your browser.
 
 <br>
 
