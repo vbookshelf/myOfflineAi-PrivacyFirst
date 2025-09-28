@@ -5,7 +5,7 @@ Transparent offline Ai access for those who need extreme data privacy and don't 
 - Ai access without an internet connection
 - Runs on the desktop.
 - Chat with Ollama models
-- Create custom multimodal Ai tools - text, images, pdf (Similar to Gemini Gemas and OpenAi GPTs)
+- Create custom multimodal Ai tools - text, images, pdf (Similar to Gemini Gems and OpenAi GPTs)
 - Chat histories are not saved
 - Built to be transparent. Single-file flask app. Therefore, it's easy to audit the code.
 - No need to use the command line. Simply double click a file to launch the app in your browser.
