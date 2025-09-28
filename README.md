@@ -1,6 +1,6 @@
 # myOfflineAi - A Flask UI for Ollama
 
-Transparent offline Ai access for those who need extreme data privacy and don't want to blindly trust cloud providers and software developers. In other words, it's local Ai access for those who are data privacy paranoid.
+Transparent offline Ai access for those who need extreme data privacy and don't want to blindly trust cloud providers and software developers.
 
 - Ai access without an internet connection
 - Runs on the desktop.
