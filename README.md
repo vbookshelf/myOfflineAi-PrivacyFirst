@@ -198,6 +198,6 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 1- How to load your own models into Ollama
 
-bartowski/google_medgemma-4b-it-GGUF<brr>
+bartowski/google_medgemma-4b-it-GGUF<br>
 https://huggingface.co/bartowski/google_medgemma-4b-it-GGUF
 
