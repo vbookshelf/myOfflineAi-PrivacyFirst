@@ -7,7 +7,7 @@ Transparent offline Ai access for those who need extreme data privacy and don't 
 - Chat with Ollama models
 - Create multimodal Ai tools - text, images, pdf
 - Chat histories are not saved
-- Built to be transparent - easy to audit the code
+- Built to be transparent. Single-file flask app. Therefore, it's easy to audit the code.
 - No need to use the command line. Simply double click a file to launch the app in your browser.
 
 <br>
@@ -16,9 +16,6 @@ Transparent offline Ai access for those who need extreme data privacy and don't 
 
 <br>
 
-myOfflineAi is a single-file Flask app - HTML, CSS, JS and Python code are all in one file (app.py). This makes the code easy to audit. 
-
-It also makes it easy for Ai models like Gemini, ChatGPT and Claude to modify the code to add new features to the app. Simply give the Ai model the app.py file and tell it what changes or what new feature you want. If you find a bug you can use Ai to immediately fix it.
 
 ## Current state of small local Ai models
 
