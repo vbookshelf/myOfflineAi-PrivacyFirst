@@ -210,8 +210,68 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 ## Appendix
 
-1- How to load your own models into Ollama
+### How to load your own models into Ollama
 
+The process is slightly different depending on whether or not the model is text only or multimodal. Here we will use the text-only MedGemma model as an example.
+
+1- Download the .gguf file for the model.
+Download the file and place it on your desktop.
+
+You can create a gguf file. But its simpler to find one on HuggingFace and download it.
+For this example I've downloaded the BF16 gguf file from here:
 bartowski/google_medgemma-4b-it-GGUF<br>
 https://huggingface.co/bartowski/google_medgemma-4b-it-GGUF
+
+This is a text-only model version.
+
+2- If the model is multimodal, then also download the mmproj file.
+In the repo on Huggingface click 'Files'. Among the list of files, usually at the bottom, you will find files with names that start with mmproj. Chhose the mmproj file that matches your chose model and download it. For example, here we have chose the BF16 model so, if this was a multimodal model, the the following mmproj file needs to be downloaded:<br>
+mmproj-google_medgemma-4b-it-bf16.gguf
+
+
+[ TEXT-ONLY MODEL ]
+```
+1- Create a Modelfile
+
+cd to the desktop<br>
+% cd Desktop
+
+(Note that the path to the downloaded file is specified)<br>
+% echo 'FROM ./google_medgemma-4b-it-GGUF' > Modelfile
+
+2- Insert the model into Ollama
+(You can specify any name. I've used: google_medgemma-4b-it-GGUF-bf16)
+ollama create google_medgemma-4b-it-GGUF-bf16 -f Modelfile
+
+```
+
+Thats all.<br>
+You can now select the model using myOfflineAi or using the Ollama desktop app.<br>
+You can only submit text.
+
+[ MULTIMODAL MODEL ]
+```
+1- Create a Modelfile<br>
+
+cd to the desktop<br>
+% cd Desktop
+
+Add the gguf and mmproj file names to this terminal command:<br>
+% echo 'FROM ./google_medgemma-4b-it-GGUF
+ADAPTER ./mmproj-google_medgemma-4b-it-bf16.gguf' > Modelfile
+
+2- Insert the model into Ollama
+(You can specify any name. I've used: google_medgemma-4b-it-GGUF-bf16)
+% ollama create google_medgemma-4b-it-GGUF-bf16 -f Modelfile
+
+```
+
+Thats all.<br>
+You can now select the model using myOfflineAi or using the Ollama desktop app.<br>
+You can submit both text and images.
+
+
+
+
+
 
