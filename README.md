@@ -40,7 +40,11 @@ https://deepmind.google/models/gemma/medgemma/
 
 In Appendix 2 two I will show how download MedGemma from HuggingFace and load it into Ollama locally. This approach will allow you to use models that are not available in the Ollama library.
 
-In the past model quantization was done by third parties. But the recent trend is for the companies that train these models to release quantized versions that they have tested. Quantization is also being done during training. A good example od this is gpt-oss from OpenAi. This trend points towards small local models becoming much better as time progresses.
+In the past model quantization was done by third parties. But the recent trend is for the companies that train these models to release quantized versions that they have tested. Quantization is also being done during post training.
+
+A good example of this is gpt-oss from OpenAi. Surprisingly, the gpt-oss-20b model (14 GB) runs resonably fine on an M4, 16GB Mac. Ollama worked with OpenAI to benchmark against their reference implementations to ensure Ollama’s implementations have the same quality.
+
+This trend points towards small local models becoming much better and faster as time progresses.
 
 <br>
 
