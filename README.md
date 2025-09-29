@@ -286,7 +286,9 @@ You can now select the model using myOfflineAi or using the Ollama desktop app.<
 You can submit both text and images.
 Again, please note that the 4b Medgemma model that we downloaded is not multimodal. The 27b version is multimodal.
 
-
+Test<br>
+You can test the model by asking this question:<br>
+How do you conduct a patient preclinical interview?
 
 
 
