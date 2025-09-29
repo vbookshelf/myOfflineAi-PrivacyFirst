@@ -214,7 +214,7 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 <br>
 
-## How to load your own models into Ollama
+## How to load your own models into Ollama locally (not up to the cloud)
 
 The process is slightly different depending on whether or not the model is text only or multimodal. Here we will use the text-only MedGemma model as an example.
 
