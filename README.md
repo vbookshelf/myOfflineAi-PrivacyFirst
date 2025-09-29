@@ -219,11 +219,11 @@ The process is slightly different depending on whether or not the model is text 
 Download the file and place it on your desktop.
 
 You can create a gguf file. But its simpler to find one on HuggingFace and download it.
-For this example I've downloaded the BF16 gguf file from here:
+For this example I've downloaded the BF16 gguf file from here:<br>
 bartowski/google_medgemma-4b-it-GGUF<br>
 https://huggingface.co/bartowski/google_medgemma-4b-it-GGUF
 
-We've downloded the text-only model 4b version. The 27b version is multimodal i.e. it supports both text and image input.
+The 4b version is text only. The 27b version is multimodal i.e. it supports both text and image input.
 
 
 ### 2- If the model is multimodal, then also download the mmproj file.
