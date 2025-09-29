@@ -57,6 +57,32 @@ Therefore, please be patient for the first response.
 
 ## myOfflineAi Settings
 
+These are the app settings. To change them please open the app.py file with a text editor, make the change and then save the file as app.py.
+
+Ollama models have a default context size of 4096 tokens.<br>
+4096 is low and will lead to poor quality results when submitting files or when pasting in a large amount of text.<br>
+Here we set a custom context size.<br>
+Setting large context sizes will slow down inference.<br>
+NUM_CTX = 10000
+
+TEMPERATURE = 0.3
+TOP_K = 20
+TOP_P = 0.95
+
+Max number of pdf pages allowed per pdf file<
+MAX_PAGES = 15
+
+Each pdf page is converted into an image.<br>
+The image resolution is set here.<br>
+1.5x scale provides good readability while reducing file size.<br>
+Change this if you need greater resolution when for example, when using medical images.<br>
+PDF_IMAGE_RES = 1.5 # 150 dpi
+
+Max pdf upload size<br>
+MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024 # (20MB)
+
+<br>
+
 ## How to Install and Run the app
 
 I tested the installation process on Mac OS. Please note that although I've included instructions for Windows, I haven't tested on Windows.
