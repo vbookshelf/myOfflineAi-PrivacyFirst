@@ -28,12 +28,17 @@ Open source, offline, privacy-first AI solves this problem. The data never leave
 
 ## Current state of small local Ai models
 
-Currently, if you want to run AI models locally, say on a machine with 16GB RAM, you are restricted to using small models. The bottom line is that these quantized (compressed) models are not trustworthy. They are okay for non-crtical work like translation, summarization and brainstorming. But their ability to hallucinate makes them unsuitable for high precision work.
+Currently, if you want to run AI models locally, say on a machine with 16GB RAM, you are restricted to using small models. The bottom line is that most quantized (compressed) models are not trustworthy. They are okay for non-crtical work like translation, summarization and brainstorming. But their ability to hallucinate makes them unsuitable for high precision work.
 
-One solution may be to use small domain specific models. A good example of this is MedGemma, a Google model that's optimized for medical text and image understanding. The model comes in two variants - 4b (7.8GB (non-quantized size), text only) and 27b (54GB (non-quantized size), text and images).
+One solution may be to use small domain specific models. A good example of this is MedGemma, a Google model that's optimized for medical text and image understanding. The model comes in two variants:
+- 4b: 7.8GB (non-quantized size), text only
+- 27b: 54GB (non-quantized size), text and images
+
 https://deepmind.google/models/gemma/medgemma/
 
-In Appendix 2 two I will show how download this model from HuggingFace and load it into Ollama locally. This approach will allow you to use models that are not available in the Ollama library.
+In Appendix 2 two I will show how download MedGemma from HuggingFace and load it into Ollama locally. This approach will allow you to use models that are not available in the Ollama library.
+
+In the past model quantization was done by third parties. But the recent trend is for the companies that train these models to release quantized versions that they have tested. Quantization is also being done during training. A good example od this is gpt-oss from OpenAi. This trend points towards small local models becoming much better as time progresses.
 
 <br>
 
