@@ -55,6 +55,8 @@ This trend points towards small local models becoming much better and faster as 
 
 Therefore, please be patient for the first response.
 
+## myOfflineAi Settings
+
 ## How to Install and Run the app
 
 I tested the installation process on Mac OS. Please note that although I've included instructions for Windows, I haven't tested on Windows.
