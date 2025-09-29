@@ -141,13 +141,6 @@ To use the other models first make sure your computer has enough RAM to run them
 
 ```
 
-## How does the app work?
-- Ai Models
-- Inference process
-- How does pdf conversion work
-- Adding new tools
-- Click to run
-
 <br>
 
 ## FAQ
@@ -155,10 +148,17 @@ To use the other models first make sure your computer has enough RAM to run them
 1- Is it essential to switch off the internet connection?<br>
 No it's not essential. By design, no data leaves your device. But I recommend putting Ollama into Airplane mode. This can be done in the Ollama settings.
 
-2- How do I audit the code for privacy?
+2- How do I audit the code for privacy?<br>
+There are two options. Either let a programmer review the code or take the app.py file and submit it to an Ai model like Gemini or ChatGPT. Ask it to review the code for data privacy compliance.
 
-3- How do I add features, make changes or fix a bug?
+3- How do I add features, make changes or fix a bug?<br>
 This is a single-file app thats designed to be reviewed and modified by Ai. All the code is in one file so the Ai sees the entire design. Simply take the app.py file and upload it to Gemini 2.5 Pro, Claude Sonnet or GPT-5. Tell it what changes or new features you want. Also tell it to output all the code on one page so you can copy and paste it. When the Ai outputs the revised code, copy it and replace all the code in the app.py file. Then put the app.py file back inside the project folder. Launch the app and check if your changes have been made.
+
+4- How is pdf conversion handled internally?<br>
+The app converts each page of the pdf document into an image. These images are then passed to the model.
+
+5- Is it possible to edit a Tool after it is created?<br>
+Yes it is. Hover over the tool in the left panel. The edit button will become vsible.
 
 ## Lessons learned
 - Ollama models have a default context size of 4096. Knowing this will help you get much better results.
