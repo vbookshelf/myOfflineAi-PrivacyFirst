@@ -30,9 +30,10 @@ Open source, offline, privacy-first AI solves this problem. The data never leave
 
 Currently, if you want to run AI models locally, say on a machine with 16GB RAM, you are restricted to using small models. The bottom line is that these models are not trustworthy. They are okay for non-crtical work like translation, summarization and brainstorming. But their ability to hallucinate makes them unsuitable for high precision work.
 
-That said, the most recent small models, like Gemma3, have very good qualities: They are multilingual. They are multimodal meaning that they can handle both text and images. And they run quite fast on a CPU. Some, like the Qwen3 models, also have the ability to reason internally i.e. they are thinking models.
+One possible solution could be to use small domain specific moodels. A good example of this is MedGemma, a Google model that's optimized for medical text and image understanding. The model comes in two variants - 4b (7.8GB (BF16), text only) and 27b (54GB (BF16), text and images). This model can also be fine tuned to improve its performance on medical data. 
+https://deepmind.google/models/gemma/medgemma/
 
-Trustworthy local Ai is not a reality yet, but the day when it will be is coming fast. myOfflineAi is designed so that when that day comes you can hit the ground running.
+In Appendix 2 two I will show how download this model from HuggingFace and load it into Ollama locally. This approach will allow you to use models that are not available in the Ollama library.
 
 <br>
 
