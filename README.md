@@ -8,7 +8,7 @@ Transparent and auditable offline Ai access for those who need extreme data priv
 - Create custom multimodal Ai tools - text, images, pdf (Similar to Gemini Gems and OpenAi GPTs)
 - Chat histories are not saved
 - Built to be transparent. Single-file flask app - code is easy to audit because html, css, js and python are all in one file.
-- Easy to use - No need to use the command line. Simply double click a file to launch the app in your browser.
+- Easy to use - no need to use the command line. Simply double click a file to launch the app in your browser.
 
 <br>
 
