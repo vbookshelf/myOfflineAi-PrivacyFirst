@@ -290,6 +290,16 @@ Test<br>
 You can test the model by asking this question:<br>
 How do you conduct a patient preclinical interview?
 
+<br>
+
+## How to delete an Ollama model from your computer
+
+```
+# Delete model
+% olama rm model_name
+
+```
+
 
 
 
