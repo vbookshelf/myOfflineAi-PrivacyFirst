@@ -48,11 +48,12 @@ This trend points towards small local models becoming much better and faster as 
 
 <br>
 
-## Limitations
-- Hallucinations
-- Slow response time to first message when processing pdf documents and images
-- Limited to using small models
+## Response times when using myOfflineAi
 
+- When you send your first message, it make a minute to get your first response. But after that responses are much faster.
+- Similarly when you submit an image or a pdf, the response time to the first message may take a while. But susequent responses are faster.
+
+Therefore, please be patient for the first response.
 
 ## How to Install and Run the app
 
