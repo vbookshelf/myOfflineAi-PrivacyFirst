@@ -67,19 +67,11 @@ There's a few steps that you need to follow when first installing. Normally you 
 
 System Requirements
 
-The app has the following models that you can select:
-- gemma3:270m - Text only, 32K context, 292MB
-- gemma3:4b - Text and Images, 128k context, 3.3GB
-- gemma3:12b - Text and Images, 128k context, 8.1GB (Recommended)
-- qwen3:4b - Text only, Thinking, 256k context, 2.5GB
-
-Other Ollama models can be easily added.
-
-The amount of RAM that your machine has needs to exceed the sizes shown above.
+The amount of RAM that your machine has needs to exceed the size of the model you want to download.
 For example, if your computer has 8GB of RAM then you should select the gemma3:4b because
 its size is 3.3GB. On an M series Mac with 16GB RAM, models with a size of approx. 10 GB tend to run well.
 
-The models run on the CPU. The speed at which the models run will depend on how fast your computer is. 
+The speed at which the models run will depend on how fast your computer is. 
 
 ```
 1. Download and install the Ollama desktop application
@@ -144,32 +136,8 @@ The app will open in your browser. The terminal will also open.
 To shut down the app from the terminal, type Crl+C on Mac or Alt+F4 on Windows.
 
 5. Notes on selecting and using models.
-When you first start the app you will only be able to use the gemma3:4b model because you've downloaded it already.
+When you first start the app you will only see the gemma3:4b model because you've downloaded it already.
 To use the other models first make sure your computer has enough RAM to run them. Then download the model using the same procedure explained above.
-
-The app can run all Ollama models, but not all models are included in the dropdown.
-To run a model that not included in the dropdown, to need to manually add model name to the dropdown.
-To do this open the app.py file with a text editor and change one line of code. Then save the file.
-model_list = ['gemma3:270m', 'gemma3:4b', 'gemma3:12b']
-
-For example if you wanted to add the OpenAi gpt-oss:20b model this is the change you should make:
-model_list = ['gemma3:270m', 'gemma3:4b', 'gemma3:12b', 'gpt-oss:20b]
-
-Now, it will appear in the dropdown.
-If you have downloaded gpt-oss:20b you will be able to use it in the app.
-
-A full list of Ollama models and their details can be found here:
-https://ollama.com/search
-
-6. How to set a default model
-
-The default model is the one that displays, in the dropdown, when you load the app.
-To make a model your default, open the app.py file.
-Change the number (model_list[0]) to match your models poition in the list e.g. 0 for gemma3:270m', 1 for gemma3:4b etc.
-model_list = ['gemma3:270m', 'gemma3:4b', 'gemma3:12b', 'qwen3:4b']
-MODEL_NAME = model_list[0]  # Set the Default model
-
-All the Ai Tools use the same model that's selected in the dropdown.
 
 ```
 
