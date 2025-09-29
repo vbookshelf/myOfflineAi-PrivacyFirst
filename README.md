@@ -1,13 +1,13 @@
 # myOfflineAi - A Flask UI for Ollama
 
-Transparent offline Ai access for those who need extreme data privacy and don't want to blindly trust cloud providers and software developers.
+Transparent and auditable offline Ai access for those who need extreme data privacy and don't want to blindly trust cloud providers and software developers.
 
 - Ai access without an internet connection
 - Runs on the desktop.
 - Chat with Ollama models
 - Create custom multimodal Ai tools - text, images, pdf (Similar to Gemini Gems and OpenAi GPTs)
 - Chat histories are not saved
-- Built to be transparent. Single-file flask app. Therefore, it's easy to audit the code.
+- Built to be transparent. Single-file flask app - code is easy to audit because html, css, js and python are all in one file.
 - No need to use the command line. Simply double click a file to launch the app in your browser.
 
 <br>
