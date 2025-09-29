@@ -233,14 +233,15 @@ mmproj-google_medgemma-4b-it-bf16.gguf
 ```
 1- Create a Modelfile
 
-cd to the desktop<br>
+# cd to the desktop
 % cd Desktop
 
-(Note that the path to the downloaded file is specified)<br>
+# (Note that the path to the downloaded file is specified)
 % echo 'FROM ./google_medgemma-4b-it-GGUF' > Modelfile
 
-2- Insert the model into Ollama
-(You can specify any name. I've used: google_medgemma-4b-it-GGUF-bf16)
+# 2- Insert the model into Ollama
+
+# (You can specify any name. I've used: google_medgemma-4b-it-GGUF-bf16)
 ollama create google_medgemma-4b-it-GGUF-bf16 -f Modelfile
 
 ```
@@ -251,17 +252,18 @@ You can only submit text.
 
 [ MULTIMODAL MODEL ]
 ```
-1- Create a Modelfile<br>
+1- Create a Modelfile
 
-cd to the desktop<br>
+# cd to the desktop
 % cd Desktop
 
-Add the gguf and mmproj file names to this terminal command:<br>
+# Add the gguf and mmproj file names to this terminal command:
 % echo 'FROM ./google_medgemma-4b-it-GGUF
 ADAPTER ./mmproj-google_medgemma-4b-it-bf16.gguf' > Modelfile
 
 2- Insert the model into Ollama
-(You can specify any name. I've used: google_medgemma-4b-it-GGUF-bf16)
+
+# (You can specify any name. I've used: google_medgemma-4b-it-GGUF-bf16)
 % ollama create google_medgemma-4b-it-GGUF-bf16 -f Modelfile
 
 ```
