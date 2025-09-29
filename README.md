@@ -178,6 +178,8 @@ All the Ai Tools use the same model that's selected in the dropdown.
 - Adding new tools
 - Click to run
 
+<br>
+
 ## FAQ
 
 1- Is it essential to switch off the internet connection?<br>
@@ -192,6 +194,8 @@ This is a single-file app thats designed to be reviewed and modified by Ai. All 
 - Ollama models have a default context size of 4096. Knowing this will help you get much better results.
 - When using Gemma models images come before text.
 - The best coding models are Gemini 2.5 Pro and Claude Sonnet.
+
+<br>
 
 ## Resources
 
@@ -208,9 +212,9 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
   Grace Leung<br>
   https://www.youtube.com/watch?v=-era_Orh3TM
 
-## Appendix
+<br>
 
-### How to load your own models into Ollama
+## How to load your own models into Ollama
 
 The process is slightly different depending on whether or not the model is text only or multimodal. Here we will use the text-only MedGemma model as an example.
 
