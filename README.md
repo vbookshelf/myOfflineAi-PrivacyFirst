@@ -245,13 +245,15 @@ mmproj-google_medgemma-4b-it-bf16.gguf
 # cd to the desktop
 % cd Desktop
 
-# (Note that the path to the downloaded file is specified)
-% echo 'FROM ./google_medgemma-4b-it-GGUF' > Modelfile
+# (Note that the path to the downloaded file is specified)<br>
+# Make sure that you use the actual file name and not the model name from the repo.
+% echo 'FROM ./google_medgemma-4b-it-bf16.gguf' > Modelfile
 
 # 2- Insert the model into Ollama
 
-# (You can specify any name. I've used: google_medgemma-4b-it-GGUF-bf16)
-ollama create google_medgemma-4b-it-GGUF-bf16 -f Modelfile
+# (You can specify any name. I've used: my-google_medgemma-4b-it-GGUF-bf16)<br>
+# The file name you specify must be lower case only.
+ollama create my-google_medgemma-4b-it-gguf-bf16 -f Modelfile
 
 ```
 
@@ -267,13 +269,13 @@ You can only submit text.
 % cd Desktop
 
 # Add the gguf and mmproj file names to this terminal command:
-% echo 'FROM ./google_medgemma-4b-it-GGUF
+% echo 'FROM ./google_medgemma-4b-it-bf16.gguf
 ADAPTER ./mmproj-google_medgemma-4b-it-bf16.gguf' > Modelfile
 
 2- Insert the model into Ollama
 
-# (You can specify any name. I've used: google_medgemma-4b-it-GGUF-bf16)
-% ollama create google_medgemma-4b-it-GGUF-bf16 -f Modelfile
+# (You can specify any name. I've used: my-google_medgemma-4b-it-bf16)
+% ollama create my-google_medgemma-4b-it-bf16 -f Modelfile
 
 ```
 
