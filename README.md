@@ -30,7 +30,9 @@ Open source, offline, privacy-first AI solves this problem. The data never leave
 
 Currently, if you want to run AI models locally, say on a machine with 16GB RAM, you are restricted to using small models. The bottom line is that most quantized (compressed) models are not trustworthy. They are okay for non-crtical work like translation, summarization and brainstorming. But their ability to hallucinate makes them unsuitable for high precision work.
 
-One solution may be to use small domain specific models. A good example of this is MedGemma, a Google model that's optimized for medical text and image understanding. The model comes in two variants:
+Qnatization may also affect the model in unexpected ways. For example, in a roleplay scenario, they may start to mix male/female behaviours.
+
+One solution may be to use small domain specific non-quantized models. A good example of this is MedGemma, a Google model that's optimized for medical text and image understanding. The model comes in two variants:
 - 4b: 7.8GB (non-quantized size), text only
 - 27b: 54GB (non-quantized size), text and images
 
