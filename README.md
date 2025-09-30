@@ -108,8 +108,7 @@ start-app.bat
 ## Selecting and using models
 
 <br>
-When you first start the app you will only see the model you downloaded. To use the other models first make sure your computer has enough RAM to run them. 
-Then download the model using the same procedure explained above.
+When you first start myOfflineAi you will only see the model you downloaded in the dropdown menu. To add other models first make sure your computer has enough RAM to run them.  Then download the Ollama model using the same procedure explained above.
 
 You will need to restart the myOfflineAi app to ensure that the model you downloaded is displayed in the dropdown menu.
 
