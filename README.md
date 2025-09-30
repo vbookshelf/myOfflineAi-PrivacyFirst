@@ -166,7 +166,7 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024 # (20MB)
 
 <br>
 
-### Security & Auditability
+### Security and Auditability
 
 This app is provided without warranties.<br>
 I suggest that you do a privacy audit of the code before using the app.<br>
@@ -180,10 +180,10 @@ Files to inspect:
 - start-windows-app.bat
 
 You should also review how myOfflineAi interacts with the Ollama desktop app. I suggest putting Ollama into Airplane mode and turning off internet access. 
-This is a note from Ollama concerning privacy:
+This is a note from Ollama concerning privacy:<br>
 [Does Ollama send my prompts and responses back to ollama.com?](https://github.com/ollama/ollama/blob/main/docs/faq.md#does-ollama-send-my-prompts-and-responses-back-to-ollamacom)
 
-For a quick check you can take the app.py file and submit it to an Ai model like Gemin, ChatGPT or Claude. Ask it to review the code for data privacy compliance.
+For a quick check you can take the app.py file and submit it to an Ai model like Gemini, ChatGPT or Claude. Ask it to review the code for data privacy compliance.
 
 <br>
 
