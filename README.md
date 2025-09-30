@@ -232,6 +232,9 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
   Grace Leung<br>
   https://www.youtube.com/watch?v=-era_Orh3TM
 
+- Ollama FAQ<br>
+  https://github.com/ollama/ollama/blob/main/docs/faq.md
+
 <br>
 
 ## How to load your own models into Ollama locally (not up to the cloud)
