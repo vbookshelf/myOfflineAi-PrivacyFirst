@@ -50,7 +50,6 @@ If you have a fast internet connection and at least 8GB RAM then I suggest you d
 This model can handle both text and images.
 If you have a slow connection then download the smaller gemma3:270m model (292MB).
 This model can handle text only.
-My recommended model is: gemma3:12b (8.1GB, Text and image)
 
 To download first open the Ollama desktop app.
 Then paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right.
@@ -115,6 +114,8 @@ You will need to restart the myOfflineAi app to ensure that the model you downlo
 
 You can explore the avaiable Ollama models here:
 https://ollama.com/search
+
+My recommended model is: gemma3:12b (8.1GB, Text and image)
 
 It's also possible to add your own model to Ollama locally. This process is explained below.
 
