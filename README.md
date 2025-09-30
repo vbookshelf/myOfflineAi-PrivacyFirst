@@ -23,14 +23,14 @@ Transparent and auditable offline Ai access for professionals in highly regulate
 
 <br>
 
-In this section you will be doing the following:
-- Installing the Ollama desktop app
-- Downloading a small 250MB text-only Ollama model
-- Installing the UV python package manager
-- Starting the myOfflineAi app by double clicking a file (The app auto installs the Python packages it needs.)
+In this section you will be do the following:
+- Install the Ollama desktop app
+- Download a small 250MB text-only Ollama model
+- Install the UV python package manager
+- Start the myOfflineAi app by double clicking a file
 
 Notes:<br>
-- I tested the installation process on Mac OS. I've included instructions for Windows, but I haven't tested on Windows.<br>
+- I tested the installation process on Mac OS. I've included instructions for Windows, but I haven't tested on Windows.
 - After setup, you only need to double-click a file to launch the app.
 
 System Requirements:
@@ -42,11 +42,13 @@ System Requirements:
 
 ```
 1. Download and install the Ollama desktop application
+
 This is the link to download Ollama. After downloading, please install it on your computer.
 Then launch it. A white chat window will open.
 https://ollama.com/
 
 2. Download an Ollama model
+
 If you have a fast internet connection and at least 8GB RAM then I suggest you download the gemma3:4b model (2.5GB).
 This model can handle both text and images.
 If you have a slow connection then download the smaller gemma3:270m model (292MB).
@@ -58,6 +60,7 @@ Then type any message e.g. Hi.
 The model will start to auto download.
 
 3. Install UV
+
 UV is a new and fast python package manager.
 Here you will find the instructions to install uv on Mac and Windows:
 https://docs.astral.sh/uv/getting-started/installation
@@ -71,6 +74,7 @@ Windows:
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 4. Download the project folder
+
 Download the myOfflineAi project folder from this repo.
 
 5. Open the folder and double-click a file.
@@ -86,6 +90,7 @@ Then the myOfflineAi web app will open in your browser.
 The terminal will also open.
 
 5. Use the app
+
 Click on "AI Assistant"
 Type a mesage.
 
