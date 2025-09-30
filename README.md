@@ -118,7 +118,7 @@ It's also possible to add your own model to Ollama locally. This process is expl
 
 <br>
 
-## Response times when using myOfflineAi
+## Response times
 
 <br>
 When you send your first message, it may a minute to get your first response. But after that responses are much faster.<br>
@@ -204,6 +204,8 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 <br>
 
 ## How to load your own models into Ollama locally (not up to the cloud)
+
+<br>
 
 The process is slightly different depending on whether or not the model is text only or multimodal. Here we will use the text-only MedGemma model as an example.
 
