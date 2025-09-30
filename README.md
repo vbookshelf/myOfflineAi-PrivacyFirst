@@ -26,7 +26,7 @@ Transparent and auditable offline Ai access for professionals in highly regulate
 <br>
 
 <img src="https://github.com/vbookshelf/myOfflineAi-Flask-UI-for-Ollama/blob/main/images/image4.png" alt="Ollama desktop app settings" height="500">
-<p>Ollama Settings - Airplane Mode</p>
+<p>Ollama Settings - Airplane mode</p>
 
 ## How to Install and Run
 
