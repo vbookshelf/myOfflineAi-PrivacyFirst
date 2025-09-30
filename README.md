@@ -113,6 +113,8 @@ Similarly when you submit an image or a pdf, the response time to the first mess
 
 Therefore, please be patient for the first response.
 
+<br>
+
 ## myOfflineAi Settings
 
 These are the app settings. To change them please open the app.py file with a text editor, make the change and then save the file as app.py.
@@ -158,10 +160,14 @@ The app converts each page of the pdf document into an image. These images are t
 5- Is it possible to edit a Tool after it is created?<br>
 Yes it is. Hover over the tool in the left panel. The edit button will become visible.
 
-## Lessons learned
+<br>
+
+## Lessons learned during this project
+
 - Ollama models have a default context size of 4096. Knowing this will help you get much better results.
 - When using Gemma models images come before text.
 - The best coding models are Gemini 2.5 Pro and Claude Sonnet.
+- Flask apps can be set up to start by double clicking a file.
 
 <br>
 
