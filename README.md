@@ -43,6 +43,7 @@ System Requirements:
 ```
 1. Download and install the Ollama desktop application
 This is the link to download Ollama. After downloading, please install it on your computer.
+Then launch it. A white chat window will open.
 https://ollama.com/
 
 2. Download an Ollama model
