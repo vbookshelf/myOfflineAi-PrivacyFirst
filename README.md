@@ -73,20 +73,17 @@ Then it will auto open the myOfflineAi web app in your browser.
 The terminal will also open.
 
 5. Use the app
-The name of the model you download will appear in the dropdown in the top left.
 Click on "AI Assistant"
 Type a mesage.
+
+The name of the model you downloaded will appear in the dropdown in the top left.
 If you downloaded the gemma3:4b you can also submit images and pdf documents.<br>
 
-6. Future - Double-click to launch
+6. Future - Simply Double-click a file to launch
 
-The set up process above only needs to be done once.
-In future to start the app do the following:
-
-1- The Ollama desktop app auto launches when you start your computer.
-2- Double-click this file that's in the project folder:
 Mac:
 start-app.command
+
 Windows:
 start-app.bat
 
@@ -94,10 +91,16 @@ The app will open in your browser. The terminal will also open.
 To shut down the app from the terminal, type Crl+C on Mac or Alt+F4 on Windows.
 
 7. Notes on selecting and using models.
-When you first start the app you will only see the gemma3:4b model because you've downloaded it already.
+When you first start the app you will only see the model you downloaded.
 To use the other models first make sure your computer has enough RAM to run them. Then download the model using the same procedure explained above.
 
 ```
+
+The set up process above only needs to be done once.
+In future to start the app do the following:
+
+1- The Ollama desktop app auto launches when you start your computer.
+2- Double-click this file that's in the project folder:
 
 
 The amount of RAM that your machine has needs to exceed the size of the model you want to download.
