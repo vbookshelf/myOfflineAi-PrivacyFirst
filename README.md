@@ -148,11 +148,11 @@ I've set a custom context size.<br>
 Note that setting large context sizes will slow down inference.<br>
 NUM_CTX = 16000
 
-TEMPERATURE = 0.3
-TOP_K = 20
-TOP_P = 0.95
+TEMPERATURE = 0.3<br>
+TOP_K = 20<br>
+TOP_P = 0.95<br>
 
-Max number of pdf pages allowed per pdf file<
+Max number of pdf pages allowed per pdf file<br>
 MAX_PAGES = 15
 
 Each pdf page is converted into an image.<br>
