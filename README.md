@@ -112,7 +112,7 @@ When you first start myOfflineAi you will only see the model you downloaded in t
 
 You will need to restart the myOfflineAi app to ensure that the model you downloaded is displayed in the dropdown menu.
 
-You can explore the avaiable Ollama models here:
+You can explore Ollama models here:<br>
 https://ollama.com/search
 
 My recommended model is: gemma3:12b (8.1GB, Text and image)
