@@ -1,0 +1,14 @@
+myOfflineAi
+
+1. If you already have the Ollama desktop app and UV installed, and you have downloaded at least one Ollama model - then
+double-click the file named below to start the app:
+
+Mac:
+start-mac-app.command
+
+Windows:
+start-windows-app.bat
+
+
+2. Please visit the project GitHub repo for full instructions:
+https://github.com/vbookshelf/myOfflineAi-Flask-UI-for-Ollama
