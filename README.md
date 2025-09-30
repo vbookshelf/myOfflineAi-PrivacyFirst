@@ -192,16 +192,17 @@ For a quick check you can take the app.py file and submit it to an Ai model like
 ## FAQ
 
 <br>
-1- Is it essential to switch off the internet connection?<br>
+
+### 1- Is it essential to switch off the internet connection?<br>
 No it's not essential. By design, no data leaves your device. But I recommend putting Ollama desktop app into Airplane mode. This can be done in the Ollama settings.
 
-2- How do I add features, make changes or fix a bug?<br>
+### 2- How do I add features, make changes or fix a bug?<br>
 This is a single-file app thats designed to be reviewed and modified by Ai. All the code is in one file so the Ai sees the entire design. Simply take the app.py file and upload it to Gemini 2.5 Pro, Claude Sonnet or GPT-5. Tell it what changes or new features you want. Also tell it to output all the code on one page so you can copy and paste it. When the Ai outputs the revised code, copy it and replace all the code in the app.py file. Then put the app.py file back inside the project folder. Launch the app and check if your changes have been made.
 
-3- How is pdf conversion handled internally?<br>
+### 3- How is pdf conversion handled internally?<br>
 The app converts each page of the pdf document into an image. These images are then passed to the model.
 
-4- Is it possible to edit a Tool after it is created?<br>
+### 4- Is it possible to edit a Tool after it is created?<br>
 Yes it is. Hover over the tool in the left panel. The edit button will become visible.
 
 <br>
@@ -236,7 +237,11 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 <br>
 
-The process is slightly different depending on whether or not the model is text only or multimodal. Here we will use the text-only MedGemma model as an example.
+Ollama makes multimodal local CPU inference simple. To take advantage of this you may want to load your own domain specialized models into Ollama, on your computer. Here I will explain how to do that. We will use the MedGemma model as an example.
+
+<br>
+
+The process is slightly different depending on whether the model is text only or multimodal.
 
 ### 1- Download the .gguf file for the model.<r>
 
@@ -247,7 +252,7 @@ For this example I've downloaded the BF16 gguf file from here:<br>
 bartowski/google_medgemma-4b-it-GGUF<br>
 https://huggingface.co/bartowski/google_medgemma-4b-it-GGUF
 
-The 4b version is text only. The 27b version is multimodal i.e. it supports both text and image input.
+The 4b MedGemma version is text only. The 27b version is multimodal i.e. it supports both text and image input.
 
 
 ### 2- If the model is multimodal, then also download the mmproj file.
