@@ -181,7 +181,7 @@ Files to inspect:
 - start-mac-app.command
 - start-windows-app.bat
 
-You should also review how myOfflineAi interacts with the Ollama desktop app. I suggest putting Ollama into Airplane mode and turning off internet access. 
+You should also review how myOfflineAi interacts with the Ollama desktop app.<br>
 This is a note from Ollama concerning privacy:<br>
 [Does Ollama send my prompts and responses back to ollama.com?](https://github.com/ollama/ollama/blob/main/docs/faq.md#does-ollama-send-my-prompts-and-responses-back-to-ollamacom)
 
