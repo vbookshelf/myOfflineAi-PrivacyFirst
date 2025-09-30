@@ -9,6 +9,7 @@ Transparent and auditable offline Ai access for those who need extreme data priv
 - Chat histories are not saved
 - Built to be transparent. Single-file flask app - code is easy to audit because html, css, js and python are all in one file.
 - Double-click a file to install and run. No need to use the command line.
+- Small zipped file. Easy for non-programmers to share the app via email. They don't need to go to GitHub to download.
 
 <br>
 
@@ -16,34 +17,94 @@ Transparent and auditable offline Ai access for those who need extreme data priv
 
 <br>
 
-## What problem does this solve?
 
-Most of us take it for granted that we can drop a document into Google Translate or ChatGPT without a second thought. But what if that document is your grandmother’s secret recipe? Or a client’s legal brief? Or a patient’s medical chart? For many people, uploading such things to the cloud is a risk. A single upload could expose sensitive data, waive attorney–client privilege, or violate medical privacy laws. That fear prevents many from benefiting from the power of AI to help them be more productive and to serve more people.
+## How to Install and Run the app
 
-Large firms can buy their way out of this problem with costly, enterprise-grade privacy systems. But the solo lawyer, the therapist in private practice, the small nonprofit cannot.
-Open source, offline, privacy-first AI solves this problem. The data never leaves the user’s computer. And there's full transparency - all the underlying code for the app can be audited for data privacy compliance. Also, the user's internet connection can be disconnected while the app is being used - creating peace of mind.
+In this section you will be installing the Ollama desktop app, the UV python package manager and the python packages needed to run the myOfflineAi app. You will also be downloading a small 250MB text-only model.
 
-<br>
+System Requirements
+Recommended: 16GB RAM
+Minimum: 8GB RAM
 
-## Current state of small local Ai models
+I tested the installation process on Mac OS. I've included instructions for Windows, but I haven't tested on Windows.
 
-Currently, if you want to run AI models locally, say on a machine with 16GB RAM, you are restricted to using small models. The bottom line is that most quantized (compressed) models are not trustworthy. They are okay for non-crtical work like translation, summarization and brainstorming. But their ability to hallucinate makes them unsuitable for high precision work.
+There's a few steps that you need to follow when first installing.<br>
+Normally you only need to double-click a file to launch the myOfflineAi app.<br>
+On Mac and Windows the Ollama desktop app lauches automatically on startup. If the myOfflineAi app won't lauch then you may need to mamually launch Ollama first.
 
-Qnatization may also affect the model in unexpected ways. For example, in a roleplay scenario, they may start to mix male/female behaviours.
+```
+1. Download and install the Ollama desktop application
+This is the link to download Ollama. After downloading it install in on your computer.
+https://ollama.com/
 
-One solution may be to use small domain specific non-quantized models. A good example of this is MedGemma, a Google model that's optimized for medical text and image understanding. The model comes in two variants:
-- 4b: 7.8GB (non-quantized size), text only
-- 27b: 54GB (non-quantized size), text and images
+2. Download an Ollama model
+If you have a good intenet connection and at least 8GB RAM then download the gemma3:4b model (2.5GB). This model can handle both text and images.
+If you have a slow connection then download the smaller gemma3:270m model (292MB). This model can handle text only.
 
-https://deepmind.google/models/gemma/medgemma/
+Open the Ollama desktop app. Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right. Then type any message e.g. Hi.
+The model will start to auto download.
 
-In Appendix 2 two I will show how download MedGemma from HuggingFace and load it into Ollama locally. This approach will allow you to use models that are not available in the Ollama library.
+3. Install UV
+UV is a new and fast python package manager.
+Here you will find the instructions to install uv on Mac and Windows:
+https://docs.astral.sh/uv/getting-started/installation/#installation-methods
 
-In the past model quantization was done by third parties. But the recent trend is for the companies that train these models to release quantized versions that they have tested. Quantization is also being done during post training.
+Open your terminal and copy paste this command:
 
-A good example of this is gpt-oss from OpenAi. Surprisingly, the gpt-oss-20b model (14 GB) runs resonably fine on an M4, 16GB Mac. Ollama worked with OpenAI to benchmark against their reference implementations to ensure Ollama’s implementations have the same quality.
+Mac:
+wget -qO- https://astral.sh/uv/install.sh | sh
 
-This trend points towards small local models becoming much better and faster as time progresses.
+Windows:
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+4. Download the project folder<br>
+Download the project folder from this repo.
+
+5. Open the folder and double-click a file.
+
+Mac:
+Double-click start-app.command
+
+Windows:
+Double-click start-app.bat
+
+This will install all the python packages (first time only).
+Then it will auto open the myOfflineAi web app in your browser.
+The terminal will also open.
+
+5. Use the app
+The name of the model you download will appear in the dropdown in the top left.
+Click on "AI Assistant"
+Type a mesage.
+If you downloaded the gemma3:4b you can also submit images and pdf documents.<br>
+
+6. Future - Double-click to launch
+
+The set up process above only needs to be done once.
+In future to start the app do the following:
+
+1- The Ollama desktop app auto launches when you start your computer.
+2- Double-click this file that's in the project folder:
+Mac:
+start-app.command
+Windows:
+start-app.bat
+
+The app will open in your browser. The terminal will also open.
+To shut down the app from the terminal, type Crl+C on Mac or Alt+F4 on Windows.
+
+7. Notes on selecting and using models.
+When you first start the app you will only see the gemma3:4b model because you've downloaded it already.
+To use the other models first make sure your computer has enough RAM to run them. Then download the model using the same procedure explained above.
+
+```
+
+
+The amount of RAM that your machine has needs to exceed the size of the model you want to download.
+For example, if your computer has 8GB of RAM then you should select the gemma3:4b because
+its size is 3.3GB. On an M series Mac with 16GB RAM, models with a size of approx. 10 GB tend to run well.
+
+The speed at which the models run will depend on how fast your computer is. 
 
 <br>
 
@@ -79,92 +140,6 @@ PDF_IMAGE_RES = 1.5 # 150 dpi
 
 Max pdf upload size<br>
 MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024 # (20MB)
-
-<br>
-
-## How to Install and Run the app
-
-I tested the installation process on Mac OS. Please note that although I've included instructions for Windows, I haven't tested on Windows.
-
-In this section you will be installing the requirements. You will also be downloading a model thats 3.3GB. You'll need to have a computer with approx. 8GB of RAM. You will also need to have a good internet connection. If you have one of the newer M series Macs with 16GB RAM, you will be fine.
-
-There's a few steps that you need to follow when first installing. Normally you only need to make sure Ollama is running, and then double-click a file to launch the app.
-
-System Requirements
-
-The amount of RAM that your machine has needs to exceed the size of the model you want to download.
-For example, if your computer has 8GB of RAM then you should select the gemma3:4b because
-its size is 3.3GB. On an M series Mac with 16GB RAM, models with a size of approx. 10 GB tend to run well.
-
-The speed at which the models run will depend on how fast your computer is. 
-
-```
-1. Download and install the Ollama desktop application
-This is the link to download Ollama. After downloading it install in on your computer.
-https://ollama.com/
-
-2. Download an Ollama model
-If you have a good intenet connection and at least 8GB RAM then download the gemma3:4b model (2.5GB). This model can handle both text and images.
-If you have a slow connection then download the smaller gemma3:270m model (292MB). This model can handle text only.
-
-Open the Ollama desktop app. Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right. Then type any message e.g. Hi.
-The model will start to auto download.
-
-3. Install UV
-UV is a new and fast python package manager.
-Here you will find the instructions to install uv on Mac and Windows:
-https://docs.astral.sh/uv/getting-started/installation/#installation-methods
-
-Open your terminal and copy paste this command:
-
-Mac:
-wget -qO- https://astral.sh/uv/install.sh | sh
-
-Windows:
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-
-4. Download the project folder<br>
-Download the project folder from this repo.
-
-5. Open the folder and double-click a file.
-This will install all the python packages (first time only).
-Then it will auto open the myOfflineAi web app in your browser.
-The terminal will also open.
-
-Mac:
-Double-click start-app.command
-
-Windows:
-Double-click start-app.bat
-
-5. Use the app
-The name of the model you download will appear in the dropdown in the top left.
-Click on "AI Assistant"
-Type a mesage.
-If you downloaded the gemma3:4b you can also submit images and pdf documents.<br>
-The app converts pdf docs into images before processing.
-
-
-5. Future
-
-This set up process above only needs to be done once.
-In future to start the app do the following:
-
-1- The Ollama desktop app auto launches when you start your computer.
-2- Double-click this file that's in the project folder:
-Mac:
-start-app.command
-Windows:
-start-app.bat
-
-The app will open in your browser. The terminal will also open.
-To shut down the app from the terminal, type Crl+C on Mac or Alt+F4 on Windows.
-
-5. Notes on selecting and using models.
-When you first start the app you will only see the gemma3:4b model because you've downloaded it already.
-To use the other models first make sure your computer has enough RAM to run them. Then download the model using the same procedure explained above.
-
-```
 
 <br>
 
