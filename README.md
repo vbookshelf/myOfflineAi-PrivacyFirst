@@ -22,8 +22,8 @@ Transparent and auditable offline Ai access for those who need extreme data priv
 
 In this section you will be installing the Ollama desktop app, the UV python package manager and the python packages needed to run the myOfflineAi app. You will also be downloading a small 250MB text-only model.
 
-System Requirements
-Recommended: 16GB RAM
+System Requirements<br>
+Recommended: 16GB RAM<br>
 Minimum: 8GB RAM
 
 I tested the installation process on Mac OS. I've included instructions for Windows, but I haven't tested on Windows.
