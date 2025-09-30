@@ -46,10 +46,11 @@ This is the link to download Ollama. After downloading, please install it on you
 https://ollama.com/
 
 2. Download an Ollama model
-If you have a good intenet connection and at least 8GB RAM then download the gemma3:4b model (2.5GB).
+If you have a fast internet connection and at least 8GB RAM then I suggest you download the gemma3:4b model (2.5GB).
 This model can handle both text and images.
 If you have a slow connection then download the smaller gemma3:270m model (292MB).
 This model can handle text only.
+My recommended model is: gemma3:12b (8.1GB, Text and image)
 
 To download first open the Ollama desktop app.
 Then paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right.
