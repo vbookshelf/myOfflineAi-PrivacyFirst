@@ -1,5 +1,7 @@
 # myOfflineAi - A Flask UI for Ollama
 
+<br>
+
 Transparent and auditable offline Ai access for those who need extreme data privacy and don't want to blindly trust cloud providers and software developers.
 
 - Ai access without an internet connection
@@ -17,7 +19,9 @@ Transparent and auditable offline Ai access for those who need extreme data priv
 <br>
 
 
-## How to Install and Run the app
+## How to Install and Run
+
+<br>
 
 In this section you will be doing the following:
 - Installing the Ollama desktop app
@@ -76,7 +80,7 @@ Windows:
 Double-click start-app.bat
 
 This will install all the python packages.
-Then it will auto open the myOfflineAi web app in your browser.
+Then the myOfflineAi web app will open in your browser.
 The terminal will also open.
 
 5. Use the app
@@ -95,19 +99,26 @@ start-app.command
 Windows:
 start-app.bat
 
+```
 
-7. Notes on selecting and using models.
-When you first start the app you will only see the model you downloaded.
-To use the other models first make sure your computer has enough RAM to run them.
-Then download the model using the same procedure explained above.
+## Selecting and using models
+
+<br>
+When you first start the app you will only see the model you downloaded.<br>
+To use the other models first make sure your computer has enough RAM to run them. 
+Then download the model using the same procedure explained above.<br>
 You will need to restart the myOfflineAi app to ensure that the model you downloaded is displayed in the dropdown menu.
 
-```
+You can explore the avaiable Ollama models here:
+https://ollama.com/search
+
+Below I will show how to add your own model to Ollama locally. 
 
 <br>
 
 ## Response times when using myOfflineAi
 
+<br>
 When you send your first message, it may a minute to get your first response. But after that responses are much faster.<br>
 Similarly when you submit an image or a pdf, the response time to the first message may take a while. But subsequent responses are faster.
 
@@ -117,6 +128,7 @@ Therefore, please be patient for the first response.
 
 ## myOfflineAi Settings
 
+<br>
 These are the app settings. To change them please open the app.py file with a text editor, make the change and then save the file as app.py.
 
 Ollama models have a default context size of 4096 tokens.<br>
@@ -145,6 +157,7 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024 # (20MB)
 
 ## FAQ
 
+<br>
 1- Is it essential to switch off the internet connection?<br>
 No it's not essential. By design, no data leaves your device. But I recommend putting Ollama desktop app into Airplane mode. This can be done in the Ollama settings.
 
