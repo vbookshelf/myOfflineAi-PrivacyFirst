@@ -42,7 +42,7 @@ System Requirements:
 
 ```
 1. Download and install the Ollama desktop application
-This is the link to download Ollama. After downloading, install it on your computer.
+This is the link to download Ollama. After downloading, please install it on your computer.
 https://ollama.com/
 
 2. Download an Ollama model
