@@ -23,16 +23,18 @@ In this section you will be doing the following:
 - Installing the Ollama desktop app
 - Downloading a small 250MB text-only Ollama model
 - Installing the UV python package manager
-- Run the myOfflineAi app (The app auto installs the Python packages it needs and the starts.)
+- Starting the myOfflineAi app by double clicking a file (The app auto installs the Python packages it needs.)
 
-System Requirements<br>
-Recommended: 16GB RAM<br>
-Minimum: 8GB RAM
+Notes:<br>
+- I tested the installation process on Mac OS. I've included instructions for Windows, but I haven't tested on Windows.<br>
+- After setup, you only need to double-click a file to launch the app.
 
-I tested the installation process on Mac OS. I've included instructions for Windows, but I haven't tested on Windows.
+System Requirements:
+- Recommended: 16GB RAM
+- Minimum: 8GB RAM
+- Enough free disk space to store the models you download
 
-You need to follow a few steps when first installing.<br>
-Normally you only need to double-click a file to launch the myOfflineAi app.<br>
+<br>
 
 ```
 1. Download and install the Ollama desktop application
@@ -40,10 +42,13 @@ This is the link to download Ollama. After downloading, install it on your compu
 https://ollama.com/
 
 2. Download an Ollama model
-If you have a good intenet connection and at least 8GB RAM then download the gemma3:4b model (2.5GB). This model can handle both text and images.
-If you have a slow connection then download the smaller gemma3:270m model (292MB). This model can handle text only.
+If you have a good intenet connection and at least 8GB RAM then download the gemma3:4b model (2.5GB).
+This model can handle both text and images.
+If you have a slow connection then download the smaller gemma3:270m model (292MB).
+This model can handle text only.
 
-Open the Ollama desktop app. Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right. Then type any message e.g. Hi.
+Open the Ollama desktop app. Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right.
+Then type any message e.g. Hi.
 The model will start to auto download.
 
 3. Install UV
@@ -59,7 +64,7 @@ wget -qO- https://astral.sh/uv/install.sh | sh
 Windows:
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
-4. Download the project folder<br>
+4. Download the project folder
 Download the myOfflineAi project folder from this repo.
 
 5. Open the folder and double-click a file.
@@ -79,7 +84,8 @@ Click on "AI Assistant"
 Type a mesage.
 
 The name of the model you downloaded will appear in the dropdown in the top left.
-If you downloaded the gemma3:4b you can also submit images and pdf documents.<br>
+If you downloaded the gemma3:4b you can also submit images and pdf documents.
+To shut down the app: In the terminal type Crl+C on Mac or Alt+F4 on Windows.
 
 6. Future - Simply Double-click a file to launch
 
@@ -89,12 +95,12 @@ start-app.command
 Windows:
 start-app.bat
 
-The app will open in your browser. The terminal will also open.
-To shut down the app from the terminal, type Crl+C on Mac or Alt+F4 on Windows.
 
 7. Notes on selecting and using models.
 When you first start the app you will only see the model you downloaded.
-To use the other models first make sure your computer has enough RAM to run them. Then download the model using the same procedure explained above.
+To use the other models first make sure your computer has enough RAM to run them.
+Then download the model using the same procedure explained above.
+You will need to restart the myOfflineAi app to ensure that the model you downloaded is displayed in the dropdown menu.
 
 ```
 
