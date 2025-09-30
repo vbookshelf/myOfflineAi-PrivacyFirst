@@ -80,10 +80,10 @@ Download the myOfflineAi project folder from this repo.
 5. Open the folder and double-click a file.
 
 Mac:
-Double-click start-app.command
+Double-click start-mac-app.command
 
 Windows:
-Double-click start-app.bat
+Double-click start-windows-app.bat
 
 This will install all the python packages.
 Then the myOfflineAi web app will open in your browser.
@@ -101,10 +101,10 @@ To shut down the app: In the terminal type Crl+C on Mac or Alt+F4 on Windows.
 6. Future - Simply Double-click a file to launch
 
 Mac:
-start-app.command
+start-mac-app.command
 
 Windows:
-start-app.bat
+start-windows-app.bat
 
 ```
 
