@@ -20,7 +20,7 @@ Transparent and auditable offline Ai access for professionals in highly regulate
 
 <br>
 
-<img src="https://github.com/vbookshelf/myOfflineAi-Flask-UI-for-Ollama/blob/main/images/image3.png" alt="Ollama desktop app screenshot" height="500">
+<img src="https://github.com/vbookshelf/myOfflineAi-Flask-UI-for-Ollama/blob/main/images/image3.png" alt="Ollama desktop app screenshot" height="350">
 <p>Ollama Desktop App</p>
 
 ## How to Install and Run
