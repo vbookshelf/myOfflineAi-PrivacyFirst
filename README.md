@@ -60,7 +60,7 @@ The model will start to auto download.
 3. Install UV
 UV is a new and fast python package manager.
 Here you will find the instructions to install uv on Mac and Windows:
-https://docs.astral.sh/uv/getting-started/installation/#installation-methods
+https://docs.astral.sh/uv/getting-started/installation
 
 Open your terminal and copy paste this command:
 
