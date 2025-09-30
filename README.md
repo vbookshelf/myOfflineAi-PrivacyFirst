@@ -27,9 +27,8 @@ Minimum: 8GB RAM
 
 I tested the installation process on Mac OS. I've included instructions for Windows, but I haven't tested on Windows.
 
-There's a few steps that you need to follow when first installing.<br>
+You need to follow a few steps when first installing.<br>
 Normally you only need to double-click a file to launch the myOfflineAi app.<br>
-On Mac and Windows the Ollama desktop app lauches automatically on startup. If the myOfflineAi app won't lauch then you may need to mamually launch Ollama first.
 
 ```
 1. Download and install the Ollama desktop application
