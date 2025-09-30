@@ -166,22 +166,40 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024 # (20MB)
 
 <br>
 
+### Security & Auditability
+
+This app is provided without warranties.<br>
+I suggest that you do a privacy audit of the code before using the app.<br>
+There are no opaque executables. Everything is plain text.
+
+Files to inspect: 
+- app.py
+- pyproject.toml
+- uv.lock
+- start-mac-app.command
+- start-windows-app.bat
+
+You should also review how myOfflineAi interacts with the Ollama desktop app. I suggest putting Ollama into Airplane mode and turning off internet access. 
+This is a note from Ollama concerning privacy:
+[Does Ollama send my prompts and responses back to ollama.com?](https://github.com/ollama/ollama/blob/main/docs/faq.md#does-ollama-send-my-prompts-and-responses-back-to-ollamacom)
+
+For a quick check you can take the app.py file and submit it to an Ai model like Gemin, ChatGPT or Claude. Ask it to review the code for data privacy compliance.
+
+<br>
+
 ## FAQ
 
 <br>
 1- Is it essential to switch off the internet connection?<br>
 No it's not essential. By design, no data leaves your device. But I recommend putting Ollama desktop app into Airplane mode. This can be done in the Ollama settings.
 
-2- How do I audit the code for privacy?<br>
-There are two options. Either let a programmer review the code or take the app.py file and submit it to an Ai model like Gemini or ChatGPT. Ask it to review the code for data privacy compliance.
-
-3- How do I add features, make changes or fix a bug?<br>
+2- How do I add features, make changes or fix a bug?<br>
 This is a single-file app thats designed to be reviewed and modified by Ai. All the code is in one file so the Ai sees the entire design. Simply take the app.py file and upload it to Gemini 2.5 Pro, Claude Sonnet or GPT-5. Tell it what changes or new features you want. Also tell it to output all the code on one page so you can copy and paste it. When the Ai outputs the revised code, copy it and replace all the code in the app.py file. Then put the app.py file back inside the project folder. Launch the app and check if your changes have been made.
 
-4- How is pdf conversion handled internally?<br>
+3- How is pdf conversion handled internally?<br>
 The app converts each page of the pdf document into an image. These images are then passed to the model.
 
-5- Is it possible to edit a Tool after it is created?<br>
+4- Is it possible to edit a Tool after it is created?<br>
 Yes it is. Hover over the tool in the left panel. The edit button will become visible.
 
 <br>
@@ -307,11 +325,6 @@ If the launcher shows: 'uv' is not installed → recommended: pipx install uv or
 
 If browser doesn't open, open http://127.0.0.1:5000 manually.
 
-Security & auditability
-
-Files to inspect for privacy audit: requirements.txt, uv.lock, start-app.*, and x-edits-made.py.
-
-No opaque executables are produced; everything is plain text and auditable.
 
 
 
