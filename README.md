@@ -166,7 +166,9 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024 # (20MB)
 
 <br>
 
-### Security and Auditability
+## Security and Auditability
+
+<br>
 
 This app is provided without warranties.<br>
 I suggest that you do a privacy audit of the code before using the app.<br>
