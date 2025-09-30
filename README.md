@@ -9,7 +9,6 @@ Transparent and auditable offline Ai access for those who need extreme data priv
 - Chat histories are not saved
 - Built to be transparent. Single-file flask app - code is easy to audit because html, css, js and python are all in one file.
 - Double-click a file to install and run. No need to use the command line.
-- Small zipped file. Easy for non-programmers to share the app via email. They don't need to go to GitHub to download.
 
 <br>
 
