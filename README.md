@@ -9,7 +9,7 @@ Transparent and auditable offline Ai access for professionals in highly regulate
 - Chat with Ollama models
 - Create custom multimodal Ai tools - text, images, pdf (Similar to Gemini Gems and OpenAi GPTs)
 - Chat histories are not saved
-- All user-submitted content, including files and images, is processed ephemerally (in memory). At no time is any data stored on disk.
+- All user-submitted content, including files and images, are processed ephemerally (in memory). At no time is any data stored on disk.
 - Built to be transparent. Single-file flask app - code is easy to audit because html, css, js and python are all in one file.
 - Double-click a file to run. No need to use the command line.
 
