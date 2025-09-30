@@ -330,6 +330,9 @@ If the launcher shows: Ollama is not installed → install from https://ollama.c
 
 If the launcher shows: 'uv' is not installed → recommended: pipx install uv or python3 -m pip install --user uv.
 
+## Revision History
+
+
 If browser doesn't open, open http://127.0.0.1:5000 manually.
 
 
