@@ -23,19 +23,19 @@ Transparent and auditable offline Ai access for professionals in highly regulate
 
 <br>
 
-In this section you will be do the following:
+In this section you will do the following:
 - Install the Ollama desktop app
 - Download a small 250MB text-only Ollama model
 - Install the UV python package manager
 - Start the myOfflineAi app by double clicking a file
 
 Notes:<br>
-- I tested the installation process on Mac OS. I've included instructions for Windows, but I haven't tested on Windows.
+- I tested the installation process on Mac OS. Although I've included instructions for Windows, I haven't tested on Windows.
 - After setup, you only need to double-click a file to launch the app.
 
 System Requirements:
 - Recommended: 16GB RAM
-- Minimum: 8GB RAM
+- Minimum: Depends on the model size
 - Enough free disk space to store the models you download
 
 <br>
@@ -94,8 +94,8 @@ The terminal will also open.
 Click on "AI Assistant"
 Type a mesage.
 
-The name of the model you downloaded will appear in the dropdown in the top left.
-If you downloaded the gemma3:4b you can also submit images and pdf documents.
+The name of the model you downloaded will appear in the dropdown menu in the top left.
+If you downloaded the gemma3:4b model you can submit images and pdf documents in addition to text.
 To shut down the app: In the terminal type Crl+C on Mac or Alt+F4 on Windows.
 
 6. Future - Simply Double-click a file to launch
@@ -129,7 +129,7 @@ It's also possible to add your own model to Ollama locally. This process is expl
 ## Response times
 
 <br>
-When you send your first message, it may take a minute to get your first response. But after that responses are much faster.
+When you send your first text message, it may take a few seconds to get your first response. But after that responses are much faster.
 
 Similarly when you submit an image or a pdf, the response time to the first message may take a while. But subsequent responses are faster.
 
