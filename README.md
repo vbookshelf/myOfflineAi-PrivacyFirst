@@ -89,7 +89,7 @@ This will install all the python packages.
 Then the myOfflineAi web app will open in your browser.
 The terminal will also open.
 
-5. Use the app
+6. Use the app
 
 Click on "AI Assistant"
 Type a mesage.
@@ -98,7 +98,7 @@ The name of the model you downloaded will appear in the dropdown menu in the top
 If you downloaded the gemma3:4b model you can submit images and pdf documents in addition to text.
 To shut down the app: In the terminal type Crl+C on Mac or Alt+F4 on Windows.
 
-6. Future - Simply Double-click a file to launch
+7. Future - Simply Double-click a file to launch
 
 Mac:
 start-mac-app.command
