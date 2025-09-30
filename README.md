@@ -32,7 +32,7 @@ Normally you only need to double-click a file to launch the myOfflineAi app.<br>
 
 ```
 1. Download and install the Ollama desktop application
-This is the link to download Ollama. After downloading it install in on your computer.
+This is the link to download Ollama. After downloading, install it on your computer.
 https://ollama.com/
 
 2. Download an Ollama model
@@ -56,7 +56,7 @@ Windows:
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 4. Download the project folder<br>
-Download the project folder from this repo.
+Download the myOfflineAi project folder from this repo.
 
 5. Open the folder and double-click a file.
 
@@ -66,7 +66,7 @@ Double-click start-app.command
 Windows:
 Double-click start-app.bat
 
-This will install all the python packages (first time only).
+This will install all the python packages.
 Then it will auto open the myOfflineAi web app in your browser.
 The terminal will also open.
 
@@ -94,25 +94,12 @@ To use the other models first make sure your computer has enough RAM to run them
 
 ```
 
-The set up process above only needs to be done once.
-In future to start the app do the following:
-
-1- The Ollama desktop app auto launches when you start your computer.
-2- Double-click this file that's in the project folder:
-
-
-The amount of RAM that your machine has needs to exceed the size of the model you want to download.
-For example, if your computer has 8GB of RAM then you should select the gemma3:4b because
-its size is 3.3GB. On an M series Mac with 16GB RAM, models with a size of approx. 10 GB tend to run well.
-
-The speed at which the models run will depend on how fast your computer is. 
-
 <br>
 
 ## Response times when using myOfflineAi
 
 - When you send your first message, it make a minute to get your first response. But after that responses are much faster.
-- Similarly when you submit an image or a pdf, the response time to the first message may take a while. But susequent responses are faster.
+- Similarly when you submit an image or a pdf, the response time to the first message may take a while. But subsequent responses are faster.
 
 Therefore, please be patient for the first response.
 
@@ -122,9 +109,9 @@ These are the app settings. To change them please open the app.py file with a te
 
 Ollama models have a default context size of 4096 tokens.<br>
 4096 is low and will lead to poor quality results when submitting files or when pasting in a large amount of text.<br>
-Here we set a custom context size.<br>
-Setting large context sizes will slow down inference.<br>
-NUM_CTX = 10000
+I've set a custom context size.<br>
+Note that setting large context sizes will slow down inference.<br>
+NUM_CTX = 16000
 
 TEMPERATURE = 0.3
 TOP_K = 20
@@ -147,7 +134,7 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024 # (20MB)
 ## FAQ
 
 1- Is it essential to switch off the internet connection?<br>
-No it's not essential. By design, no data leaves your device. But I recommend putting Ollama into Airplane mode. This can be done in the Ollama settings.
+No it's not essential. By design, no data leaves your device. But I recommend putting Ollama desktop app into Airplane mode. This can be done in the Ollama settings.
 
 2- How do I audit the code for privacy?<br>
 There are two options. Either let a programmer review the code or take the app.py file and submit it to an Ai model like Gemini or ChatGPT. Ask it to review the code for data privacy compliance.
@@ -159,7 +146,7 @@ This is a single-file app thats designed to be reviewed and modified by Ai. All 
 The app converts each page of the pdf document into an image. These images are then passed to the model.
 
 5- Is it possible to edit a Tool after it is created?<br>
-Yes it is. Hover over the tool in the left panel. The edit button will become vsible.
+Yes it is. Hover over the tool in the left panel. The edit button will become visible.
 
 ## Lessons learned
 - Ollama models have a default context size of 4096. Knowing this will help you get much better results.
