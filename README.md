@@ -1,4 +1,4 @@
-# myOfflineAi - A Flask UI for Ollama
+# myOfflineAi - Privacy-First Ai
 
 <br>
 
