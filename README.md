@@ -108,8 +108,8 @@ You will need to restart the myOfflineAi app to ensure that the model you downlo
 
 ## Response times when using myOfflineAi
 
-- When you send your first message, it make a minute to get your first response. But after that responses are much faster.
-- Similarly when you submit an image or a pdf, the response time to the first message may take a while. But subsequent responses are faster.
+When you send your first message, it may a minute to get your first response. But after that responses are much faster.<br>
+Similarly when you submit an image or a pdf, the response time to the first message may take a while. But subsequent responses are faster.
 
 Therefore, please be patient for the first response.
 
