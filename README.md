@@ -293,6 +293,21 @@ olama rm model_name
 
 ```
 
+Troubleshooting
+
+If the launcher shows: Ollama is not installed → install from https://ollama.com/download
+.
+
+If the launcher shows: 'uv' is not installed → recommended: pipx install uv or python3 -m pip install --user uv.
+
+If browser doesn't open, open http://127.0.0.1:5000 manually.
+
+Security & auditability
+
+Files to inspect for privacy audit: requirements.txt, uv.lock, start-app.*, and x-edits-made.py.
+
+No opaque executables are produced; everything is plain text and auditable.
+
 
 
 
