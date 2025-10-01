@@ -62,6 +62,8 @@ This is the link to download Ollama. After downloading, please install it on you
 Then launch it. A white chat window will open.
 https://ollama.com/
 
+Normally, Ollama will launch automatically when you start your computer.
+
 2. Download an Ollama model
 
 If you have a fast internet connection and at least 8GB RAM then I suggest you download the gemma3:4b model (3.3GB).
