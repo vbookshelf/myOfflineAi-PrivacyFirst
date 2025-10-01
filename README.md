@@ -259,35 +259,6 @@ Yes it is. Hover over the tool in the left panel. The edit button will become vi
 
 <br>
 
-## Lessons learned during this project
-
-- Ollama models have a default context size of 4096. Knowing this will help you get much better results.
-- When using Gemma models images come before text.
-- The best coding models are Gemini 2.5 Pro and Claude Sonnet.
-- Flask apps can be set up to start by double clicking a file.
-
-<br>
-
-## Resources
-
-- Search Ollama models<br>
-https://ollama.com/search
-
-- Install UV<br>
-https://docs.astral.sh/uv/getting-started/installation/#installation-methods
-
-- How to create a single-file flask app<br>
-https://github.com/vbookshelf/Single-File-Flask-Web-App
-
-- 7 Essential AI Prompting Skills That Instantly Make Your Work Stand Out<br>
-  Grace Leung<br>
-  https://www.youtube.com/watch?v=-era_Orh3TM
-
-- Ollama FAQ<br>
-  https://github.com/ollama/ollama/blob/main/docs/faq.md
-
-<br>
-
 ## How to load your own models into Ollama locally (not up to the cloud)
 
 <br>
@@ -378,17 +349,43 @@ olama rm model_name
 
 ```
 
-Troubleshooting
+<br>
 
-If the launcher shows: Ollama is not installed → install from https://ollama.com/download
-.
+## Lessons learned during this project
 
-If the launcher shows: 'uv' is not installed → recommended: pipx install uv or python3 -m pip install --user uv.
+- Ollama models have a default context size of 4096. Knowing this will help you get much better results.
+- When using Gemma models images come before text.
+- The best coding models are Gemini 2.5 Pro and Claude Sonnet.
+- Flask apps can be set up to start by double clicking a file.
+
+<br>
+
+## Resources
+
+- Search Ollama models<br>
+https://ollama.com/search
+
+- Install UV<br>
+https://docs.astral.sh/uv/getting-started/installation/#installation-methods
+
+- How to create a single-file flask app<br>
+https://github.com/vbookshelf/Single-File-Flask-Web-App
+
+- 7 Essential AI Prompting Skills That Instantly Make Your Work Stand Out<br>
+  Grace Leung<br>
+  https://www.youtube.com/watch?v=-era_Orh3TM
+
+- Ollama FAQ<br>
+  https://github.com/ollama/ollama/blob/main/docs/faq.md
+
+<br>
 
 ## Revision History
 
+Version 1.0<br>
+1-Oct-2025<br>
+First release
 
-If browser doesn't open, open http://127.0.0.1:5000 manually.
 
 
 
