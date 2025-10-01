@@ -22,16 +22,24 @@ from urllib.parse import urlparse
 
 
 
-# The context size of all Ollama models is limited to 4096 tokens.
+# The context size of all Ollama models is set to 4096 tokens.
 # There is no warning when the context is exceeded, but
 # the quality of the responses becomes very poor.
+# This happens because Ollama will automatically drop the oldest 
+# messages/tokens from the history to make space for the new input. 
+# You don’t see an error, but earlier conversation context is silently lost.
+
 # Here we set a custom context size.
 # Note: Setting large context sizes will slow down inference.
 NUM_CTX = 16000
 
-TEMPERATURE = 0.3
-TOP_K = 20
+
+TEMPERATURE = 0.6
+TOP_K = 60
 TOP_P = 0.95
+FREQUENCY_PENALTY = 1.0
+REPEAT_PENALTY = 1.0
+
 
 # Max number of pdf pages allowed per pdf file
 MAX_PAGES = 15
@@ -1508,7 +1516,7 @@ def upload_pdf():
     """
     Receives a PDF file, converts each page to a JPEG image with optimizations,
     and returns the images as a list of base64-encoded strings.
-    Limited to 10 pages maximum for medical document processing.
+    Can set the page limit.
     """
     if 'pdf_file' not in request.files:
         return jsonify({"error": "No PDF file part in the request"}), 400
@@ -1574,7 +1582,7 @@ def upload_pdf():
 def stream_chat():
     """
     Handles the chat request and streams the response back to the client.
-    Now handles multimodal requests with images, ensuring images are
+    Handles multimodal requests with images, ensuring images are
     processed before text.
     """
     data = request.json
@@ -1617,9 +1625,20 @@ def stream_chat():
 
     def generate_chunks():
         try:
-			# Note: All Ollama models have a default context of 2048.
-			# This needs to be increased by setting num_ctx.
-            stream = ollama_chat(model=model_to_use, messages=ollama_messages, stream=True, options={"num_ctx": NUM_CTX,    "temperature": TEMPERATURE, "top_k": TOP_K})
+			
+            stream = ollama_chat(
+				model=model_to_use, 
+				messages=ollama_messages, 
+				stream=True, 
+				options={
+					"num_ctx": NUM_CTX,				
+					"temperature": TEMPERATURE, 
+					"top_k": TOP_K, 
+					"top_p": TOP_P, 
+					"frequency_penalty": FREQUENCY_PENALTY, 
+					"repeat_penalty": REPEAT_PENALTY,
+					}
+				)
 			
             print("[INFO] Started streaming response from Ollama.")
             for chunk in stream:
