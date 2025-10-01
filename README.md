@@ -181,25 +181,11 @@ The app has a context warning system that will alert you when the context size h
 
 This can happen if you've submitted a large file. Even when you change the model to a smaller model the performance can still be slow. On Mac, if you look at the Activity Monitor you will see that the memory use is still high.
 
-How Ollama Manages Model Memory:
-
-Ollama uses a caching mechanism controlled by a parameter called keep_alive.
-
-Model Loading:<br>
-When you make a request with a model the Ollama server loads that entire model into system RAM.
-
-Switching Models:<br>
-When you then make a new request with a different, smaller model, Ollama loads this second model. The first, larger model is now considered inactive but remains in memory.
-
-The keep_alive Timer:<br>
-The inactive model stays loaded for the duration specified by keep_alive. The default value is 5 minutes.
-
-Unloading:<br>
-If you don't use the large model again within that 5-minute window, Ollama will automatically unload it, and only then will the memory be freed.
+To manage memory, Ollama uses a caching mechanism controlled by a parameter called keep_alive. When you make a request with a model the Ollama server loads that entire model into system RAM. When you then make a new request with a different, smaller model, Ollama loads this second model. The first, larger model is now considered inactive but remains in memory. The inactive model stays loaded for the duration specified by keep_alive. The default value is 5 minutes. If you don't use the large model again within that 5-minute window, Ollama will automatically unload it, and only then will the memory be freed.
 
 This behavior is designed for performance, preventing the slow process of reloading a model if you need to use it again soon.
 
-Solution:
+Solution:<br>
 To free up memory immediately, Ollama needs to be shut down and restarted. You can do this by using "Quit Ollama" in the desktop app. When you click the "Quit Ollama" option from the menu bar icon (on macOS) or the system tray icon (on Windows), it does more than just close a window. It terminates the Ollama background server.
 
 This action has several important effects:
