@@ -233,11 +233,10 @@ Files to inspect:
 - start-mac-app.command
 - start-windows-app.bat
 
-You should also review how myOfflineAi interacts with the Ollama desktop app.<br>
 This is a note from Ollama concerning privacy:<br>
 [Does Ollama send my prompts and responses back to ollama.com?](https://github.com/ollama/ollama/blob/main/docs/faq.md#does-ollama-send-my-prompts-and-responses-back-to-ollamacom)
 
-For a quick check you can take the app.py file and submit it to an Ai model like Gemini, ChatGPT or Claude. Ask it to review the code for data privacy compliance.
+To do a quick check, you can take the app.py file and submit it to an Ai model like Gemini, ChatGPT or Claude. Ask it to review the code for data privacy compliance.
 
 <br>
 
