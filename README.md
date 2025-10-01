@@ -200,7 +200,9 @@ It's also possible to add your own model to Ollama locally. This process is expl
 ## Response times
 
 <br>
-When you send your first text message, it may take a few seconds to get your first response. But after that responses are much faster. This is becuase once a model is loaded Ollama keeps it in memory for a specified time (set to 5min).
+When you send your first text message, it may take a few seconds to get your first response. But after that responses are much faster.
+
+This is because, by default models are kept in memory for 5 minutes before being unloaded. This allows for quicker response times if you're making numerous requests to the LLM e.g. during a chat.
 
 Similarly when you submit an image or a pdf, the response time to the first message may take a while. But subsequent responses are faster. 
 
