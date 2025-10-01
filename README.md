@@ -354,7 +354,7 @@ olama rm model_name
 ## Lessons learned during this project
 
 - All Ollama models have are limited to context size of 4096 tokens. This small size allows the models to work faster. However, when your inputs (or the chat history) exceeds this size there's no warning message. The quality of the model's responses just becomes very poor. In this app I've set a context size of 16000. You can change the context size if needed. But take note that this will affect the speed of the model's responses. Also, I've built in a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Additinally, the total size of the context is continously printed in the terminal.
-- When using Gemma models images come before text.
+- When using Gemma models images must be placed before text when coding the model input e.g. [<my_image>, "What's on this image]. This gives much better results.
 - The best coding models are Gemini 2.5 Pro and Claude Sonnet.
 - Flask apps can be set up to start by double clicking a file.
 
