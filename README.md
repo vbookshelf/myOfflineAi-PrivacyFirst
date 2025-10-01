@@ -174,7 +174,7 @@ The app has a context warning system that will alert you when the context size h
 
 ### 5- Performance has suddenly slowed down
 
-This can happen if you've submitted a large file. Even when you change the model to a smaller model the performance can still be slow.
+This can happen if you've submitted a large file. Even when you change the model to a smaller model the performance can still be slow. On Mac, if you look at the Activity Monitor you will see that the memory use is still high.
 
 Soultion:<br>
 Close the terminal. This shuts down the app. Then double-click the file to start the app again.
