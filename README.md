@@ -119,6 +119,41 @@ start-windows-app.bat
 
 <br>
 
+## Troubleshooting
+
+### 1- The app doesn't auto start when you double-click the file
+
+Solution:<br>
+Launch the app manually from the terminal.
+
+Example:<br>
+On mac if the project folder is on your desktop type the following commands in the terminal:
+```
+% cd Desktop
+% cd myOfflineAi-v1.0
+% uv run python app.py
+```
+
+The app will start in the terminal. A url will appear in the terminal: http://127.0.0.1:5000/<br>
+Copy this url and paste it in your browser.<br>
+The app will be displayed.<br>
+
+### 2- The app starts when you double-click the file but the browser does not auto open
+
+Solution:<br>
+Copy the url, displayed in the terminal (http://127.0.0.1:5000/) and paste it into the browser.
+
+### 3- The app does not work.
+
+Possible causes are that the Ollama Desktop app is not running.<br> 
+Or another instance of the app is already running on your computer and using the same port. The app does not stop when you close the browser tab.
+
+Solutions:<br>
+Start Ollama. The retstart the app.<br>
+Check that the app is not already running on your computer. If it is running then type this url in your broswer: http://127.0.0.1:5000/ to see the app.
+
+<br>
+
 ## Selecting and using models
 
 <br>
