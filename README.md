@@ -146,7 +146,7 @@ Copy the url, displayed in the terminal (http://127.0.0.1:5000/) and paste it in
 ### 3- The app does not work.
 
 Possible causes are that the Ollama Desktop app is not running.<br> 
-Or another instance of the app is already running on your computer and using the same port. The app does not stop when you close the browser tab.
+Or another instance of the app is already running on your computer and using the same port - the app does not stop when you close the browser tab.
 
 Solutions:<br>
 Start Ollama. The retstart the app.<br>
