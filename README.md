@@ -170,7 +170,7 @@ Solution:<br>
 Increase the context size by changing NUM_CTX = 16000 in the app.py file.<br>
 Please note that large context sizes will slow down the model.
 
-The total number of tokens in the message history is continuously printed in the console. This will help you monitor the context size. Ensure that this value stays below the value that you set for NUM_CTX.
+The app has a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Also, the total number of tokens in the message history is continuously printed in the console. This will help you monitor the context size. Ensure that this value stays below the value that you set for NUM_CTX.
 
 <br>
 
