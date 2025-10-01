@@ -290,8 +290,6 @@ This is a note from Ollama concerning privacy:<br>
 
 To do a quick check, you can take the app.py file and submit it to an Ai model like Gemini, ChatGPT or Claude. Ask it to review the code for data privacy compliance.
 
-Verify. Don't just trust.
-
 <br>
 
 ## FAQ
