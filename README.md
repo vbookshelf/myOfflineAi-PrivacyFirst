@@ -437,7 +437,7 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 <br>
 
-### Conclusion
+## Conclusion
 
 This project is about more than just privacy. It's a shift in mindset. It's about moving away from renting your Ai and moving towards owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability - on your terms, with full transparency.
 
