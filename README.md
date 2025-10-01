@@ -108,7 +108,7 @@ The terminal will also open.
 6. Use the app
 
 Click on "AI Assistant"
-Type a mesage.
+Type a message.
 
 The name of the model you downloaded will appear in the dropdown menu in the top left.
 If you downloaded the gemma3:4b model you can submit images and pdf documents in addition to text.
@@ -116,7 +116,9 @@ If you downloaded the gemma3:4b model you can submit images and pdf documents in
 The app does not stop running when you close the browser tab.
 To shut down the app: In the terminal type Crl+C on Mac or Alt+F4 on Windows.
 
-7. Future - Simply Double-click a file to launch
+7. Future startup
+
+Now that the setup is complete, in future simply Double-click a file to launch the app.
 
 Mac:
 start-mac-app.command
