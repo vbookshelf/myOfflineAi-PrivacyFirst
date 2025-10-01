@@ -393,8 +393,8 @@ How do you conduct a patient preclinical interview?
 ## How to delete an Ollama model from your computer
 
 ```
-# Type this in the console
-olama rm model_name
+# Type this in the terminal
+% olama rm model_name
 
 ```
 
