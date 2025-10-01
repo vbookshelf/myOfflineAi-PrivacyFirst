@@ -2,7 +2,7 @@
 
 <br>
 
-Transparent and auditable offline Ai access for professionals in highly regulated industries who need data privacy and don't want to blindly trust cloud providers and software developers.
+Transparent and auditable offline Ai access for professionals in highly regulated industries who need data privacy and don't want to blindly trust cloud providers.
 
 - Ai access without an internet connection
 - Runs on the desktop.
