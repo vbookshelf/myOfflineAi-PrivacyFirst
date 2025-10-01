@@ -358,7 +358,7 @@ olama rm model_name
 - When using Gemma models - images must be placed before text when coding the model input<br>e.g. [<my_image>, "What's on this image?"].<br>This gives much better results.
 
 - Ai models are now capable of coding up entire apps. I used Ai models like Gemini 2.5 Pro, Claude Sonnet and GPT-5 extensivley during this project. The secret is the single-file flask app architecture. All the code - html, css, js, python - on one file. Therefore, the AI can see the entire app design at one time. This makes it easy for Ai to make changes and fix bugs.<br> See: https://github.com/vbookshelf/Single-File-Flask-Web-App<br>
-I got better results by using top-end models e.g. Gemini 2.5 Pro and not Gemini 2.5 Flash.
+I got better results by using top-end models e.g. Gemini 2.5 Pro and not Gemini 2.5 Flash. Each Ai has it's own quirks and strengths. For example, Gemini 2.5 Pro produces beautiful UI designs.
 
 - Flask apps used together with the UV python package manager is a very powerful combination. It allows the designer to create a much more seamless user experience. Flask is a powerful tool for creating beautiful and powerful python apps that run locally. But, on my past flask projects, one limitation was that user needed to use the command line to install the app's dependencies. Also, they always had to use the command line to start the app. Non-programmers are not comfortable using the command line. On this project I learned that the whole process can be set up such that the user only needs to double-click a file and all dependencies will be auto installed by uv. Also, the user only needs to double-click a file to start the app each time. This simple setup makes flask apps more accessible to ordinary users.
 
