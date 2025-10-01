@@ -105,6 +105,8 @@ Type a mesage.
 
 The name of the model you downloaded will appear in the dropdown menu in the top left.
 If you downloaded the gemma3:4b model you can submit images and pdf documents in addition to text.
+
+The app does not stop running when you close the browser tab.
 To shut down the app: In the terminal type Crl+C on Mac or Alt+F4 on Windows.
 
 7. Future - Simply Double-click a file to launch
@@ -150,7 +152,7 @@ Or another instance of the app is already running on your computer and using the
 
 Solutions:<br>
 Start Ollama. Then retstart the app.<br>
-Look for an open terminal on your desktop and see if the app is already running. If it is running then type this url in your broswer: http://127.0.0.1:5000/ to see the app.
+Look for an open terminal on your desktop and see if the app is already running. If it is running then type this url in your broswer: http://127.0.0.1:5000/
 
 <br>
 
