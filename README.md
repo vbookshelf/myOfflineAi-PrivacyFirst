@@ -134,7 +134,7 @@ On mac if the project folder is on your desktop type the following commands in t
 % uv run python app.py
 ```
 
-The app will start in the terminal. A url will appear in the terminal: http://127.0.0.1:5000/<br>
+The app will start. A url will appear in the terminal: http://127.0.0.1:5000/<br>
 Copy this url and paste it in your browser.<br>
 The app will be displayed.<br>
 
@@ -149,8 +149,8 @@ Possible causes are that the Ollama Desktop app is not running.<br>
 Or another instance of the app is already running on your computer and using the same port - the app does not stop when you close the browser tab.
 
 Solutions:<br>
-Start Ollama. The retstart the app.<br>
-Check that the app is not already running on your computer. If it is running then type this url in your broswer: http://127.0.0.1:5000/ to see the app.
+Start Ollama. Then retstart the app.<br>
+Look for an open terminal on your desktop and see if the app is already running. If it is running then type this url in your broswer: http://127.0.0.1:5000/ to see the app.
 
 <br>
 
