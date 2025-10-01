@@ -180,28 +180,27 @@ How Ollama Manages Model Memory:
 
 Ollama uses a caching mechanism controlled by a parameter called keep_alive.
 
-Model Loading: When you make a request with a model the Ollama server loads that entire model into system RAM.
+Model Loading:<br>
+When you make a request with a model the Ollama server loads that entire model into system RAM.
 
-Switching Models: When you then make a new request with a different, smaller model, Ollama loads this second model. The first, larger model is now considered inactive but remains in memory.
+Switching Models:<br>
+When you then make a new request with a different, smaller model, Ollama loads this second model. The first, larger model is now considered inactive but remains in memory.
 
-The keep_alive Timer: The inactive model stays loaded for the duration specified by keep_alive. The default value is 5 minutes.
+The keep_alive Timer:<br>
+The inactive model stays loaded for the duration specified by keep_alive. The default value is 5 minutes.
 
-Unloading: If you don't use the large model again within that 5-minute window, Ollama will automatically unload it, and only then will the memory be freed.
+Unloading:<br>
+If you don't use the large model again within that 5-minute window, Ollama will automatically unload it, and only then will the memory be freed.
 
 This behavior is designed for performance, preventing the slow process of reloading a model if you need to use it again soon.
 
 Solution:
-To free up memory immediately, Ollama needs to be shut down and restarted. You can do this by using "Quit Ollama" in the desktop app.
-
-When you click the "Quit Ollama" option from the menu bar icon (on macOS) or the system tray icon (on Windows), it does more than just close a window. It terminates the Ollama background server.
+To free up memory immediately, Ollama needs to be shut down and restarted. You can do this by using "Quit Ollama" in the desktop app. When you click the "Quit Ollama" option from the menu bar icon (on macOS) or the system tray icon (on Windows), it does more than just close a window. It terminates the Ollama background server.
 
 This action has several important effects:
-
-Stops the Server: The core Ollama process that listens for API requests is stopped.
-
-Frees All Memory: Any models currently loaded into your VRAM or system RAM are immediately unloaded.
-
-Ends Connectivity: You will no longer be able to interact with Ollama. Any attempt to connect will result in an error.
+- Stops the Server: The core Ollama process that listens for API requests is stopped.
+- Frees All Memory: Any models currently loaded into your VRAM or system RAM are immediately unloaded.
+- Ends Connectivity: You will no longer be able to interact with Ollama. Any attempt to connect will result in an error.
 
 Simply closing a terminal window  does not stop the background server. The server is designed to run persistently. Using "Quit Ollama" is the explicit and correct way to ensure the application is fully turned off and all system resources are released.
 
@@ -399,6 +398,8 @@ olama rm model_name
 <br>
 
 ## Lessons learned during this project
+
+<br>
 
 - All Ollama models are limited to context size of 4096 tokens. This small size allows the models to work faster. However, when your inputs (or the chat history) exceeds this size there's no warning message. The quality of the model's responses just becomes very poor. In this app I've set a context size of 16000. You can change the context size if needed. But take note that this will affect the speed of the model's responses. Also, I've built in a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Additionally, the total size of the context is continously printed in the terminal.
   
