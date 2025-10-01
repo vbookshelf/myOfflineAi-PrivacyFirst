@@ -172,6 +172,13 @@ Please note that large context sizes will slow down the model.
 
 The app has a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Also, the total number of tokens in the message history is continuously printed in the console. This will help you monitor the context size. Ensure that this value stays below the value that you set for NUM_CTX.
 
+### 5- Performance has suddenly slowed down
+
+This can happen if you've submitted a large file. Even when you change the model to a smaller model the performance can still be slow.
+
+Soultion:<br>
+Close the terminal. This shuts down the app. Then double-click the file to start the app again.
+
 <br>
 
 ## Selecting and using models
@@ -193,9 +200,9 @@ It's also possible to add your own model to Ollama locally. This process is expl
 ## Response times
 
 <br>
-When you send your first text message, it may take a few seconds to get your first response. But after that responses are much faster.
+When you send your first text message, it may take a few seconds to get your first response. But after that responses are much faster. This is becuase once a model is loaded Ollama keeps it in memory for a specified time (set to 5min).
 
-Similarly when you submit an image or a pdf, the response time to the first message may take a while. But subsequent responses are faster.
+Similarly when you submit an image or a pdf, the response time to the first message may take a while. But subsequent responses are faster. 
 
 Therefore, please be patient for the first response.
 
