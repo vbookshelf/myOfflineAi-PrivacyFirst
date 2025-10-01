@@ -354,9 +354,10 @@ olama rm model_name
 ## Lessons learned during this project
 
 - All Ollama models are limited to context size of 4096 tokens. This small size allows the models to work faster. However, when your inputs (or the chat history) exceeds this size there's no warning message. The quality of the model's responses just becomes very poor. In this app I've set a context size of 16000. You can change the context size if needed. But take note that this will affect the speed of the model's responses. Also, I've built in a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Additinally, the total size of the context is continously printed in the terminal.
-- When using Gemma models images must be placed before text when coding the model input e.g. [<my_image>, "What's on this image]. This gives much better results.
-- The best coding models are Gemini 2.5 Pro and Claude Sonnet.
-- Flask apps can be set up to start by double clicking a file.
+- When using Gemma models images must be placed before text when coding the model input<br>e.g. [<my_image>, "What's on this image?"].<br>This gives much better results.
+- Ai models are now capable of coding up entire apps. I used Ai models like Gemini 2.5 Pro, Claude Sonnet and GPT-5 extensivley during this project. The secret is the single-file flask app architecture. All the code - html, css, js, python - on one file. Therefore, the AI can see the entire app design at one time. This makes it easy for Ai to make changes and fix bugs.<br> See: https://github.com/vbookshelf/Single-File-Flask-Web-App
+I got better results by using top-end models e.g. Gemini 2.5 Pro and not Gemini 2.5 Flash.
+- Flask apps used together with the UV python package manager is a very powerful combination. It allows the designer to create a much more seamless user experience. Flask is a powerful tool for creating beautiful and powerful python apps that run locally. But, on my past flask projects, one limitation was that user needed to use the command line to install the app's dependencies. Also, they always had to use the command line to start the app. Non-programmers are not comfortable using the command line. On this project I learned that the whole process can be set up such that the user only needs to double-click a file and all dependencies will be auto installed by uv. Also, the user only needs to double-click a file to start the app each time. This simple setup makes flask apps more accessible to ordinary users.
 
 <br>
 
