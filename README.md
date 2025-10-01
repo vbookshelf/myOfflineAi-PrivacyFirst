@@ -160,6 +160,18 @@ Solutions:<br>
 Start Ollama. Then retstart the app.<br>
 Look for an open terminal on your desktop and see if the app is already running. If it is running then type this url in your broswer: http://127.0.0.1:5000/
 
+### 4- The model responses have become very poor
+
+The context size of all Ollama models is limited to 4096 tokens. There is no warning when the context is exceeded, but the quality of the responses becomes very poor.
+
+This happens because Ollama will automatically drop the oldest messages/tokens from the history to make space for the new input. You don’t see an error, but earlier conversation context is silently lost.
+
+Solution:<br>
+Increase the context size by changing NUM_CTX = 16000 in the app.py file.<br>
+Please note that large context sizes will slow down the model.
+
+The total number of tokens in the message history is continuously printed in the console. This will help you monitor the context size. Ensure that this value stays below the value that you set for NUM_CTX.
+
 <br>
 
 ## Selecting and using models
