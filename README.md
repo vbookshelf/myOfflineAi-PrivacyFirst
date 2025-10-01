@@ -15,9 +15,9 @@ Transparent and auditable offline Ai access for professionals in highly regulate
 
 <br>
 
-myOfflineAi is an app that runs entirely on your computer and connects directly to Ollama, which is a program that lets you run AI models locally. When you type something into the app, it sends your message to Ollama running on your machine (not over the internet). Ollama then processes the request with the chosen AI model and streams the response back to the app, which displays it in the chat window.
+myOfflineAi is an app that runs entirely on your computer and connects directly to Ollama - a program that lets you run AI models locally. When you type something into the app, it sends your message to Ollama running on your machine (not over the internet). Ollama processes the request with the chosen AI model and streams the response back to the app.
 
-In simple terms: this app is just a friendly interface in your browser, while Ollama does the “thinking” in the background. Everything happens locally, so your data never leaves your computer.
+In other words, myOfflineAi is just a friendly interface in your browser. Ollama does the “thinking” in the background. Everything happens locally - your data never leaves your computer.
 
 <br>
 
