@@ -69,9 +69,10 @@ This model can handle both text and images.
 If you have a slow connection then download the smaller gemma3:270m model (292MB).
 This model can handle text only.
 
-To download first open the Ollama desktop app.
-Then paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right.
-Then type any message e.g. Hi.
+How to download a model:
+Open the Ollama desktop app.
+Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right.
+Type any message e.g. Hi.
 The model will start to auto download.
 
 3. Install UV
