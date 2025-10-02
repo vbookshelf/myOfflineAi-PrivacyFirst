@@ -42,6 +42,8 @@ You enter some text or you give the app a document. It reads the data straight i
 
 You trade the convenience of being able to look back through old chats for the absolute certainty that your data is private.
 
+<br>
+
 ## How to Install and Run
 
 <br>
