@@ -324,7 +324,7 @@ This is a note from Ollama concerning privacy:<br>
 
 #### Use Ai to do a quick privacy check
 
-To do a quick check, you can take the app.py file and submit it to an enterprise grade Ai model like Gemini 2.5 Pro or Claude Sonnet. Ask it to review the code for data privacy compliance. It's important that the Ai can automatically deduce that this app will run locally. It's assessment should be given with that fact in mind. In my testing Gemini 2.5 Pro and Claude Sonnet did this best. 
+To do a quick check, you can take the app.py file and submit it to an enterprise grade Ai model like Gemini 2.5 Pro or Claude Sonnet. Ask it to review the code for data privacy compliance. It's important that the Ai can automatically deduce that this app will run locally. Its assessment should be given with this context in mind. In my testing Gemini 2.5 Pro and Claude Sonnet did this best. 
 
 You can ask the following questions:
 
