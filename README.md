@@ -206,6 +206,14 @@ This action has several important effects:
 
 Simply closing a terminal window  does not stop the background server. The server is designed to run persistently. Using "Quit Ollama" is the correct way to ensure the application is fully turned off and all system resources are released.
 
+### 6- Everything freezes even tho the model you are trying to use is small
+
+This can happen if you have LM Studio running while you are trying to use Ollama and myOfflineAi.
+
+Solution:<br>
+Eject any model that you have loaded into LM Studio.<br>
+Quit LM Studio.
+
 
 <br>
 
