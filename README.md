@@ -227,29 +227,37 @@ Therefore, please be patient for the first response.
 ## myOfflineAi Settings
 
 <br>
-These are the app settings. To change them please open the app.py file with a text editor, make the change and then save the file as app.py.
 
-Context size<br>
+These are the app settings.<br>
+To change them please open the app.py file with a text editor, make the change and then save the file as app.py.<br>
+Some systems may add a .txt extension. Please double check that the file has not been saved as: app.py.txt
+
+<br>
+
+```
+Context size
 NUM_CTX = 16000
 
-TEMPERATURE = 0.6<br>
-TOP_K = 60<br>
-TOP_P = 0.95<br>
-FREQUENCY_PENALTY = 1.0<br>
+TEMPERATURE = 0.6
+TOP_K = 60
+TOP_P = 0.95
+FREQUENCY_PENALTY = 1.0
 REPEAT_PENALTY = 1.0
 
-Max number of pdf pages allowed per pdf file<br>
+Max number of pdf pages allowed per pdf file
 MAX_PAGES = 15
 
-Each pdf page is converted into an image.<br>
-The image resolution is set here.<br>
-1.5x scale provides good readability while reducing file size.<br>
-Change this if you need greater resolution when for example, when using medical images.<br>
-PDF_IMAGE_RES = 1.5 # 150 dpi
+Each pdf page is converted into an image.
+The image resolution is set here.
+1.5x scale provides good readability while reducing file size.
+1.5 is 150 dpi, 2.5 is 250 dpi etc.
+Change this if you need greater resolution. For example, when reviewing medical images.
+PDF_IMAGE_RES = 1.5 
 
-Max pdf upload size<br>
-MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024 # (20MB)
+Max pdf upload size is set to 20MB
+MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024
 
+```
 <br>
 
 ## Security and Auditability
