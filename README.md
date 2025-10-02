@@ -445,7 +445,7 @@ In my earlier Flask projects, one major limitation for desktop use was that user
 
 On this project, I discovered a way to remove that friction. With UV, the entire process can be streamlined so that the user only needs to double-click a file: dependencies are installed automatically, and the app launches without any extra steps. Each time the user only needs to double-click a file to run the app.
 
-This approach makes desktop Flask apps far more accessible to everyday users. It also makes the app easier to share - non-programmers can simply send the zipped file by email. There's no need to go to GitHub.
+This approach makes desktop Flask apps far more accessible to everyday users. It also makes the app easier to share - non-programmers can simply send the zipped file by email. There's no need to use GitHub or Docker.
 
 <br>
 
