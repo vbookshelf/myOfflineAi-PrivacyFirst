@@ -299,7 +299,7 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024
 
 These two files are stored locally in the same folder as the app.py file.
 
-Note: Because the agent/tool personas are stored, it's highly recommended that the user not store sensitive personal data in the agent/tool personas.
+Note: Because the Ai tool system messages are stored in a file, it's highly recommended that the user not include sensitive information in the tool system messages.
 
 <br>
 
