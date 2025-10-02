@@ -34,6 +34,14 @@ In other words, myOfflineAi is a helpful interface running in your browser. Olla
 <img src="https://github.com/vbookshelf/myOfflineAi-Flask-UI-for-Ollama/blob/main/images/image4.png" alt="Ollama desktop app settings" height="500">
 <p>Ollama Settings - Airplane mode</p>
 
+<br>
+
+## What is Ephemeral data handling
+
+You enter some text or you give the app a document. It reads the data straight into your computers temporary memory. It processes the data and uses it to get the Ai answer. At no point is your sensitive data ever written down or stored on your hard drive. When you close the assistant tab in the app or close your browser tab - any data in temporary memory is deleted. So even if someone got into your computer later there would be no unencrypted data sitting around in your chat history or in an obscure file waiting to be found.
+
+You trade the convenience of being able to look back through old chats for the absolute certainty that your data is private.
+
 ## How to Install and Run
 
 <br>
