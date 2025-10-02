@@ -293,7 +293,7 @@ Files to inspect:
 This is a note from Ollama concerning privacy:<br>
 [Does Ollama send my prompts and responses back to ollama.com?](https://github.com/ollama/ollama/blob/main/docs/faq.md#does-ollama-send-my-prompts-and-responses-back-to-ollamacom)
 
-### Use Ai to do a quick privacy audit
+#### Use Ai to do a quick privacy audit
 
 To do a quick check, you can take the app.py file and submit it to an enterprise grade Ai model like Gemini 2.5 Pro or Claude Sonnet. Ask it to review the code for data privacy compliance. Because GPT-5 sets it's thinking budget dynamically, there's no guarantee that it will apply the highest level of thinking to this code review.
 
@@ -304,7 +304,7 @@ You can ask the following questions:
 - What happens if I forget to turn off my internet connection?
 - The app creates files named agents.json and last_model.txt. What are those files for?
 
-By using Ai to check the code, even if you don't know anything about coding, you can get a sophisticated privacy compliance report within minutes. But it's important to use the enterprise grade pro level models and not the faster consumer models.
+By using Ai to check the code, even if you don't know anything about programming, you can get a sophisticated privacy compliance report within minutes. But it's important to use the enterprise grade pro level models and not the faster consumer models.
 
 <br>
 
