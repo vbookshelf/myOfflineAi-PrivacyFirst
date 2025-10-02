@@ -144,6 +144,11 @@ start-mac-app.command
 Windows:
 start-windows-app.bat
 
+You could start the app and leave it running in the background all day.
+Then whenever you want to access it, enter the following url in your browser:
+http://127.0.0.1:5000/
+Your browser will remember this local address so you won't have to.
+
 ```
 
 <br>
