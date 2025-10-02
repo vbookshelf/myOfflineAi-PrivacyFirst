@@ -289,12 +289,15 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024
 ```
 <br>
 
-## What app settings are stored
+## What app settings are stored locally
 
 <br>
 
-1- The system messages/personas of custom Ai tools that the user creates are stored in a file called agents.json. This ensures that each time the app is loaded the user created tools are available. Without this feature any user defined tool would disappear each time the browser tab is closed. The user has the ability to manually delete any tool they have created.
+1- The names and system messages/personas of custom Ai tools that the user creates are stored in a file called agents.json. This ensures that each time the app is loaded the user created tools are available. Without this feature any user defined tool would disappear each time the browser tab is closed. The user has the ability to manually delete any tool they have created.
+
 2- The name of the last model that was used is stored in a file called last_model.txt. This ensures that every time the app is loaded the user's favourite model is selected in the dropdown menu. This ensures a smoother user experience.
+
+These files are stored locally in the myOfflineAi folder.
 
 <br>
 
