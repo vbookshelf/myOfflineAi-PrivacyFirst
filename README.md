@@ -14,6 +14,7 @@ Transparent offline Ai access for professionals in highly regulated industries w
 - All user-submitted content, including files and images, is processed ephemerally (in memory). At no time is any data stored on disk.
 - Built to be simple and transparent. Single-file flask app architecture - code is easy to audit because html, css, js and python are all in one file.
 - Double-click a file to run. No need to use the command line.
+- The app is free, open source and has an MIT License - this prevents any future legal complications.
 
 <br>
 
@@ -130,7 +131,8 @@ The name of the model you downloaded will appear in the dropdown menu in the top
 If you downloaded the gemma3:4b model you can submit images and pdf documents in addition to text.
 
 The app does not stop running when you close the browser tab.
-To shut down the app: In the terminal type Crl+C on Mac or Alt+F4 on Windows.
+To shut down the app simply close the terminal window.
+You can also type Crl+C on Mac or Alt+F4 on Windows to shut down the app.
 
 7. Future startup
 
@@ -303,7 +305,7 @@ Files to inspect:
 This is a note from Ollama concerning privacy:<br>
 [Does Ollama send my prompts and responses back to ollama.com?](https://github.com/ollama/ollama/blob/main/docs/faq.md#does-ollama-send-my-prompts-and-responses-back-to-ollamacom)
 
-#### Use Ai to do a quick privacy audit
+#### Use Ai to do a quick privacy check
 
 To do a quick check, you can take the app.py file and submit it to an enterprise grade Ai model like Gemini 2.5 Pro or Claude Sonnet. Ask it to review the code for data privacy compliance. Because GPT-5 sets it's thinking budget dynamically, there's no guarantee that it will apply the highest level of thinking to this code review.
 
@@ -315,6 +317,8 @@ You can ask the following questions:
 - The app creates files named agents.json and last_model.txt. What are those files for?
 
 By using Ai to check the code, even if you don't know anything about programming, you can get a sophisticated privacy compliance report within minutes. But it's important to use the enterprise grade pro level models and not the faster consumer models.
+
+Many professionals in private practice and also small non-profits may not have access to professional programmers to check the code. In those cases using Ai to do the check might be a good option.
 
 <br>
 
