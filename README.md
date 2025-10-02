@@ -304,33 +304,41 @@ Yes it is. Hover over the tool in the left panel. The edit button will become vi
 
 <br>
 
-Ollama makes multimodal local CPU inference simple. To take advantage of this you may want to load your own domain specialized models into Ollama, on your computer. Here I will explain how to do that. We will use the MedGemma model as an example.
+Ollama makes multimodal local CPU inference simple. To take advantage of this you may want to load your own domain specialized models into Ollama, on your computer. Here I will explain how to do that. We will use the MedGemma model (4b version) as an example. 
+
+4b means 4 billion parameters. It's a refelection of the size and capability of the model. For reference, a top end model like GPT-5 may have more the 500 billion parameters.
 
 <br>
 
-The process is slightly different depending on whether the model is text only or multimodal.
+The process to add the model to Ollama is slightly different depending on whether the model is text only or multimodal.
 
 ### 1- Download the .gguf file for the model.<r>
 
 Download the file and place it on your desktop.
 
-You can create a gguf file. But its simpler to find one on HuggingFace and download it.
-For this example I've downloaded the BF16 gguf file from here:<br>
+To add a model to Ollama it the file has to be in gguf format. You can convert a model to gguf. But its simpler to find one on HuggingFace and download it.
+
+For this example I've downloaded the BF16 gguf file from here (7.77GB):<br>
 bartowski/google_medgemma-4b-it-GGUF<br>
 https://huggingface.co/bartowski/google_medgemma-4b-it-GGUF
 
-The 4b MedGemma version is text only. The 27b version is multimodal i.e. it supports both text and image input.
+We are using the BF16 model. BF16 means that the model is in it's original form, without any quantization (smart compression). Quantization reduces the size of a model but it can also affect the model's performance in unexpcted ways. This uncertainty is not acceptable for medical applications. BF16 models can be very large. But in this case the BF16 size is only 7.7 GB.
+
+The 4b MedGemma version is text only. The 27b version is multimodal. Multimodal means that it supports both text and image input.
 
 
 ### 2- If the model is multimodal, then also download the mmproj file.
 
-Download the file and also place it on your desktop.
+Download the mmproj file and also place it on your desktop.
 
-In the repo on Huggingface click 'Files'. Among the list of files, usually at the bottom, you will find files with names that start with mmproj. Choose the mmproj file that matches your chosen model and download it. For example, here we have chose the BF16 model so, if this was a multimodal model, then the following mmproj file needs to be downloaded:<br>
+In the repo on Huggingface click 'Files'. Among the list of files, usually at the bottom, you will find files with names that start with mmproj. Choose the mmproj file that matches your chosen model and download it. Here we have chosen the text only BF16 model. But if this was a multimodal model, then the following mmproj file needs to be downloaded:<br>
 mmproj-google_medgemma-4b-it-bf16.gguf
 
+The terminal commands below are for Mac. Windows will be similar.
+You don't need to type the % symbol.
 
-[ TEXT-ONLY MODEL ]
+
+### [ TEXT-ONLY MODEL ]
 ```
 1- Create a Modelfile
 
@@ -341,19 +349,27 @@ mmproj-google_medgemma-4b-it-bf16.gguf
 # Make sure that you use the actual file name and not the model name from the repo.
 % echo 'FROM ./google_medgemma-4b-it-bf16.gguf' > Modelfile
 
-# 2- Insert the model into Ollama
+2- Insert the model into Ollama
 
 # (You can specify any name. I've used: my-google_medgemma-4b-it-GGUF-bf16)<br>
 # The file name you specify must be lower case only.
-ollama create my-google_medgemma-4b-it-gguf-bf16 -f Modelfile
+% ollama create my-google_medgemma-4b-it-gguf-bf16 -f Modelfile
 
 ```
 
-Thats all.<br>
-You can now select the model using myOfflineAi or using the Ollama desktop app.<br>
-You can only submit text.
+The model has now been inserted into your local Ollama models folder.<br>
+The medGemma model will now appear in the myOfflineAi dropdown menu and in the Ollama desktop app dropdown menu.<br>
+As this is a text only model, you can only submit text.
 
-[ MULTIMODAL MODEL ]
+You can test the model by asking this question:<br>
+How do you conduct a patient preclinical interview?
+
+<br>
+
+### [ MULTIMODAL MODEL ]
+
+This is for example only because the 4b MedGemma model is not multimodal.
+
 ```
 1- Create a Modelfile
 
@@ -371,14 +387,6 @@ ADAPTER ./mmproj-google_medgemma-4b-it-bf16.gguf' > Modelfile
 
 ```
 
-Thats all.<br>
-You can now select the model using myOfflineAi or using the Ollama desktop app.<br>
-You can submit both text and images.
-Again, please note that the 4b Medgemma model that we downloaded is not multimodal. The 27b version is multimodal.
-
-Test<br>
-You can test the model by asking this question:<br>
-How do you conduct a patient preclinical interview?
 
 <br>
 
