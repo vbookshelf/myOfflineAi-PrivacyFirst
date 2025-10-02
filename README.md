@@ -140,7 +140,7 @@ Solution:<br>
 Launch the app manually from the terminal.
 
 Example:<br>
-On mac if the project folder is on your desktop type the following commands in the terminal:
+On Mac if the project folder is on your desktop type the following commands in the terminal:
 ```
 % cd Desktop
 % cd myOfflineAi-v1.0
@@ -148,42 +148,42 @@ On mac if the project folder is on your desktop type the following commands in t
 ```
 
 The app will start. A url will appear in the terminal: http://127.0.0.1:5000/<br>
-Copy this url and paste it in your browser.<br>
+Copy this url and paste it in your browser, then press Enter.<br>
 The app will be displayed.<br>
 
 ### 2- The app starts when you double-click the file but the browser does not auto open
 
 Solution:<br>
-Copy the url, displayed in the terminal (http://127.0.0.1:5000/) and paste it into the browser.
+Copy the url, displayed in the terminal (http://127.0.0.1:5000/) and paste it into the browser. Then press Enter.
 
 ### 3- The app does not work.
 
 Possible causes are that the Ollama Desktop app is not running.<br> 
-Or another instance of the app is already running on your computer and using the same port - the app does not stop when you close the browser tab.
+Or another instance of the app is already running on your computer and using the same port - because the app does not stop when you close the browser tab.
 
 Solutions:<br>
-Start Ollama. Then retstart the app.<br>
-Look for an open terminal on your desktop and see if the app is already running. If it is running then type this url in your broswer: http://127.0.0.1:5000/
+- Start Ollama. Then retstart the app or<br>
+- Look for an open terminal on your desktop and see if the app is already running. If it is running then type this url in your broswer: http://127.0.0.1:5000/
 
 ### 4- The model responses have become very poor
 
-The context size of all Ollama models is limited to 4096 tokens. There is no warning when the context is exceeded, but the quality of the responses becomes very poor.
+Not many people know that the context size of all Ollama models is set to 4096 tokens. There is no warning when the context is exceeded, but the quality of the responses becomes very poor.
 
 This happens because Ollama will automatically drop the oldest messages/tokens from the history to make space for the new input. You don’t see an error, but earlier conversation context is silently lost.
 
 Solution:<br>
-Increase the context size by changing NUM_CTX = 16000 in the app.py file.<br>
+Increase the context size by changing the NUM_CTX setting in the app.py file (currently NUM_CTX = 16000).<br>
 Please note that large context sizes will slow down the model.
 
-The app has a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Also, the total number of tokens in the message history is continuously printed in the console. This will help you monitor the context size. Ensure that this value stays below the value that you set for NUM_CTX.
+The app has a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Also, the total number of tokens in the message history is continuously printed in the terminal. This will help you monitor the context size. Ensure that this value stays below the value that you set for NUM_CTX.
 
 ### 5- Performance has suddenly slowed down
 
 This can happen if you've submitted a large file. Even when you change the model to a smaller model the performance can still be slow. On Mac, if you look at the Activity Monitor you will see that the memory use is still high.
 
-To manage memory, Ollama uses a caching mechanism controlled by a parameter called keep_alive. When you make a request with a model the Ollama server loads that entire model into system RAM. When you then make a new request with a different, smaller model, Ollama loads this second model. The first, larger model is now considered inactive but remains in memory. The inactive model stays loaded for the duration specified by keep_alive. The default value is 5 minutes. If you don't use the large model again within that 5-minute window, Ollama will automatically unload it, and only then will the memory be freed.
+To manage memory, Ollama uses a caching mechanism controlled by a parameter called keep_alive. When you make a request with a model the Ollama server loads that entire model into RAM. When you then make a new request with a different, smaller model, Ollama loads this second model. The first, larger model is now considered inactive but remains in memory. The inactive model stays loaded for the duration specified by keep_alive. The default value is 5 minutes. If you don't use the large model again within that 5-minute window, Ollama will automatically unload it, and only then will the memory be freed.
 
-This behavior is designed for performance, preventing the slow process of reloading a model if you need to use it again soon.
+This behavior is designed for performance, preventing the slow reloading a model if you need to use it again soon.
 
 Solution:<br>
 To free up memory immediately, Ollama needs to be shut down and restarted. You can do this by using "Quit Ollama" in the desktop app. When you click the "Quit Ollama" option from the menu bar icon (on macOS) or the system tray icon (on Windows), it does more than just close a window. It terminates the Ollama background server.
@@ -193,7 +193,7 @@ This action has several important effects:
 - Frees All Memory: Any models currently loaded into your VRAM or system RAM are immediately unloaded.
 - Ends Connectivity: You will no longer be able to interact with Ollama. Any attempt to connect will result in an error.
 
-Simply closing a terminal window  does not stop the background server. The server is designed to run persistently. Using "Quit Ollama" is the explicit and correct way to ensure the application is fully turned off and all system resources are released.
+Simply closing a terminal window  does not stop the background server. The server is designed to run persistently. Using "Quit Ollama" is the correct way to ensure the application is fully turned off and all system resources are released.
 
 
 <br>
