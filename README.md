@@ -9,7 +9,7 @@ Transparent and auditable offline Ai access for professionals in highly regulate
 - Chat with Ollama models
 - Create custom multimodal Ai tools - text, images, pdf (Specialized assistants - similar to Gemini Gems and OpenAi GPTs)
 - Chat histories are not saved
-- All user-submitted content, including files and images, is processed ephemerally (in memory). At no time is any data copied or stored on disk.
+- All user-submitted content, including files and images, is processed ephemerally (in memory). At no time is any data stored on disk.
 - Built to be simple and transparent. Single-file flask app architecture - code is easy to audit because html, css, js and python are all in one file.
 - Double-click a file to run. No need to use the command line.
 
@@ -17,7 +17,7 @@ Transparent and auditable offline Ai access for professionals in highly regulate
 
 myOfflineAi is an app that runs entirely on your computer and connects directly to Ollama - a program that lets you run AI models locally. Ollama is the engine that downloads, manages and runs the models. When you type something into the app, it sends your message to Ollama running on your machine (not over the internet). Ollama processes the request with the chosen AI model and streams the response back to the app.
 
-In other words, myOfflineAi is a helpful interface running in your browser. Ollama models do the thinking in the background. Everything happens locally - your sensitive data never leaves your computer. Compliance thinking is built into the software.
+In other words, myOfflineAi is a helpful interface running in your browser. Ollama models do the thinking in the background. Everything happens locally - your sensitive data never leaves your machine. Compliance thinking is built into the software.
 
 <br>
 
