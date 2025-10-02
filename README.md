@@ -392,6 +392,8 @@ ADAPTER ./mmproj-google_medgemma-4b-it-bf16.gguf' > Modelfile
 
 ## How to delete an Ollama model from your computer
 
+This coomand is for Mac.
+
 ```
 # Type this in the terminal
 % olama rm model_name
