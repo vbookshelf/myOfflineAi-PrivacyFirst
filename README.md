@@ -295,7 +295,7 @@ This is a single-file app. It's designed to be reviewed and modified by Ai. All 
 ### 3- How is pdf conversion handled internally?<br>
 The app converts each page of the pdf document into an image. These images are then passed to the model. This ensures that the model sees all relevant details including graphs and hand written comments.
 
-### 4- Is it possible to edit a Tool after it is created?<br>
+### 4- Is it possible to edit a Tool?<br>
 Yes it is. Hover over the tool in the left panel. The edit button will become visible.
 
 <br>
