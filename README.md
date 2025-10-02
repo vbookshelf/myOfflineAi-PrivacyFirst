@@ -289,6 +289,15 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024
 ```
 <br>
 
+## What app settings are stored
+
+<br>
+
+1- The system messages/personas of custom Ai tools that the user creates are stored in a file called agents.json. This ensures that each time the app is loaded the user created tools are available. Without this feature any user defined tool would disappear each time the browser tab is closed. The user has the ability to manually delete any tool they have created.
+2- The name of the last model that was used is stored in a file called last_model.txt. This ensures that every time the app is loaded the user's favourite model is selected in the dropdown menu. This ensures a smoother user experience.
+
+<br>
+
 ## Security and Auditability
 
 <br>
@@ -312,7 +321,7 @@ This is a note from Ollama concerning privacy:<br>
 
 #### Use Ai to do a quick privacy check
 
-To do a quick check, you can take the app.py file and submit it to an enterprise grade Ai model like Gemini 2.5 Pro or Claude Sonnet. Ask it to review the code for data privacy compliance. Because GPT-5 sets it's thinking budget dynamically, there's no guarantee that it will apply the highest level of thinking to this code review.
+To do a quick check, you can take the app.py file and submit it to an enterprise grade Ai model like Gemini 2.5 Pro or Claude Sonnet. Ask it to review the code for data privacy compliance. It's important that the Ai can automatically deduce that this app will run locally. It's assessment should be given with that fact in mind. In my testing Gemini 2.5 Pro and Claude Sonnet did this best. 
 
 You can ask the following questions:
 
