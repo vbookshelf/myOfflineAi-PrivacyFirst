@@ -471,7 +471,9 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 ## Conclusion
 
-This project is about more than just privacy. It's a shift in mindset. It's about owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability.
+MyOfflineAi solves the privacy problem through isolation and local ephemeral processing. No longer does user need to read a company's opaque privacy policy and hope that they stick to it. Now the user is in control. This removes data privacy anxiety.
+
+But this project is about more than just privacy. It's a shift in mindset. It's about owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability.
 
 <br>
 
