@@ -148,8 +148,7 @@ On Mac if the project folder is on your desktop type the following commands in t
 ```
 
 The app will start. A url will appear in the terminal: http://127.0.0.1:5000/<br>
-Copy this url and paste it in your browser, then press Enter.<br>
-The app will be displayed.<br>
+Copy this url and paste it in your browser, then press Enter.
 
 ### 2- The app starts when you double-click the file but the browser does not auto open
 
