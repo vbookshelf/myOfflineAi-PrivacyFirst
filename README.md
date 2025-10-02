@@ -406,15 +406,20 @@ This coomand is for Mac.
 
 <br>
 
-- All Ollama models are set to context size of 4096 tokens. I didn't know this. At first I just assumed that small local models were just bad. This small size allows the models to work faster. However, when your inputs (or the chat history) exceeds this size there's no warning message. The quality of the model's responses just becomes very poor. In this app I've set a context size of 16000. You can change the context size if needed. But take note that this will affect the speed of the model's responses. Also, I've built in a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Additionally, the total size of the context is continously printed in the terminal.
+1- All Ollama models are set to context size of 4096 tokens. I didn't know this. At first I just assumed that small local models were just bad. This small size allows the models to work faster. However, when your inputs (or the chat history) exceeds this size there's no warning message. The quality of the model's responses just becomes very poor. In this app I've set a context size of 16000. You can change the context size if needed. But take note that this will affect the speed of the model's responses. Also, I've built in a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Additionally, the total size of the context is continously printed in the terminal.
   
-- When using Gemma models - images must be placed before text when coding the model input<br>e.g. [<my_image>, "What's on this image?"].<br>This gives much better results.
+2- When using Gemma models - images must be placed before text when coding the model input<br>e.g. [<my_image>, "What's on this image?"].<br>This gives much better results.
 
-- Ai models are now capable of coding up entire apps. I used Ai models like Gemini 2.5 Pro, Claude Sonnet, GPT-5 and Qwen-235B extensivley during this project. The secret is the single-file flask app architecture. All the code - html, css, js, python - is in one file. Therefore, the Ai can see the entire app design. This makes it easy for Ai to make changes and fix bugs.<br> See: https://github.com/vbookshelf/Single-File-Flask-Web-App<br>
+3- Ai models are now capable of coding up entire apps. I used Ai models like Gemini 2.5 Pro, Claude Sonnet, GPT-5 and Qwen-235B extensivley during this project. The secret is the single-file flask app architecture. All the code - html, css, js, python - is in one file. Therefore, the Ai can see the entire app design. This makes it easy for Ai to make changes and fix bugs.<br> See: https://github.com/vbookshelf/Single-File-Flask-Web-App<br>
 I got better results by using top-end models e.g. Gemini 2.5 Pro and not Gemini 2.5 Flash. Each Ai has it's own quirks and strengths. For example, Gemini 2.5 Pro produces beautiful UI designs but it struggled to add comments to Html code.
 
-- Flask apps used together with the UV python package manager is a powerful combination. It allows the designer to create a much more seamless user experience. Flask is a light-weight tool for creating beautiful and powerful python apps that can run locally. But, on my past flask projects, one limitation was that user had to use the command line to install the app's dependencies. Also, the user had to use the command line to start the app. Non-programmers are not comfortable using the command line.<br>
-On this project I learned that the whole process can be set up such that the user only needs to double-click a file and all dependencies will be auto installed by uv. Also, the user only needs to double-click a file to start the app each time. This simple setup makes desktop flask apps more accessible to ordinary users. Another benefit is that non-programmers can share the app by simply emailing the zipped file. They don't need to download from GitHub.
+4- Using Flask together with the UV Python package manager creates a powerful setup for desktop applications. Flask was originally designed as a lightweight framework for building web applications to be deployed on servers. But Flask is also well-suited for running locally on the desktop. Its simplicity makes it ideal for creating fast, elegant, and functional Python apps.
+
+In my earlier Flask projects, one major limitation for desktop use was that users needed to rely on the command line to install dependencies and to start the app. This was a barrier beacuse non-programmers are not comfortable using terminal commands.
+
+On this project, I discovered a way to remove that friction. With UV, the entire process can be streamlined so that the user only needs to double-click a file: dependencies are installed automatically, and the app launches without any extra steps. Each time the user only needs to double-click a file to run the app.
+
+This approach makes desktop Flask apps far more accessible to everyday users. It also makes the app easier to share - non-programmers can simply send the zipped file by email. There's no need to go to GitHub.
 
 <br>
 
