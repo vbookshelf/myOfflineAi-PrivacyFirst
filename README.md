@@ -281,7 +281,7 @@ I suggest that you do a privacy audit of the code before using the app.
 
 There are no opaque executables. Everything is plain text.
 
-The single-file Flask app architecture places all the necessary code — HTML, CSS, JavaScript, and Python — into a single app.py file. This makes the code easy to audit because a professional can review the entire application design and logic in one place without needing to navigate a complex file structure.
+The single-file Flask app architecture places all the necessary code — HTML, CSS, JavaScript, and Python — into a single app.py file. This makes the code easy to audit because a compliance professional can review the entire application design and logic in one place without needing to navigate a complex file structure.
 
 Files to inspect: 
 - app.py
