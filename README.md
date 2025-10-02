@@ -229,10 +229,7 @@ Therefore, please be patient for the first response.
 <br>
 These are the app settings. To change them please open the app.py file with a text editor, make the change and then save the file as app.py.
 
-Ollama models have a default context size of 4096 tokens.<br>
-4096 is low and will lead to poor quality results when submitting files or when pasting in a large amount of text.<br>
-I've set a custom context size.<br>
-Note that setting large context sizes will slow down inference.<br>
+Context size<br>
 NUM_CTX = 16000
 
 TEMPERATURE = 0.3<br>
