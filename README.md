@@ -200,14 +200,12 @@ Simply closing a terminal window  does not stop the background server. The serve
 ## Selecting and using models
 
 <br>
-When you first start myOfflineAi you will only see the model you downloaded in the dropdown menu. To add other models first make sure your computer has enough RAM to run them.  Then download the Ollama model using the same procedure explained above.
+When you first start myOfflineAi you will see only one model in the dropdown menu - the model that you downloaded. To add other models first make sure your computer has enough RAM to run them. Then download the Ollama model using the same procedure explained above. You can check model sizes by searching models on the Ollama website.
 
 You will need to restart the myOfflineAi app to ensure that the model you downloaded is displayed in the dropdown menu.
 
 You can explore Ollama models here:<br>
 https://ollama.com/search
-
-My recommended model is: gemma3:12b (8.1GB, Text and image)
 
 It's also possible to add your own model to Ollama locally. This process is explained below.
 
