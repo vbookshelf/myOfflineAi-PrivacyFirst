@@ -297,7 +297,7 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024
 
 2- The name of the last model that was used is stored in a file called last_model.txt. This ensures that every time the app is loaded the user's favourite model is selected in the dropdown menu. This ensures a smoother user experience.
 
-These files are stored locally in the myOfflineAi folder.
+These two files are stored locally in the same folder as the app.py file.
 
 <br>
 
