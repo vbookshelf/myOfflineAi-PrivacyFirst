@@ -443,7 +443,10 @@ HTML_TEMPLATE = r"""
                         <span class="text-7xl text-slate-300 mb-2">myOfflineAi</span>
                         <p class="text-xl font-semibold mb-2 mt-3">Local. Transparent. Free.</p>
                         <p>For maximum security please switch off your internet connection<br>
-						and put the Ollama desktop app into Airplane mode.</p>
+						and put the Ollama desktop app into Airplane mode.<br>
+						The system messages of the Ai tools you create are stored in a file.<br>
+						Therefore, you are advised not to include<br>
+						sensitive information in the tool system messages.</p>
                     </div>
                 </div>
             </div>
@@ -1395,6 +1398,21 @@ HTML_TEMPLATE = r"""
 </html>
 """
 
+"""
+What app settings are stored locally
+-------------------------------------
+
+1- The names, titles and system messages/personas of custom Ai tools that the user creates are stored in a file called agents.json. This ensures that each time the app is loaded the user created tools are available. Without this feature any user defined tool would disappear each time the browser tab is closed. The user has the ability to manually delete any tool they have created.
+
+    *** Note: It is recommended that the user not store sensitive information in the agent/tool system messages.
+
+2- The name of the last model that was used is stored in a file called last_model.txt. This ensures that every time the app is loaded the user's favourite model is selected in the dropdown menu. This ensures a smoother user experience.
+
+These files are stored locally in the same folder as as this app.py file.
+
+"""
+
+
 # Helper functions and routes to create new agents
 # -------------------------------------------------
 
@@ -1698,4 +1716,5 @@ if __name__ == "__main__":
 
     # Start Flask app
     app.run(host="127.0.0.1", port=5000, debug=False, threaded=True)
+	
 
