@@ -1,3 +1,5 @@
+<img src="https://github.com/vbookshelf/myOfflineAi-Privacy-First-Flask-Desktop-UI-for-Ollama/blob/main/myOfflineAi-v1.0/static/icon.png" alt="App screenshot" height="100">
+
 # myOfflineAi - Privacy-First Ai
 
 <br>
