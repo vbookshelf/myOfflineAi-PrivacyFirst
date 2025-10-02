@@ -278,7 +278,7 @@ Files to inspect:
 This is a note from Ollama concerning privacy:<br>
 [Does Ollama send my prompts and responses back to ollama.com?](https://github.com/ollama/ollama/blob/main/docs/faq.md#does-ollama-send-my-prompts-and-responses-back-to-ollamacom)
 
-To do a quick check, you can take the app.py file and submit it to an Ai model like Gemini, ChatGPT or Claude. Ask it to review the code for data privacy compliance.
+To do a quick check, you can take the app.py file and submit it to an enterprise grade Ai model like Gemini 2.5 Pro or Claude Sonnet. Ask it to review the code for data privacy compliance. Because GPT-5 sets it's thinking budget dynamically, there's no guarantee that it will apply the highest level of thinking to this code review.
 
 <br>
 
