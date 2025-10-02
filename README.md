@@ -414,7 +414,7 @@ This coomand is for Mac.
 I got better results by using top-end models e.g. Gemini 2.5 Pro and not Gemini 2.5 Flash. Each Ai has it's own quirks and strengths. For example, Gemini 2.5 Pro produces beautiful UI designs but it struggled to add comments to Html code.
 
 - Flask apps used together with the UV python package manager is a powerful combination. It allows the designer to create a much more seamless user experience. Flask is a light-weight tool for creating beautiful and powerful python apps that can run locally. But, on my past flask projects, one limitation was that user had to use the command line to install the app's dependencies. Also, the user had to use the command line to start the app. Non-programmers are not comfortable using the command line.<br>
-On this project I learned that the whole process can be set up such that the user only needs to double-click a file and all dependencies will be auto installed by uv. Also, the user only needs to double-click a file to start the app each time. This simple setup makes flask apps more accessible to ordinary users. Another benefit is that non-programmers can share the app by simply emailing the zipped file. They don't need to download from GitHub.
+On this project I learned that the whole process can be set up such that the user only needs to double-click a file and all dependencies will be auto installed by uv. Also, the user only needs to double-click a file to start the app each time. This simple setup makes desktop flask apps more accessible to ordinary users. Another benefit is that non-programmers can share the app by simply emailing the zipped file. They don't need to download from GitHub.
 
 <br>
 
