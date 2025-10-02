@@ -442,7 +442,7 @@ HTML_TEMPLATE = r"""
                 <div id="initial-message" class="flex-1 flex items-center justify-center text-center text-slate-500">
                     <div>
                         <span class="text-7xl text-slate-300 mb-2">myOfflineAi</span>
-                        <p class="text-xl font-semibold mb-2 mt-3">Local. Transparent. Free.</p>
+                        <p class="text-xl font-semibold mb-2 mt-3">Private. Transparent. Free.</p>
                         <p>For maximum security please switch off your internet connection<br>
 						and put the Ollama desktop app into Airplane mode.<br>
 						The system messages of the Ai tools you create are stored in a file.<br>
