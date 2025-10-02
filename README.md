@@ -4,7 +4,7 @@
 
 <br>
 
-Transparent offline Ai access for professionals in highly regulated industries who need data privacy and don't want to blindly trust cloud providers.
+Transparent offline Ai access for self employed professionals and non-profits in highly regulated industries who need data privacy and don't want to blindly trust cloud providers.
 
 - Ai access without an internet connection
 - Runs on the desktop.
