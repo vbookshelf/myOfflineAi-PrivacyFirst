@@ -14,7 +14,7 @@ Transparent offline Ai access for self employed professionals and non-profits in
 - All user-submitted content, including files and images, is processed ephemerally (in memory). At no time is any data stored on disk.
 - Built to be simple and transparent. Single-file flask app architecture - code is easy to audit because HTML, CSS, JS and Python are all in one file.
 - Double-click a file to run. No need to use the command line.
-- The app is free, open source and has an MIT License - this prevents any future legal complications.
+- The app is free, open source and has an MIT License.
 
 <br>
 
