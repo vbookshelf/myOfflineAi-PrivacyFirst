@@ -232,9 +232,11 @@ These are the app settings. To change them please open the app.py file with a te
 Context size<br>
 NUM_CTX = 16000
 
-TEMPERATURE = 0.3<br>
-TOP_K = 20<br>
+TEMPERATURE = 0.6<br>
+TOP_K = 60<br>
 TOP_P = 0.95<br>
+FREQUENCY_PENALTY = 1.0<br>
+REPEAT_PENALTY = 1.0
 
 Max number of pdf pages allowed per pdf file<br>
 MAX_PAGES = 15
