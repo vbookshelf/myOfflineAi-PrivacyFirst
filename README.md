@@ -312,24 +312,20 @@ Ollama makes multimodal local CPU inference simple. To take advantage of this yo
 
 The process to add the model to Ollama is slightly different depending on whether the model is text only or multimodal.
 
-### 1- Download the .gguf file for the model.<r>
+### 1- Download the .gguf file for the model.
 
-Download the file and place it on your desktop.
-
-To add a model to Ollama it the file has to be in gguf format. You can convert a model to gguf. But its simpler to find one on HuggingFace and download it.
+To add a model to Ollama it the file has to be in gguf format. You can convert a model to gguf. But it's simpler to find one on HuggingFace and download it.
 
 For this example I've downloaded the BF16 gguf file from here (7.77GB):<br>
 bartowski/google_medgemma-4b-it-GGUF<br>
 https://huggingface.co/bartowski/google_medgemma-4b-it-GGUF
 
-We are using the BF16 model. BF16 means that the model is in it's original form, without any quantization (smart compression). Quantization reduces the size of a model but it can also affect the model's performance in unexpcted ways. This uncertainty is not acceptable for medical applications. BF16 models can be very large. But in this case the BF16 size is only 7.7 GB.
+We are using the BF16 model. BF16 means that the model is in it's original form, without any quantization (smart compression). Quantization reduces the size of a model but it can also affect the model's performance in unexpected ways. This uncertainty is not acceptable for medical applications. BF16 models can be very large. But in this case the BF16 size is only 7.7 GB.
 
-The 4b MedGemma version is text only. The 27b version is multimodal. Multimodal means that it supports both text and image input.
+The 4b MedGemma version is text only. The 27b version is multimodal. Multimodal means that it supports both text and image input. Some multimodal models also support video and audio input.
 
 
 ### 2- If the model is multimodal, then also download the mmproj file.
-
-Download the mmproj file and also place it on your desktop.
 
 In the repo on Huggingface click 'Files'. Among the list of files, usually at the bottom, you will find files with names that start with mmproj. Choose the mmproj file that matches your chosen model and download it. Here we have chosen the text only BF16 model. But if this was a multimodal model, then the following mmproj file needs to be downloaded:<br>
 mmproj-google_medgemma-4b-it-bf16.gguf
@@ -341,6 +337,8 @@ You don't need to type the % symbol.
 ### [ TEXT-ONLY MODEL ]
 ```
 1- Create a Modelfile
+
+These terminal commands assume the file is on your desktop.
 
 # cd to the desktop
 % cd Desktop
@@ -372,6 +370,8 @@ This is for example only because the 4b MedGemma model is not multimodal.
 
 ```
 1- Create a Modelfile
+
+These terminal commands assume the file is on your desktop.
 
 # cd to the desktop
 % cd Desktop
