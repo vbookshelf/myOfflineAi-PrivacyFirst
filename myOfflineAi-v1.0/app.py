@@ -491,8 +491,8 @@ HTML_TEMPLATE = r"""
                     </div>
                     
                     <div>
-						<p class="text-xs text-red-600 mt-1">
-						 <strong>Warning:</strong> This information is saved in a local file. Do not include sensitive data. Deleting the Tool will permanently delete this data from the file.
+						<p class="text-xs text-slate-400 mt-1">
+						 This information is saved in a local file. Do not include sensitive data. Deleting the Tool will permanently delete this data from the file.
 						</p>
                         <label for="agent-persona" class="block text-sm font-medium text-slate-700 mb-1">Persona / System Instruction</label>
                         <textarea autocomplete="off" id="agent-persona" rows="4" required class="w-full p-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="e.g. You are an expert at summarizing text..."></textarea>
