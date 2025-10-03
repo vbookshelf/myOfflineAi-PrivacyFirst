@@ -486,7 +486,6 @@ On this project, I discovered a way to remove that friction by combining Flask, 
 
 This double-click simplicity makes desktop Flask apps more accessible to everyday users.
 
-5- Frontier Ai models can produce magic, but they can also produce very eloquent sounding falsifications - presented as "deep research". It's hard to spot the difference unless you already have a background in the subject/context.
 
 <br>
 
