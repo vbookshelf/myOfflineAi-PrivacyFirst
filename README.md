@@ -180,26 +180,26 @@ Possible causes are that the Ollama Desktop app is not running.<br>
 Or another instance of the app is already running on your computer and using the same port - because the app does not stop when you close the browser tab.
 
 Solutions:<br>
-- Start Ollama. Then retstart the app or<br>
+- Start Ollama. Then restart the app or<br>
 - Look for an open terminal on your desktop and see if the app is already running. If it is running then type this url in your broswer: http://127.0.0.1:5000/
 
 ### 4- The model responses have become very poor
 
-Not many people know that the context size of all Ollama models is set to 4096 tokens. There is no warning when the context is exceeded, but the quality of the responses becomes very poor.
+Ai Models can have context sizes over 100k tokens. However, not many people know that the context size of all Ollama models is set to 4096 tokens. There is no warning when the context is exceeded, but the quality of the responses becomes very poor.
 
-This happens because Ollama will automatically drop the oldest messages/tokens from the history to make space for the new input. You don’t see an error, but earlier conversation context is silently lost.
+This happens because Ollama will automatically drop the oldest messages/tokens from the message history to make space for the new input. You don’t see an error, but earlier conversation context is silently lost.
 
 Solution:<br>
 Increase the context size by changing the NUM_CTX setting in the app.py file (currently NUM_CTX = 16000).<br>
 Please note that large context sizes will slow down the model.
 
-The app has a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Also, the total number of tokens in the message history is continuously printed in the terminal. This will help you monitor the context size. Ensure that this value stays below the value that you set for NUM_CTX.
+This app has a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Also, the total number of tokens in the message history is continuously printed in the terminal. This will help you monitor the context size. Ensure that this value stays below the value that you set for NUM_CTX.
 
 ### 5- Performance has suddenly slowed down
 
 This can happen if you've submitted a large file. Even when you change the model to a smaller model the performance can still be slow. On Mac, if you look at the Activity Monitor you will see that the memory use is still high.
 
-To manage memory, Ollama uses a caching mechanism controlled by a parameter called keep_alive. When you make a request with a model the Ollama server loads that entire model into RAM. When you then make a new request with a different, smaller model, Ollama loads this second model. The first, larger model is now considered inactive but remains in memory. The inactive model stays loaded for the duration specified by keep_alive. The default value is 5 minutes. If you don't use the large model again within that 5-minute window, Ollama will automatically unload it, and only then will the memory be freed.
+To manage memory, Ollama uses a caching mechanism controlled by a parameter called keep_alive. When you make a request with a model the Ollama server loads that entire model into RAM. When you make a new request with a different, smaller model, Ollama loads this second model. The first, larger model is now considered inactive but remains in memory. The inactive model stays loaded for the duration specified by keep_alive. The default value is 5 minutes. If you don't use the large model again within that 5-minute window, Ollama will automatically unload it, and only then will the memory be freed.
 
 This behavior is designed for performance, preventing the slow reloading a model if you need to use it again soon.
 
@@ -215,7 +215,8 @@ Simply closing a terminal window  does not stop the background server. The serve
 
 ### 6- Everything freezes even tho the model you are trying to use is small
 
-This can happen if you have LM Studio running while you are trying to use Ollama and myOfflineAi.
+This can happen if you have LM Studio running while you are trying to use Ollama and myOfflineAi.<br>
+(LM Studio is a program, similar to Ollama, that allows you to run Ai models locally.)
 
 Solution:<br>
 Eject any model that you have loaded into LM Studio.<br>
