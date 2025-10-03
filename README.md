@@ -460,16 +460,18 @@ This command is for Mac.
   
 2- When using Gemma models - images must be placed before text when coding the model input<br>e.g. [<my_image>, "What's on this image?"].<br>This gives much better results.
 
-3- Ai models are now capable of coding up entire apps. I used Ai models like Gemini 2.5 Pro, Claude Sonnet, GPT-5 and Qwen-235B extensivley during this project. The secret is the single-file flask app architecture. All the code - html, css, js, python - is in one file. Therefore, the Ai can see the entire app design. This makes it easy for Ai to make changes and fix bugs.<br> See: https://github.com/vbookshelf/Single-File-Flask-Web-App<br>
-I got better results by using top-end models e.g. Gemini 2.5 Pro and not Gemini 2.5 Flash. Each Ai has it's own quirks and strengths. For example, Gemini 2.5 Pro produces beautiful UI designs but it struggled to add comments to Html code.
+3- Ai models are now capable of coding up entire apps. I used Ai models like Gemini 2.5 Pro, Claude Sonnet, GPT-5 and Qwen-235B extensivley during this project. The secret is the single-file flask app architecture. All the code - HTML, CSS, JS, Python - is in one file. Therefore, the Ai can see the entire app design. This makes it easy for Ai to make changes and fix bugs.<br> See: https://github.com/vbookshelf/Single-File-Flask-Web-App<br>
+I got better results by using top-end models e.g. Gemini 2.5 Pro and not Gemini 2.5 Flash. Each Ai has it's own quirks and strengths. For example, Gemini 2.5 Pro produces beautiful UI designs but it struggled to add comments to HTML code.
 
 4- Using Flask together with the UV Python package manager creates a powerful setup for desktop applications. Flask was originally designed as a lightweight framework for building web applications to be deployed on servers. But Flask is also well-suited for running locally on the desktop. Its simplicity makes it ideal for creating fast, elegant, and functional Python apps.
 
-In my earlier Flask projects, one major limitation for desktop use was that users needed to rely on the command line to install dependencies and to start the app. This was a barrier beacuse non-programmers are not comfortable using terminal commands.
+In my earlier Flask projects, one major limitation for desktop use was that users needed to rely on the command line to install dependencies and to start the app. This was a barrier beacause non-programmers are not comfortable using terminal commands.
 
 On this project, I discovered a way to remove that friction. With UV, the entire process can be streamlined so that the user only needs to double-click a file: dependencies are installed automatically, and the app launches without any extra steps. Each time the user only needs to double-click a file to run the app.
 
-This approach makes desktop Flask apps far more accessible to everyday users. It also makes the app easier to share - non-programmers can simply send the zipped file by email. There's no need to use GitHub or Docker.
+This approach makes desktop Flask apps far more accessible to everyday users. The elegant full featured experience that Flask enables also positions small free Ai powered desktop tools as a viable alternative to web based services. 
+
+Interestingly, once I started using the app it was easy to forget that my internet was actually disconnected.
 
 <br>
 
