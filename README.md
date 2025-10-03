@@ -13,12 +13,12 @@ Transparent offline Ai access for self employed professionals and non-profits in
 - Chat histories are not saved
 - All user chat messages, including files and images, are processed ephemerally (in memory). At no time is any data stored on disk.
 - Built to be simple and transparent. Single-file flask app architecture - code is easy to audit because HTML, CSS, JS and Python are all in one file.
-- Double-click a file to run. No need to use the command line.
+- Double-click a file to run. No need to use the command line after the initial setup.
 - The app is free, open source and has an MIT License.
 
 <br>
 
-myOfflineAi is an app that runs entirely on your computer and connects directly to Ollama - a program that lets you run AI models locally. Ollama is the engine that downloads, manages and runs the models. When you type something into the app, it sends your message to Ollama running on your machine (not over the internet). Ollama processes the request with the chosen AI model and streams the response back to the app.
+myOfflineAi is an app that runs entirely on your computer and connects directly to Ollama. Ollama is a program that lets you run AI models locally. It's the engine that downloads, manages and runs the models. When you type something into the app, it sends your message to Ollama running on your machine (not over the internet). Ollama processes the request with the chosen AI model and streams the response back to the app.
 
 In other words, myOfflineAi is a helpful interface running in your browser. Ollama models do the thinking in the background. Everything happens locally - your sensitive data never leaves your machine. Compliance thinking is built into the software.
 
