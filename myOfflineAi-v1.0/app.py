@@ -444,10 +444,7 @@ HTML_TEMPLATE = r"""
                         <span class="text-7xl text-slate-300 mb-2">myOfflineAi</span>
                         <p class="text-xl font-semibold mb-2 mt-3">Private. Transparent. Free.</p>
                         <p>For maximum security please switch off your internet connection<br>
-						and put the Ollama desktop app into Airplane mode.<br>
-						The system messages of the Ai tools you create are stored in a file.<br>
-						Therefore, you are advised not to include<br>
-						sensitive information in the tool system messages.</p>
+						and put the Ollama desktop app into Airplane mode.</p>
                     </div>
                 </div>
             </div>
@@ -494,6 +491,9 @@ HTML_TEMPLATE = r"""
                     </div>
                     
                     <div>
+						<p class="text-xs text-red-600 mt-1">
+						 <strong>Warning:</strong> This information is saved in a local file. Do not include sensitive data. Deleting the Tool will permanently delete this data from the file.
+						</p>
                         <label for="agent-persona" class="block text-sm font-medium text-slate-700 mb-1">Persona / System Instruction</label>
                         <textarea autocomplete="off" id="agent-persona" rows="4" required class="w-full p-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="e.g. You are an expert at summarizing text..."></textarea>
                     </div>
