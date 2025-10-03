@@ -228,6 +228,7 @@ Quit LM Studio.
 ## Selecting and using models
 
 <br>
+
 When you first start myOfflineAi you will see only one model in the dropdown menu - the model that you downloaded. To add other models first make sure your computer has enough RAM to run them. Then download the Ollama model using the same procedure explained above. You can check model sizes by searching models on the Ollama website.
 
 You will need to restart the myOfflineAi app to ensure that the model you downloaded is displayed in the dropdown menu.
@@ -242,6 +243,7 @@ It's also possible to add your own model to Ollama locally. This process is expl
 ## Response times
 
 <br>
+
 When you send your first text message, it may take a few seconds to get your first response. But after that responses are much faster.
 
 This is because, by default models are kept in memory for 5 minutes before being unloaded. This allows for quicker response times when you are making multiple requests during a chat.
