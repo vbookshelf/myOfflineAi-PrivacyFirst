@@ -117,7 +117,7 @@ Windows:
 Double-click start-windows-app.bat
 
 This will install all the Python packages.
-Then the myOfflineAi web app will open in your browser.
+Then the myOfflineAi app will open in your browser.
 The terminal will also open.
 
 6. Use the app
