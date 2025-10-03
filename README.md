@@ -508,6 +508,16 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 <br>
 
+## Build it, Release it, Forget it
+
+<br>
+
+This project follows my Build it, Release it, Forget it philosophy. There won't be any long-term maintenance. This frees me up to focus on learning and creating new things.
+
+I've built this app to truly belong to you. The single-file architecture means you can understand, audit, and modify every part of it — either yourself or with help from AI tools. I'm giving you something more valuable than ongoing support: complete transparency and ownership. This is a working solution that solves a real problem today. If you need changes tomorrow, you have everything you need to make them. The MIT license and simple design ensure you will never be dependent on me or any vendor.
+
+<br>
+
 ## Conclusion
 
 This project is about more than just privacy. It's a shift in mindset. It's about owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability.
