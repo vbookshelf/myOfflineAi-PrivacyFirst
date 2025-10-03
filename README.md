@@ -56,7 +56,7 @@ You trade the convenience of being able to look back through old chats for the c
 In this section you will do the following:
 - Install the Ollama desktop app
 - Download a small 250MB text-only Ollama model
-- Install the UV python package manager
+- Install the UV Python package manager
 - Start the myOfflineAi app by double clicking a file
 
 Notes:<br>
