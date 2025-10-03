@@ -328,18 +328,9 @@ This is a note from Ollama concerning privacy:<br>
 
 #### Use Ai to do a quick privacy check
 
-To do a quick check, you can take the app.py file and submit it to an enterprise grade Ai model like Gemini 2.5 Pro or Claude Sonnet. Ask it to review the code for data privacy compliance. It's important that the Ai can automatically deduce that this app will run locally. Its assessment should be given with this context in mind. In my testing Gemini 2.5 Pro and Claude Sonnet did this best. 
-
-You can ask the following questions:
-
-- Does this code send any data out?
-- Are there any privacy risks here?
-- What happens if I forget to turn off my internet connection?
-- The app creates files named agents.json and last_model.txt. What are those files for?
+To do a quick check, you can take the app.py file and submit it to an enterprise grade Ai model like Gemini 2.5 Pro or Claude Sonnet. Ask it to review the code for data privacy compliance. It's important that the Ai can automatically deduce that this app will run locally. Its assessment should be given with this context in mind. The Ai model should not assume that this app is going to be deployed on a web server. In my testing Gemini 2.5 Pro and Claude Sonnet did this best. 
 
 By using Ai to check the code, even if you don't know anything about programming, you can get a sophisticated privacy compliance report within minutes. But it's important to use the enterprise grade pro level models and not the faster consumer models.
-
-Many professionals in private practice and also small non-profits may not have access to professional programmers to check the code. In those cases using Ai to do the check might be a good option.
 
 <br>
 
