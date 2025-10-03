@@ -340,7 +340,7 @@ No it's not essential. By design, no data leaves your computer. But I recommend 
 This is a single-file app. It's designed to be reviewed and modified by Ai. All the code is in one file so the Ai sees the entire design. Simply take the app.py file and upload it to Gemini 2.5 Pro or Claude Sonnet. Tell it what bug to fix or what changes or new feature you want. Also tell it to output all the code on one page so you can copy and paste it. When the Ai outputs the revised code, copy it and replace all the code in the app.py file. Then put the app.py file back inside the project folder. Launch the app and check if your changes have been made.
 
 ### 3- How is pdf conversion handled internally?<br>
-The app converts each page of the pdf document into an image. These images are then passed to the model. This ensures that the model sees all relevant details including graphs and hand written comments.
+The app converts each page of the pdf document into an image. These images are then passed to the model. This ensures that the model sees all relevant details including graphs and hand written comments. The image resolution is set to 150 dpi for faster processing. If you need higher resoltion, you can change the PDF_IMAGE_RES setting in the app.py file. You may want a higher resolution if your pdf files include medical images, for example.
 
 ### 4- Is it possible to edit a Tool?<br>
 Yes it is. Hover over the tool in the left panel. The edit button will become visible.
