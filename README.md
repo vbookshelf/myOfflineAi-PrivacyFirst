@@ -94,7 +94,7 @@ The model will start to auto download.
 
 3. Install UV
 
-UV is a new and fast python package manager.
+UV is a new and fast Python package manager.
 Here you will find the instructions to install uv on Mac and Windows:
 https://docs.astral.sh/uv/getting-started/installation
 
@@ -108,7 +108,8 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 4. Download the project folder
 
-Download the myOfflineAi project folder from this repo.
+Download the project folder, unzip it and place it on your desktop.
+In this repo the project folder is named: myOfflineAi
 
 5. Open the folder and double-click a file.
 
@@ -118,7 +119,7 @@ Double-click start-mac-app.command
 Windows:
 Double-click start-windows-app.bat
 
-This will install all the python packages.
+This will install all the Python packages.
 Then the myOfflineAi web app will open in your browser.
 The terminal will also open.
 
@@ -132,7 +133,7 @@ If you downloaded the gemma3:4b model you can submit images and pdf documents in
 
 The app does not stop running when you close the browser tab.
 To shut down the app simply close the terminal window.
-You can also type Crl+C on Mac or Alt+F4 on Windows to shut down the app.
+You can also close the terminal by selecting it and typing Crl+C on Mac or Alt+F4 on Windows.
 
 7. Future startup
 
@@ -145,7 +146,7 @@ Windows:
 start-windows-app.bat
 
 You could start the app and leave it running in the background all day.
-Then whenever you want to access it, enter the following url in your browser:
+Then whenever you want to use it, enter the following url in your browser:
 http://127.0.0.1:5000/
 Your browser will remember this local address so you won't have to.
 
