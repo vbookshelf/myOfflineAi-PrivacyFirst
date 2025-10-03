@@ -299,13 +299,15 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024
 
 These two files are stored locally in the same folder as the app.py file.
 
-Note: Because the Ai tool system messages are stored in a file, it's highly recommended that the user not include sensitive information in the tool system messages.
+Note: Because the Ai tool system messages are stored in a file, it's recommended that the user not include sensitive information in the tool system messages. However, deleting the Tool will also permanently delete it's data from the file. This feature gives the user a clear and actionable way to manage the data that they input into system messages.
 
 <br>
 
 ## Security and Auditability
 
 <br>
+
+This app is designed as a private, local tool. The primary security model relies on your machine being secure.
 
 This app is provided without warranties.<br>
 I suggest that you do a privacy audit of the code before using the app.
