@@ -510,14 +510,6 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 <br>
 
-## Build it, Release it, Forget it
-
-<br>
-
-This project follows my Build it, Release it, Forget it philosophy. There won't be any long-term maintenance. This frees me up to focus on learning and creating new things.
-
-<br>
-
 ## Conclusion
 
 This project is about more than just privacy. It's a shift in mindset. It's about owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability.
