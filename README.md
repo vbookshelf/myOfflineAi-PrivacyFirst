@@ -306,12 +306,10 @@ Both files mentioned above are stored in the project folder, in the same place a
 
 This app is designed as a private, local tool. The primary security model relies on your machine being secure.
 
-This app is provided without warranties.<br>
-I suggest that you do a privacy audit of the code before using the app.
-
+I suggest that you do a privacy audit of the code before using the app.<br>
 There are no opaque executables. Everything is plain text.
 
-The single-file Flask app architecture places all the necessary code — HTML, CSS, JavaScript, and Python — into a single app.py file. This makes the code easy to audit because a compliance professional can review the entire application design and logic in one place without needing to navigate a complex file structure.
+The single-file Flask app architecture places all the necessary code — HTML, CSS, JavaScript and Python — into a single app.py file. This makes the code easy to audit because a compliance professional can review the entire application design and logic in one place without needing to navigate a complex file structure.
 
 Files to inspect: 
 - app.py
@@ -327,7 +325,7 @@ This is a note from Ollama concerning privacy:<br>
 
 To do a quick check, you can take the app.py file and submit it to an enterprise grade Ai model like Gemini 2.5 Pro or Claude Sonnet. Ask it to review the code for data privacy compliance. It's important that the Ai can automatically deduce that this app will run locally. Its assessment should be given with this context in mind. The Ai model should not assume that this app is going to be deployed on a web server. In my testing Gemini 2.5 Pro and Claude Sonnet did this best. 
 
-By using Ai to check the code, even if you don't know anything about programming, you can get a sophisticated privacy compliance report within minutes. But it's important to use the enterprise grade pro level models and not the faster consumer models.
+By using Ai to check the code, even if you don't know anything about programming, you can get a sophisticated privacy compliance report within minutes. But it's important to use enterprise grade level models and not the consumer models like Gemini 2.5 Flash.
 
 <br>
 
