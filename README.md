@@ -353,23 +353,25 @@ Yes it is. Hover over the tool in the left panel. The edit button will become vi
 
 Ollama makes multimodal local CPU inference simple. To take advantage of this you may want to load your own domain specialized models into Ollama, on your computer. Here I will explain how to do that. We will use the MedGemma model (4b version) as an example. 
 
-4b means 4 billion parameters. It's a refelection of the size and capability of the model. For reference, a top end model like GPT-5 may have more the 500 billion parameters.
+4b means 4 billion parameters. It's a reflection of the size and capability of the model. For reference, a top end model like GPT-5 may have more the 500 billion parameters.
 
 <br>
 
-The process to add the model to Ollama is slightly different depending on whether the model is text only or multimodal.
+The process to add the model to Ollama is slightly different depending on whether the model is text only or multimodal. Multimodal means that it supports both text and image input.
 
 ### 1- Download the .gguf file for the model.
 
-To add a model to Ollama it the file has to be in gguf format. You can convert a model to gguf. But it's simpler to find one on HuggingFace and download it.
+To add a model to Ollama the file has to be in gguf format. You can convert a model to gguf. But it's simpler to find one on HuggingFace and download it.
 
 For this example I've downloaded the BF16 gguf file from here (7.77GB):<br>
 bartowski/google_medgemma-4b-it-GGUF<br>
 https://huggingface.co/bartowski/google_medgemma-4b-it-GGUF
 
-We are using the BF16 model. BF16 means that the model is in it's original form, without any quantization (smart compression). Quantization reduces the size of a model but it can also affect the model's performance in unexpected ways. This uncertainty is not acceptable for medical applications. BF16 models can be very large. But in this case the BF16 size is only 7.7 GB.
+We are using the BF16 model. A bf16 model has almost the same capability as the original trained model in terms of accuracy, but with lower memory usage and faster computation on supported hardware.
 
-The 4b MedGemma version is text only. The 27b version is multimodal. Multimodal means that it supports both text and image input. Some multimodal models also support video and audio input.
+BF16 means that the model is closest to it's original form, without any quantization (smart compression). Quantization reduces the size of a model but it can also affect the model's performance in unexpected ways. This uncertainty is not acceptable for medical applications. BF16 models can be very large. But in this case the BF16 size is only 7.7 GB.
+
+The 4b MedGemma version is text only. The 27b version is multimodal. Some multimodal models also support video and audio input.
 
 
 ### 2- If the model is multimodal, then also download the mmproj file.
@@ -397,7 +399,7 @@ These terminal commands assume the file is on your desktop.
 2- Insert the model into Ollama
 
 # (You can specify any name. I've used: my-google_medgemma-4b-it-GGUF-bf16)<br>
-# The file name you specify must be lower case only.
+# The file name you specify must be lower case only or you will get an error.
 % ollama create my-google_medgemma-4b-it-gguf-bf16 -f Modelfile
 
 ```
@@ -439,6 +441,7 @@ ADAPTER ./mmproj-google_medgemma-4b-it-bf16.gguf' > Modelfile
 
 ## How to delete an Ollama model from your computer
 
+You may want to delete models you don't use to free up disk space on your computer.<br>
 This command is for Mac.
 
 ```
