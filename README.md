@@ -506,7 +506,7 @@ But this project is about more than just privacy. It's a shift in mindset. It's 
 ## Revision History
 
 Version 1.0<br>
-1-Oct-2025<br>
+3-Oct-2025<br>
 First release
 
 
