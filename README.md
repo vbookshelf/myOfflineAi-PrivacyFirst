@@ -337,7 +337,7 @@ By using Ai to check the code, even if you don't know anything about programming
 No it's not essential. By design, no data leaves your computer. But I recommend putting the Ollama desktop app into Airplane mode. This can be done in the Ollama settings. A picture of the settings menu is shown above.
 
 ### 2- How do I add features, make changes or fix a bug?<br>
-This is a single-file app. It's designed to be reviewed and modified by Ai. All the code is in one file so the Ai sees the entire design. Simply take the app.py file and upload it to Gemini 2.5 Pro, Claude Sonnet or GPT-5. Tell it what bug to fix or what changes or new feature you want. Also tell it to output all the code on one page so you can copy and paste it. When the Ai outputs the revised code, copy it and replace all the code in the app.py file. Then put the app.py file back inside the project folder. Launch the app and check if your changes have been made.
+This is a single-file app. It's designed to be reviewed and modified by Ai. All the code is in one file so the Ai sees the entire design. Simply take the app.py file and upload it to Gemini 2.5 Pro or Claude Sonnet. Tell it what bug to fix or what changes or new feature you want. Also tell it to output all the code on one page so you can copy and paste it. When the Ai outputs the revised code, copy it and replace all the code in the app.py file. Then put the app.py file back inside the project folder. Launch the app and check if your changes have been made.
 
 ### 3- How is pdf conversion handled internally?<br>
 The app converts each page of the pdf document into an image. These images are then passed to the model. This ensures that the model sees all relevant details including graphs and hand written comments.
