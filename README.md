@@ -292,13 +292,11 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024
 
 <br>
 
-1- The names and system messages/personas of custom Ai tools that the user creates are stored in a file called agents.json. This ensures that each time the app is loaded the user created tools are available. Without this feature any user defined tool would disappear each time the browser tab is closed. The user has the ability to manually delete any tool they have created. Tool info is automatically deleted from the agents.json file when the user deletes a tool.
+1- The names, titles and system messages/personas of custom Ai tools that you create are stored in a file named agents.json. This ensures that each time you start the app, your custom tools are available. Without this feature any custom tool would disappear each time the browser tab is closed. You can manually delete any tool you have created. All tool data is permanently deleted from the agents.json file when you delete a tool. This feature gives you a clear and actionable way to manage the data that you input into system messages.
 
-2- The name of the last model that was used is stored in a file called last_model.txt. This ensures that every time the app is loaded the user's favourite model is selected in the dropdown menu. This ensures a smoother user experience.
+2- The name of the last model that you used is stored in a file named last_model.txt. This ensures that every time you start the app your favourite model is selected in the dropdown menu. This ensures a smoother user experience.
 
-These two files are stored locally in the same folder as the app.py file.
-
-Note: Because the Ai tool system messages are stored in a file, it's recommended that the user not include sensitive information in the tool system messages. However, deleting the Tool will also permanently delete it's data from the file. This feature gives the user a clear and actionable way to manage the data that they input into system messages.
+Both files mentioned above are stored in the project folder, in the same place as the app.py file.
 
 <br>
 
