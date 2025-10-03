@@ -298,9 +298,13 @@ MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024
 
 2- The names, titles and system messages/personas of custom Ai tools that you create are stored in a file named agents.json, also located inside the myOfflineAi folder. This ensures that each time you start the app, your custom tools are available. Without this feature any custom tool would disappear each time the browser tab is closed. You can manually delete any tool you have created. When you delete a tool, all tool data is permanently deleted from the agents.json file. This feature gives you a clear and actionable way to manage the data that you input into system messages.
 
-### What to do if you don't want to delete your Ai Tools
+### But what if you don't want to delete your Ai Tools?
 
 If your Ai Tool system messages do contain sensitive info, but you don't want to delete your tools - you have another option. You can take the agents.json file out of the myOfflineAi folder and store it somewhere secure. The next time you want to use the app you simply need to put the agents.json file back into the myOfflineAi folder - your Tools will load when the app launches.
+
+### You can also share copies of your Ai tools
+
+This poratable agents.json file also allows you to share tools. For example, say you've created a document summarize tool that your colleagues want to use. All you need to do is send them the agents.json file. They simply need to put this file into the myOfflineAi folder on their machine and start the app. The summarizer tool you created will load up and be available for them to use.
 
 <br>
 
