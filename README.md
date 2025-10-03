@@ -456,9 +456,13 @@ This command is for Mac.
 
 <br>
 
-1- All Ollama models are set to context size of 4096 tokens. I didn't know this. At first I just assumed that small local models were just bad. This small size allows the models to work faster. However, when your inputs (or the chat history) exceeds this size there's no warning message. The quality of the model's responses just becomes very poor. In this app I've set a context size of 16000. You can change the context size if needed. But take note that this will affect the speed of the model's responses. Also, I've built in a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Additionally, the total size of the context is continously printed in the terminal.
+1- Ai models can have context sizes over 100k tokens. But all Ollama models are set to context size of 4096 tokens. This small 4096 context size allows the models to work faster. However, when your inputs (or the chat history) exceeds this size there's no warning message. The quality of the model's responses just becomes very poor. 
+
+In my early testing, I didn't know about the 4096 token context limit. I just assumed that small models were bad.
+
+In this app I've set a context size of 16000. You can change the context size in the app.py file if needed. But take note that this will affect the speed of the model's responses. Also, I've built in a context warning system that will alert you when the context size has been exceeded or is close to being exceeded. Additionally, the total size of the context is continously printed in the terminal.
   
-2- When using Gemma models - images must be placed before text when coding the model input<br>e.g. [<my_image>, "What's on this image?"].<br>This gives much better results.
+2- When using Google's Gemma models - images must be placed before text when coding the model input<br>e.g. [<my_image>, "What's on this image?"].<br>This gives much better results.
 
 3- Ai models are now capable of coding up entire apps. I used Ai models like Gemini 2.5 Pro, Claude Sonnet, GPT-5 and Qwen-235B extensivley during this project. The secret is the single-file flask app architecture. All the code - HTML, CSS, JS, Python - is in one file. Therefore, the Ai can see the entire app design. This makes it easy for Ai to make changes and fix bugs.<br> See: https://github.com/vbookshelf/Single-File-Flask-Web-App<br>
 I got better results by using top-end models e.g. Gemini 2.5 Pro and not Gemini 2.5 Flash. Each Ai has it's own quirks and strengths. For example, Gemini 2.5 Pro produces beautiful UI designs but it struggled to add comments to HTML code.
@@ -467,9 +471,9 @@ I got better results by using top-end models e.g. Gemini 2.5 Pro and not Gemini 
 
 In my earlier Flask projects, one major limitation for desktop use was that users needed to rely on the command line to install dependencies and to start the app. This was a barrier because non-programmers are not comfortable using terminal commands.
 
-On this project, I discovered a way to remove that friction by combining Flask, UV and the file-double-click capability of Mac OS/Windows. The entire process has been streamlined so that the user only needs to double-click a file: dependencies are installed automatically, and the app launches in the browser.
+On this project, I discovered a way to remove that friction by combining Flask, UV and the file-double-click capability of Mac OS/Windows. Now, the entire process has been streamlined. The user only needs to double-click a file: dependencies are installed automatically, and the app launches in the browser.
 
-This double-click simplicity makes desktop Flask apps more accessible to everyday users. 
+This double-click simplicity makes desktop Flask apps more accessible to everyday users.
 
 <br>
 
