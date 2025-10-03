@@ -463,15 +463,13 @@ This command is for Mac.
 3- Ai models are now capable of coding up entire apps. I used Ai models like Gemini 2.5 Pro, Claude Sonnet, GPT-5 and Qwen-235B extensivley during this project. The secret is the single-file flask app architecture. All the code - HTML, CSS, JS, Python - is in one file. Therefore, the Ai can see the entire app design. This makes it easy for Ai to make changes and fix bugs.<br> See: https://github.com/vbookshelf/Single-File-Flask-Web-App<br>
 I got better results by using top-end models e.g. Gemini 2.5 Pro and not Gemini 2.5 Flash. Each Ai has it's own quirks and strengths. For example, Gemini 2.5 Pro produces beautiful UI designs but it struggled to add comments to HTML code.
 
-4- Using Flask together with the UV Python package manager, along with the built-in capability of macOS and Windows to make a file runnable by double-clicking, creates a simple and powerful way to create transparent and user friedly desktop applications.
+4- Flask was originally designed as a lightweight framework for building web applications to be deployed on servers. But Flask is also well-suited for running locally on the desktop. Its simplicity makes it ideal for creating fast, elegant, and functional Python apps.
 
-Flask was originally designed as a lightweight framework for building web applications to be deployed on servers. But Flask is also well-suited for running locally on the desktop. Its simplicity makes it ideal for creating fast, elegant, and functional Python apps.
+In my earlier Flask projects, one major limitation for desktop use was that users needed to rely on the command line to install dependencies and to start the app. This was a barrier because non-programmers are not comfortable using terminal commands.
 
-In my earlier Flask projects, one major limitation for desktop use was that users needed to rely on the command line to install dependencies and to start the app. This was a barrier beacause non-programmers are not comfortable using terminal commands.
+On this project, I discovered a way to remove that friction by combining Flask, UV and the file-double-click capability of Mac OS/Windows. The entire process has been streamlined so that the user only needs to double-click a file: dependencies are installed automatically, and the app launches in the browser.
 
-On this project, I discovered a way to remove that friction by combining Flask, UV and the file-double-click capability of Mac OS/Windows. The entire process can be streamlined so that the user only needs to double-click a file: dependencies are installed automatically, and the app launches in the browser without any extra steps.
-
-This approach makes desktop Flask apps more accessible to everyday users. 
+This double-click approach makes desktop Flask apps more accessible to everyday users. 
 
 <br>
 
