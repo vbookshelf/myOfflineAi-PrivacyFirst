@@ -1,12 +1,16 @@
 <img src="https://github.com/vbookshelf/myOfflineAi-Privacy-First-Flask-Desktop-UI-for-Ollama/blob/main/myOfflineAi-v1.0/static/icon.png" alt="App screenshot" height="100">
 
 # myOfflineAi - Privacy-First Ai
-> YouTube Video:<br>
-> Introducing myOfflineAi - Local and Auditable Privacy-First Ai powered by Ollama<br>
-> https://www.youtube.com/watch?v=oecJfMUWy8M
+> 
+> Prototype - For testing and education
 
-> #### PLEASE NOTE:
-> #### This is a Prototype. It should only be used for testing and education.
+<br>
+
+YouTube Video:<br>
+Introducing myOfflineAi - Local and Auditable Privacy-First Ai powered by Ollama<br>
+https://www.youtube.com/watch?v=oecJfMUWy8M
+
+
 
 <br>
 
@@ -522,7 +526,7 @@ This project is about more than just privacy. It's a shift in mindset. It's abou
 
 Version 1.0<br>
 3-Oct-2025<br>
-Beta Version. Released for testing and education.
+Prototype. Released for testing and education.
 
 
 
