@@ -59,6 +59,18 @@ You trade the convenience of being able to look back through old chats for the c
 
 <br>
 
+## Data privacy and security is not enough - the models must also be compliant
+
+<br>
+
+In regulated industries data privacy and security must be paired with Ai models that also meet compliance standards.
+
+IBM has released a family of small models, called Granite4, that are aimed at regulated industries and mission-critical applications. These models have received accreditation under ISO/IEC 42001:2023, certifying that the models are aligned with internationally recognized best practices for safe, responsible AI and that IBM’s AI management system (AIMS) meets the highest levels of scrutiny. Because of their hybrid architecture, they run very fast.<br>
+https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models
+
+Granite4 models are available to download on Ollama.<br>
+https://ollama.com/library/granite4
+
 ## How to Install and Run
 
 <br>
