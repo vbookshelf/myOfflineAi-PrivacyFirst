@@ -59,25 +59,6 @@ You trade the convenience of being able to look back through old chats for the c
 
 <br>
 
-## Data privacy and security is not enough - the models must also be compliant
-
-<br>
-
-In regulated industries data privacy and security must be paired with Ai models that also meet compliance standards.
-
-IBM has released a family of small models, called Granite 4. They are aimed at regulated industries. These models have received accreditation under ISO/IEC 42001:2023, certifying that the models are aligned with internationally recognized best practices for safe, responsible AI.
-
-Granite 4 models are cryptographically signed, for easy provenance verification, and are open sourced under the Apache 2.0 license.<br>
-https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models
-
-> Aside:
-> Ai is a not a reliable, robust and high precision technology yet - especially not small quantized Ai models. It's important to test the models for yourself. Models can perform poorly when given a large body of text. As a quick test I suggest giving the Ai model a lot of text, copied from a long document, and asking it questions about that document.
-
-The Granite 4 models are available for download on Ollama. Because of their hybrid architecture, they run very fast.<br>
-https://ollama.com/library/granite4
-
-<br>
-
 ## How to Install and Run
 
 <br>
