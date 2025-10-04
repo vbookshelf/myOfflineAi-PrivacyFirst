@@ -314,7 +314,7 @@ If your Ai Tool system messages do contain sensitive info, but you don't want to
 
 ### You can also share copies of your Ai tools
 
-This poratable agents.json file also allows you to share tools. For example, say you've created a document summarize tool that your colleagues want to use. All you need to do is send them the agents.json file. They simply need to put this file into the myOfflineAi folder on their machine and start the app. The summarizer tool you created will load up and be available for them to use.
+This poratable agents.json file also allows you to share tools. For example, say you've created a document summarizer tool that your colleagues want to use. All you need to do is send them the agents.json file. They simply need to put this file into the myOfflineAi folder on their machine and start the app. The summarizer tool you created will load up and be available for them to use.
 
 <br>
 
