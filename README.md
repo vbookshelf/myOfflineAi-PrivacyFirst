@@ -65,7 +65,7 @@ You trade the convenience of being able to look back through old chats for the c
 
 In regulated industries data privacy and security must be paired with Ai models that also meet compliance standards.
 
-IBM has released a family of small models, called Granite4, that are aimed at regulated industries and mission-critical applications. These models have received accreditation under ISO/IEC 42001:2023, certifying that the models are aligned with internationally recognized best practices for safe, responsible AI and that IBM’s AI management system (AIMS) meets the highest levels of scrutiny. Because of their hybrid architecture, they run very fast.<br>
+IBM has released a family of small models, called Granite4, that are aimed at regulated industries and mission-critical applications. These models have received accreditation under ISO/IEC 42001:2023, certifying that the models are aligned with internationally recognized best practices for safe, responsible AI and that IBM’s AI management system (AIMS) meets the highest levels of scrutiny. Because of their hybrid architecture, they run very fast. Granite models are also open sourced under the Apache 2.0 license.<br>
 https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models
 
 Granite4 models are available to download on Ollama.<br>
@@ -534,7 +534,9 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 ## Conclusion
 
-This project is about more than just privacy. It's a shift in mindset. It's about owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability.
+The combination of myOfflineAi, Ollama and IBM Granite models creates a comprehensive "Sovereign AI" stack to provide privacy-first, local and auditable AI access to self-employed professionals and non-profits in highly regulated industries.
+
+But this project is about more than just privacy. It's a shift in mindset. It's about owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability.
 
 <br>
 
