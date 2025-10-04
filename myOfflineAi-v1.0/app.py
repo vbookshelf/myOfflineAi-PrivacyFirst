@@ -2,7 +2,10 @@
 # Creator: vbookshelf
 # GitHub: https://github.com/vbookshelf/myOfflineAi
 # License: MIT
-# Version: 1.0
+# Version: 1.0 (Beta)
+
+# PLEASE NOTE:
+# This is a Prototype. It should only be used for testing and education.
 #----------------------
 
 from flask import Flask, render_template_string, request, jsonify, Response
