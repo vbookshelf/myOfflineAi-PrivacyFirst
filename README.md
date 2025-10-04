@@ -2,7 +2,7 @@
 
 # myOfflineAi - Privacy-First Ai
 > 
-> Prototype - For testing and education
+> Prototype - For testing, education and inspiration
 
 <br>
 
