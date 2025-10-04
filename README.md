@@ -71,6 +71,8 @@ https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-perfo
 Granite4 models are available to download on Ollama.<br>
 https://ollama.com/library/granite4
 
+<br>
+
 ## How to Install and Run
 
 <br>
