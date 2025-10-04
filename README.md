@@ -5,6 +5,9 @@
 > Introducing myOfflineAi - Local and Auditable Privacy-First Ai powered by Ollama<br>
 > https://www.youtube.com/watch?v=oecJfMUWy8M
 
+> #### PLEASE NOTE:
+> #### This is a Prototype. It should only be used for testing and education.
+
 <br>
 
 Transparent offline Ai access for self employed professionals and non-profits in highly regulated industries who need data privacy and don't want to blindly trust cloud providers.
@@ -519,7 +522,7 @@ This project is about more than just privacy. It's a shift in mindset. It's abou
 
 Version 1.0<br>
 3-Oct-2025<br>
-First release
+Beta Version. Released for testing and education.
 
 
 
