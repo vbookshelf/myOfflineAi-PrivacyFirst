@@ -71,7 +71,7 @@ Granite 4 models are cryptographically signed, for easy provenance verification,
 https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models
 
 > Aside:
-> Ai is a not a reliable, robust and high precision technology yet - especially not small quantized Ai models. It's important to test the models for yourself. Models can perforn poorly when given a large body of text. As a quick test I suggest giving the Ai model a lot of text, copied from a long document, and asking it questions about that document.
+> Ai is a not a reliable, robust and high precision technology yet - especially not small quantized Ai models. It's important to test the models for yourself. Models can perform poorly when given a large body of text. As a quick test I suggest giving the Ai model a lot of text, copied from a long document, and asking it questions about that document.
 
 The Granite 4 models are available for download on Ollama. Because of their hybrid architecture, they run very fast.<br>
 https://ollama.com/library/granite4
