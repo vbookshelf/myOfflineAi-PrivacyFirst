@@ -536,7 +536,7 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 ## Conclusion
 
-The combination of myOfflineAi, Ollama and IBM Granite models creates a comprehensive "Sovereign AI" stack to provide privacy-first, local and auditable AI access to self-employed professionals and non-profits in highly regulated industries.
+The combination of myOfflineAi, Ollama and IBM Granite models creates a Sovereign AI stack to provide privacy-first, local and auditable AI access to self-employed professionals and non-profits in highly regulated industries.
 
 But this project is about more than just privacy. It's a shift in mindset. It's about owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability.
 
