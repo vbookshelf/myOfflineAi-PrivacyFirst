@@ -65,10 +65,12 @@ You trade the convenience of being able to look back through old chats for the c
 
 In regulated industries data privacy and security must be paired with Ai models that also meet compliance standards.
 
-IBM has released a family of small models, called Granite4, that are aimed at regulated industries and mission-critical applications. These models have received accreditation under ISO/IEC 42001:2023, certifying that the models are aligned with internationally recognized best practices for safe, responsible AI and that IBM’s AI management system (AIMS) meets the highest levels of scrutiny. Because of their hybrid architecture, they run very fast. Granite models are also open sourced under the Apache 2.0 license.<br>
+IBM has released a family of small models, called Granite 4. Yhey are aimed at regulated industries and mission-critical applications. These models have received accreditation under ISO/IEC 42001:2023, certifying that the models are aligned with internationally recognized best practices for safe, responsible AI and that IBM’s AI management system (AIMS) meets the highest levels of scrutiny.
+
+Granite 4 models are cryptographically signed, for easy provenance verification, and are open sourced under the Apache 2.0 license.<br>
 https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models
 
-Granite4 models are available to download on Ollama.<br>
+Granite 4 models are available to download on Ollama. Because of their hybrid architecture, they run very fast.<br>
 https://ollama.com/library/granite4
 
 <br>
