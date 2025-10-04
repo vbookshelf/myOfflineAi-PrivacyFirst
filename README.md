@@ -493,6 +493,8 @@ On this project, I discovered a way to remove that friction by combining Flask, 
 
 This double-click simplicity makes desktop Flask apps more accessible to everyday users.
 
+5- When using Ai to modify a specific part of a code base, it sometimes makes unauthorized changes to other parts of the code without telling you.
+
 
 <br>
 
