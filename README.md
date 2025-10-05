@@ -91,7 +91,8 @@ Normally, Ollama will launch automatically when you start your computer.
 
 2. Download an Ollama model
 
-If you have a fast internet connection and at least 8GB RAM then I suggest you download the gemma3:4b model (3.3GB).
+If you have a fast internet connection and at least 8GB RAM then I suggest you download
+the gemma3:4b model (3.3GB).
 This model can handle both text and images.
 If you have a slow connection then download the smaller gemma3:270m model (292MB).
 This model can handle text only.
