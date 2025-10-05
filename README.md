@@ -196,7 +196,7 @@ Solutions:<br>
 
 ### 4- The model responses have become very poor
 
-Ai Models can have context sizes over 100k tokens. However, not many people know that the context size of all Ollama models is set to 4096 tokens. There is no warning when the context is exceeded, but the quality of the responses becomes very poor.
+Ai Models can have context sizes over 100k tokens. However, not many people know that the context size of all Ollama models is set to 4096 tokens (setting can be changed by the user). There is no warning when the context is exceeded, but the quality of the responses becomes very poor.
 
 This happens because Ollama will automatically drop the oldest messages/tokens from the message history to make space for the new input. You don’t see an error, but earlier conversation context is silently lost.
 
