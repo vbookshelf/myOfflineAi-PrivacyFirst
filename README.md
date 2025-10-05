@@ -519,6 +519,18 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 <br>
 
+## Limitations
+
+1- Hardware<br>
+To run Ai locally you need good hardware - preferably a GPU or a fast CPU with enough RAM to run your chosen models. I used an M4 Macbook Air with 16GB RAM. Models with sizes around 10GB ran reasonably fast on it. Using images was much slower. 
+
+2- Ai Model Accuracy<br>
+Ai is not a reliable, robust and trustworthy technology yet. It should not be applied to uses that require high pecision. It's suitable for uses where you don't need a definitive answer e.g. generating stories, or for uses where humans can quickly check the output -  generating images or code. The user can check image quality at a glance. In code generation the programmer can instantly run the code to see if it works. However, manually checking the accuracy of Ai generated summaries of large legal or medical documents is not easy. Any time savings you get by using Ai could be lost because of the amount the time needed to check the work that Ai has generated. There will also be "accuracy anxiety."
+
+Even tho the technology is not perfect, it's important to begin experimenting with it. This will position you well for the day on which Ai is ready. At the pace of current tech development - that day is coming fast.
+
+<br>
+
 ## Conclusion
 
 But this project is about more than just privacy. It's a shift in mindset. It's about owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability.
