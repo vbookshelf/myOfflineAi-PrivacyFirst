@@ -522,7 +522,7 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 ## Limitations
 
 1- Hardware<br>
-To run Ai locally you need good hardware - preferably a GPU or a fast CPU with enough RAM to run your chosen models. I used an M4 Macbook Air with 16GB RAM. Models with sizes around 10GB ran reasonably fast on it. Using images was much slower. 
+To run Ai locally you need good hardware - preferably a GPU or a fast CPU with enough RAM to run your chosen models. I used an M4 Macbook Air with 16GB RAM. Models with sizes around 10GB ran reasonably fast on it. Tasks involving files and images were slow. 
 
 2- Ai Model Accuracy<br>
 Ai is not a reliable, robust and trustworthy technology yet. It should not be applied to uses that require high pecision. It's suitable for uses where you don't need a definitive answer e.g. generating stories, or for uses where humans can quickly check the output -  generating images or code. The user can check image quality at a glance. In code generation the programmer can instantly run the code to see if it works. However, manually checking the accuracy of Ai generated summaries of large legal or medical documents is not easy. Any time savings you get by using Ai could be lost because of the amount the time needed to check the work that Ai has generated. There will also be "accuracy anxiety."
