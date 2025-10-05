@@ -533,7 +533,7 @@ Even tho the technology is not perfect, it's important to begin experimenting wi
 
 ## Conclusion
 
-But this project is about more than just privacy. It's a shift in mindset. It's about owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability.
+This project is about more than just privacy. It's a shift in mindset. It's about owning and controlling your own tools. It's about changing your role from being a passive consumer of Ai services to an active and accountable owner of your Ai capability.
 
 <br>
 
