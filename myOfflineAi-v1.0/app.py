@@ -38,7 +38,7 @@ from urllib.parse import urlparse
 NUM_CTX = 16000
 
 
-TEMPERATURE = 0.6
+TEMPERATURE = 0.4
 TOP_K = 60
 TOP_P = 0.95
 FREQUENCY_PENALTY = 1.0
@@ -324,7 +324,12 @@ HTML_TEMPLATE = r"""
             background-color: #1a202c; /* Darker code block bg */
             border-radius: 0.5rem;
             overflow: hidden;
+			
+			 width: 100%; /* For a full width code area */
+			 box-sizing: border-box;  /* For a full width code area */
         }
+		
+		
         .code-block-header {
             display: flex;
             justify-content: space-between;
@@ -389,6 +394,30 @@ HTML_TEMPLATE = r"""
         }
         .agent-item:hover .edit-agent-btn {
             opacity: 1;
+        }
+		
+		/* --- Styles for Markdown Tables --- */
+        .markdown-content table {
+            width: 100%;
+            border-collapse: collapse; /* Ensures borders are clean and single */
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
+            border-radius: 0.5rem;
+            overflow: hidden; /* Important for rounded corners */
+        }
+        .markdown-content th, .markdown-content td {
+            padding: 0.75rem 1rem; /* Adds padding inside each cell */
+            border: 1px solid #cbd5e1; /* slate-300 border */
+            text-align: left;
+            font-size: 0.95rem; /* Slightly smaller text for tables */
+        }
+        .markdown-content th {
+            background-color: #f1f5f9; /* slate-100 background for the header */
+            font-weight: 600; /* Bolder header text */
+        }
+        .markdown-content tr:nth-child(even) {
+            background-color: #f8fafc; /* slate-50 for zebra-striping */
         }
     </style>
 	
@@ -919,7 +948,11 @@ HTML_TEMPLATE = r"""
 		    msgEl.className = `flex items-start gap-3 ${isUser ? 'justify-end' : ''}`;
 		    
 		    const contentContainer = document.createElement('div');
-		    contentContainer.className = isUser ? 'flex flex-col items-end' : '';
+			
+		    //contentContainer.className = isUser ? 'flex flex-col items-end' : '';
+			
+			// Keeps the black code area at full width
+			contentContainer.className = isUser ? 'flex flex-col items-end' : 'w-full';
 		
 		    if (isUser && imageSources.length > 0) {
 		        const imageContainer = document.createElement('div');
