@@ -91,58 +91,62 @@ Normally, Ollama will launch automatically when you start your computer.
 
 2. Download an Ollama model
 
+1. Open the Ollama desktop app.
+2. Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right.
+3. Type any message e.g. Hi, and press Enter
+4. The model will start to auto download.
+
 If you have a fast internet connection and at least 8GB RAM then I suggest you download
 the gemma3:4b model (3.3GB).
 This model can handle both text and images.
 If you have a slow connection then download the smaller gemma3:270m model (292MB).
 This model can handle text only.
 
-How to download a model:
-Open the Ollama desktop app.
-Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right.
-Type any message e.g. Hi.
-The model will start to auto download.
+3. Download the project folder and place it on your desktop
 
-3. Install UV
+1. On GitHub click on "<> Code". The select "Download Zip"
+2. Download the project folder and unzip it
+3. Inside you will find a folder named myOfflineAi-v1.1
+4. Place myOfflineAi-v1.1 on your desktop.
 
-UV is a new and fast Python package manager.
-Open your terminal and copy paste this command:
+4. Initial Setup
 
-Mac:
+[ macOS ]
+
+1. Open Terminal (Command+Space, type "Terminal")
+2. Paste this command into the terminal to install uv:
 wget -qO- https://astral.sh/uv/install.sh | sh
+2. Type 'cd ' (with a space after cd)
+3. Drag the folder into the Terminal window
+4. Paste this command into the terminal:
+cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x start-mac-app.command
+5. Press Enter
+6. Open the myOfflineAi-v1.1 folder
+7. Double-click: start-mac-app.command
 
-Windows:
+
+[ Windows ]
+
+1. Press the Windows key on your keyboard
+2. Type cmd and press Enter (a black window will open)
+3. Copy this entire command:
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+4. Right-click in the black window to paste
+5. Press Enter
+6. Wait for "uv installed successfully" or similar message
+7. Close the window and open a new one for the changes to take effect
+8. Open the myOfflineAi-v1.1 folder
+9. Double-click: start-windows-app.bat
 
-4. Download the project folder and place it on your desktop
-
-Download the project folder, unzip it and place it on your desktop.
-In this repo the project folder is named: myOfflineAi-v1.0
-
-5. Use the terminal to cd into the project folder
-
-% cd Desktop
-% cd myOfflineAi-v1.0
+If Windows shows a security warning:
+1. Right-click on start-windows-app.bat 
+2. Select "Properties"
+3. Check the "Unblock" box at the bottom
+4. Click "OK"
+5. Now double-click start-windows-app.bat to run
 
 
-6. Mac Only:
-Run this command. It will replace the start-mac-app.command file with a clean copy and make it executable
-
-% cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x start-mac-app.command
-
-6. Open the folder and double-click a file.
-
-Mac:
-Double-click start-mac-app.command
-
-Windows:
-Double-click start-windows-app.bat
-
-This will install all the Python packages.
-Then the myOfflineAi app will open in your browser.
-The terminal will also open.
-
-7. Use the app
+5. Use the app
 
 Click on "AI Assistant"
 Type a message.
@@ -154,7 +158,7 @@ The app does not stop running when you close the browser tab.
 To shut down the app simply close the terminal window.
 You can also close the terminal by selecting it and typing Crl+C on Mac or Alt+F4 on Windows.
 
-8. Future startup
+86. Future startup
 
 Now that the setup is complete, in future simply Double-click a file to launch the app.
 
