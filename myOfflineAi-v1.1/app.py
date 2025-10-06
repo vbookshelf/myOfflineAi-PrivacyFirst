@@ -1,11 +1,9 @@
 #----------------------
 # Creator: vbookshelf
-# GitHub: https://github.com/vbookshelf/myOfflineAi
+# GitHub: https://github.com/vbookshelf/myOfflineAi-Privacy-First-Ai
 # License: MIT
-# Version: 1.1 (Beta)
+# Version: 1.1 (Prototype)
 
-# PLEASE NOTE:
-# This is a Prototype. It should only be used for testing and education.
 #----------------------
 
 from flask import Flask, render_template_string, request, jsonify, Response
@@ -566,7 +564,7 @@ HTML_TEMPLATE = r"""
 	
 	let agents = [
 			
-            { id: 'assistant', name: 'Ai Assistant', title: 'A friendly Ai Assistant', persona: 'You are a friendly and helpful assistant. Do not use emojis. ALWAYS use LaTeX notation for ANY mathematical or scientific expression.', color: '#4f46e5', type: 'multi-turn', isDefault: true},
+            { id: 'assistant', name: 'Ai Assistant', title: 'A friendly Ai Assistant', persona: 'You are a friendly and helpful assistant. Do not use emojis. Use LaTeX notation for mathematical or scientific expressions only.', color: '#4f46e5', type: 'multi-turn', isDefault: true},
 			
 			/*
             { id: 'translator', name: 'Spanish Translator', title: 'Translates Spanish to English', persona: 'You are an expert at translating from English to Chinese. You will be given some text. The format will either be plain text or a parsed pdf document. Your task is to translate that text into Chinese. Only output the translation without any explanations.', color: '#4f46e5', type: 'single-turn', isDefault: true},
