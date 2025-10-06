@@ -588,8 +588,7 @@ Fixed macOS security blocking issue. Added LaTeX support.
 
 Version 1.0<br>
 3-Oct-2025<br>
-Prototype. Released for testing and education.<br>
-(Deleted)
+Prototype. Released for testing and education.
 
 
 
