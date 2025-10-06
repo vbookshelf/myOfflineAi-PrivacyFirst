@@ -398,6 +398,9 @@ The app converts each page of the pdf document into an image. These images are t
 ### 4- Is it possible to edit a Tool?<br>
 Yes it is. Hover over the tool in the left panel. The edit button will become visible.
 
+### 5- Can the app display mathematical and scientific notation?<br>
+Yes. The app has LaTeX support. But you will need to instruct the model to use LaTex. Please add an instruction to the system message when creating Ai Tools e.g. Use LaTeX notation for mathematical or scientific expressions only.
+
 <br>
 
 ## How to load your own models into Ollama locally (not up to the cloud)
