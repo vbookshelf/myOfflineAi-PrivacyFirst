@@ -124,13 +124,14 @@ This model can handle text only.
 2. Paste this command into the terminal to install uv:
 wget -qO- https://astral.sh/uv/install.sh | sh
 3. Wait for uv installation to finish
-4. Type 'cd ' (with a space after cd)
+4. Type 'cd ' in the terminal (with a space after cd)
 5. Drag the folder into the Terminal window
-6. Paste this command into the terminal:
+6. Press Enter
+7. Paste this command into the terminal:
 cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x start-mac-app.command
-7. Press Enter
-8. Open the myOfflineAi-v1.1 folder
-9. Double-click: start-mac-app.command
+8. Press Enter
+9. Open the myOfflineAi-v1.1 folder
+10. Double-click: start-mac-app.command
 
 
 [ Windows ]
