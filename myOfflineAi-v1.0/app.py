@@ -2,7 +2,7 @@
 # Creator: vbookshelf
 # GitHub: https://github.com/vbookshelf/myOfflineAi
 # License: MIT
-# Version: 1.0 (Beta)
+# Version: 1.1 (Beta)
 
 # PLEASE NOTE:
 # This is a Prototype. It should only be used for testing and education.
@@ -190,6 +190,15 @@ HTML_TEMPLATE = r"""
 	<link rel="stylesheet" href="{{ url_for('static', filename='atom-one-dark.min.css') }}">
 	<script src="{{ url_for('static', filename='highlight.min.js') }}"></script>
 	<link rel="shortcut icon" type="image/png" href="static/icon.png">
+	
+	
+	<!-- KaTeX CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='katex.min.css') }}">
+
+<!-- KaTeX JavaScript -->
+<script src="{{ url_for('static', filename='katex.min.js') }}"></script>
+<script src="{{ url_for('static', filename='katex-auto-render.min.js') }}"></script>
+	
 
     <style>
         /* Main page styling */
@@ -557,7 +566,7 @@ HTML_TEMPLATE = r"""
 	
 	let agents = [
 			
-            { id: 'assistant', name: 'Ai Assistant', title: 'A friendly Ai Assistant', persona: 'You are a friendly and helpful assistant. Do not use emojis.', color: '#4f46e5', type: 'multi-turn', isDefault: true},
+            { id: 'assistant', name: 'Ai Assistant', title: 'A friendly Ai Assistant', persona: 'You are a friendly and helpful assistant. Do not use emojis. ALWAYS use LaTeX notation for ANY mathematical or scientific expression.', color: '#4f46e5', type: 'multi-turn', isDefault: true},
 			
 			/*
             { id: 'translator', name: 'Spanish Translator', title: 'Translates Spanish to English', persona: 'You are an expert at translating from English to Chinese. You will be given some text. The format will either be plain text or a parsed pdf document. Your task is to translate that text into Chinese. Only output the translation without any explanations.', color: '#4f46e5', type: 'single-turn', isDefault: true},
@@ -1034,32 +1043,45 @@ HTML_TEMPLATE = r"""
 		
 
         function enhanceCodeBlocks(element) {
-            element.querySelectorAll('pre > code').forEach(codeBlock => {
-                const preElement = codeBlock.parentElement;
-                if (preElement.parentElement.classList.contains('code-block-wrapper')) return;
-                const wrapper = document.createElement('div');
-                wrapper.className = 'code-block-wrapper';
-                const language = Array.from(codeBlock.classList).find(c => c.startsWith('language-'))?.replace('language-', '') || 'code';
-                
-                wrapper.innerHTML = `
-                    <div class="code-block-header">
-                        <span class="font-sans">${language}</span>
-                        <button class="copy-btn">Copy</button>
-                    </div>`;
-                
-                preElement.parentNode.insertBefore(wrapper, preElement);
-                wrapper.appendChild(preElement);
-                
-                wrapper.querySelector('.copy-btn').addEventListener('click', () => {
-                   navigator.clipboard.writeText(codeBlock.textContent).then(() => {
-                       const button = wrapper.querySelector('.copy-btn');
-                       button.textContent = 'Copied!';
-                       setTimeout(() => { button.textContent = 'Copy'; }, 2000);
-                   });
-                });
-                hljs.highlightElement(codeBlock);
-            });
-        }
+		    element.querySelectorAll('pre > code').forEach(codeBlock => {
+		        const preElement = codeBlock.parentElement;
+		        if (preElement.parentElement.classList.contains('code-block-wrapper')) return;
+		        const wrapper = document.createElement('div');
+		        wrapper.className = 'code-block-wrapper';
+		        const language = Array.from(codeBlock.classList).find(c => c.startsWith('language-'))?.replace('language-', '') || 'code';
+		        
+		        wrapper.innerHTML = `
+		            <div class="code-block-header">
+		                <span class="font-sans">${language}</span>
+		                <button class="copy-btn">Copy</button>
+		            </div>`;
+		        
+		        preElement.parentNode.insertBefore(wrapper, preElement);
+		        wrapper.appendChild(preElement);
+		        
+		        wrapper.querySelector('.copy-btn').addEventListener('click', () => {
+		           navigator.clipboard.writeText(codeBlock.textContent).then(() => {
+		               const button = wrapper.querySelector('.copy-btn');
+		               button.textContent = 'Copied!';
+		               setTimeout(() => { button.textContent = 'Copy'; }, 2000);
+		           });
+		        });
+		        hljs.highlightElement(codeBlock);
+		    });
+		    
+		    // Render math with KaTeX
+		    if (window.renderMathInElement) {
+		        renderMathInElement(element, {
+		            delimiters: [
+		                {left: '$$', right: '$$', display: true},
+		                {left: '$', right: '$', display: false},
+		                {left: '\\[', right: '\\]', display: true},
+		                {left: '\\(', right: '\\)', display: false}
+		            ],
+		            throwOnError: false  // Don't break if there's a LaTeX error
+		        });
+		    }
+		}
 		
 		
         function scrollToBottom(agentId) {
