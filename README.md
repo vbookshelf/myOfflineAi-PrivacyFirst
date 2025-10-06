@@ -533,6 +533,8 @@ This double-click simplicity makes desktop Flask apps more accessible to everyda
 
 5- When using Ai to modify a specific part of a code base, it sometimes makes unauthorized changes to other parts of the code without telling you.
 
+6- When you download an .app (or .command, .sh, .pkg, or other executable) file from GitHub (or anywhere on the internet), macOS marks it with a “quarantine” flag for security. This is part of macOS’s Gatekeeper system, which is designed to protect users from running potentially unsafe or unverified code. If the user tries to double click a file to run it, macOS will block it. On this project I got around this problem by modifying the setup instructions so that the user runs a terminal command that creates a copy of the start-mac-app.command file and then makes it executeable. I also included instructions to get around this problem in Windows.
+
 
 <br>
 
