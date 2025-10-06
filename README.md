@@ -114,16 +114,20 @@ wget -qO- https://astral.sh/uv/install.sh | sh
 Windows:
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
-4. Download the project folder
+4. Download the project folder and place it on your desktop
 
 Download the project folder, unzip it and place it on your desktop.
-In this repo the project folder is named: myOfflineAi
+In this repo the project folder is named: myOfflineAi-v1.0
 
 5. Use the terminal to cd into the project folder
-cd Desktop
-cd myOfflineAi-v1.0
 
-6. Replace this command to replace the start-mac-app.command with a clean copy and make it executable
+% cd Desktop
+% cd myOfflineAi-v1.0
+
+
+6. Mac Only:
+Run this command. It will replace the start-mac-app.command file with a clean copy and make it executable
+
 % cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x start-mac-app.command
 
 6. Open the folder and double-click a file.
