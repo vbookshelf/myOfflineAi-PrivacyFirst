@@ -507,7 +507,7 @@ https://ollama.com/search
 - Install UV<br>
 https://docs.astral.sh/uv/getting-started/installation/#installation-methods
 
-- How to create a single-file flask app<br>
+- How to create a single-file Flask app<br>
 https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 - How to Double Click to Run a Desktop Flask App<br>
