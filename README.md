@@ -82,6 +82,7 @@ System Requirements:
 
 ```
 1. Download and install the Ollama desktop application
+--------------------------------------------------------------
 
 This is the link to download Ollama. After downloading, please install it on your computer.
 Then launch it. A white chat window will open.
@@ -90,6 +91,7 @@ https://ollama.com/
 Normally, Ollama will launch automatically when you start your computer.
 
 2. Download an Ollama model
+--------------------------------------------------------------
 
 1. Open the Ollama desktop app.
 2. Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right.
@@ -103,6 +105,7 @@ If you have a slow connection then download the smaller gemma3:270m model (292MB
 This model can handle text only.
 
 3. Download the project folder and place it on your desktop
+--------------------------------------------------------------
 
 1. On GitHub click on "<> Code". The select "Download Zip"
 2. Download the project folder and unzip it
@@ -110,6 +113,7 @@ This model can handle text only.
 4. Place myOfflineAi-v1.1 on your desktop.
 
 4. Initial Setup
+--------------------------------------------------------------
 
 [ macOS ]
 
@@ -147,6 +151,7 @@ If Windows shows a security warning:
 
 
 5. Use the app
+--------------------------------------------------------------
 
 Click on "AI Assistant"
 Type a message.
@@ -158,7 +163,8 @@ The app does not stop running when you close the browser tab.
 To shut down the app simply close the terminal window.
 You can also close the terminal by selecting it and typing Crl+C on Mac or Alt+F4 on Windows.
 
-86. Future startup
+6. Future startup
+--------------------------------------------------------------
 
 Now that the setup is complete, in future simply Double-click a file to launch the app.
 
