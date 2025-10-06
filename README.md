@@ -510,12 +510,15 @@ https://docs.astral.sh/uv/getting-started/installation/#installation-methods
 - How to create a single-file flask app<br>
 https://github.com/vbookshelf/Single-File-Flask-Web-App
 
-- 7 Essential AI Prompting Skills That Instantly Make Your Work Stand Out<br>
-  Grace Leung<br>
-  https://www.youtube.com/watch?v=-era_Orh3TM
+- How to Double Click to Run a Desktop Flask App<br>
+  https://github.com/vbookshelf/How-to-Double-Click-to-Run-a-Flask-App
 
 - Ollama FAQ<br>
   https://github.com/ollama/ollama/blob/main/docs/faq.md
+
+- 7 Essential AI Prompting Skills That Instantly Make Your Work Stand Out<br>
+  Grace Leung<br>
+  https://www.youtube.com/watch?v=-era_Orh3TM
 
 <br>
 
