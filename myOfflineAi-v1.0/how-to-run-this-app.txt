@@ -1,7 +1,76 @@
-myOfflineAi
 
-1. If you already have the Ollama desktop app and UV installed, and you have downloaded at least one Ollama model - then
-double-click the file named below to start the app:
+myOfflineAi - Privacy-First Ai
+
+
+Please visit the project GitHub repo for full details:
+https://github.com/vbookshelf/myOfflineAi-Flask-UI-for-Ollama
+
+
+1. Download and install the Ollama desktop application
+
+This is the link to download Ollama. After downloading, please install it on your computer.
+Then launch it. A white chat window will open.
+https://ollama.com/
+
+Normally, Ollama will launch automatically when you start your computer.
+
+2. Download an Ollama model
+
+If you have a fast internet connection and at least 8GB RAM then I suggest you download
+the gemma3:4b model (3.3GB).
+This model can handle both text and images.
+If you have a slow connection then download the smaller gemma3:270m model (292MB).
+This model can handle text only.
+
+How to download a model:
+Open the Ollama desktop app.
+Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right.
+Type any message e.g. Hi.
+The model will start to auto download.
+
+3. Install UV
+
+UV is a new and fast Python package manager.
+Open your terminal and copy paste this command:
+
+Mac:
+wget -qO- https://astral.sh/uv/install.sh | sh
+
+Windows:
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+4. Download the project folder
+
+Download the project folder, unzip it and place it on your desktop.
+In this repo the project folder is named: myOfflineAi
+
+5. Open the folder and double-click a file.
+
+Mac:
+Double-click start-mac-app.command
+
+Windows:
+Double-click start-windows-app.bat
+
+This will install all the Python packages.
+Then the myOfflineAi app will open in your browser.
+The terminal will also open.
+
+6. Use the app
+
+Click on "AI Assistant"
+Type a message.
+
+The name of the model you downloaded will appear in the dropdown menu in the top left.
+If you downloaded the gemma3:4b model you can submit images and pdf documents in addition to text.
+
+The app does not stop running when you close the browser tab.
+To shut down the app simply close the terminal window.
+You can also close the terminal by selecting it and typing Crl+C on Mac or Alt+F4 on Windows.
+
+7. Future startup
+
+Now that the setup is complete, in future simply Double-click a file to launch the app.
 
 Mac:
 start-mac-app.command
@@ -9,6 +78,9 @@ start-mac-app.command
 Windows:
 start-windows-app.bat
 
+You could start the app and leave it running in the background all day.
+Then whenever you want to use it, enter the following url in your browser:
+http://127.0.0.1:5000/
+Your browser will remember this local address so you won't have to.
 
-2. Please visit the project GitHub repo for full instructions:
-https://github.com/vbookshelf/myOfflineAi-Flask-UI-for-Ollama
+
