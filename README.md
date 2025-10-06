@@ -35,7 +35,13 @@ In other words, myOfflineAi is a helpful interface running in your browser. Olla
 <br>
 
 <img src="https://github.com/vbookshelf/myOfflineAi/blob/main/images/image1.png" alt="App screenshot" height="500">
-<p>myOfflineAi App</p>
+<p>myOfflineAi App - Supports images and pdf files</p>
+
+<br>
+
+<img src="images/image5.png" alt="App screenshot" height="500">
+<p>myOfflineAi App - Supports math notation and code rendering</p>
+
 
 <br>
 
