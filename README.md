@@ -119,7 +119,14 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 Download the project folder, unzip it and place it on your desktop.
 In this repo the project folder is named: myOfflineAi
 
-5. Open the folder and double-click a file.
+5. Use the terminal to cd into the project folder
+cd Desktop
+cd myOfflineAi-v1.0
+
+6. Replace this command to replace the start-mac-app.command with a clean copy and make it executable
+% cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x start-mac-app.command
+
+6. Open the folder and double-click a file.
 
 Mac:
 Double-click start-mac-app.command
@@ -131,7 +138,7 @@ This will install all the Python packages.
 Then the myOfflineAi app will open in your browser.
 The terminal will also open.
 
-6. Use the app
+7. Use the app
 
 Click on "AI Assistant"
 Type a message.
@@ -143,7 +150,7 @@ The app does not stop running when you close the browser tab.
 To shut down the app simply close the terminal window.
 You can also close the terminal by selecting it and typing Crl+C on Mac or Alt+F4 on Windows.
 
-7. Future startup
+8. Future startup
 
 Now that the setup is complete, in future simply Double-click a file to launch the app.
 
