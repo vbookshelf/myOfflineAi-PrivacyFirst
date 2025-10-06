@@ -90,6 +90,7 @@ https://ollama.com/
 
 Normally, Ollama will launch automatically when you start your computer.
 
+
 2. Download an Ollama model
 --------------------------------------------------------------
 
@@ -104,6 +105,7 @@ This model can handle both text and images.
 If you have a slow connection then download the smaller gemma3:270m model (292MB).
 This model can handle text only.
 
+
 3. Download the project folder and place it on your desktop
 --------------------------------------------------------------
 
@@ -111,6 +113,7 @@ This model can handle text only.
 2. Download the project folder and unzip it
 3. Inside you will find a folder named myOfflineAi-v1.1
 4. Place myOfflineAi-v1.1 on your desktop.
+
 
 4. Initial Setup
 --------------------------------------------------------------
@@ -120,13 +123,13 @@ This model can handle text only.
 1. Open Terminal (Command+Space, type "Terminal")
 2. Paste this command into the terminal to install uv:
 wget -qO- https://astral.sh/uv/install.sh | sh
-2. Type 'cd ' (with a space after cd)
-3. Drag the folder into the Terminal window
-4. Paste this command into the terminal:
+3. Type 'cd ' (with a space after cd)
+4. Drag the folder into the Terminal window
+5. Paste this command into the terminal:
 cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x start-mac-app.command
-5. Press Enter
-6. Open the myOfflineAi-v1.1 folder
-7. Double-click: start-mac-app.command
+6. Press Enter
+7. Open the myOfflineAi-v1.1 folder
+8. Double-click: start-mac-app.command
 
 
 [ Windows ]
@@ -139,7 +142,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 5. Press Enter
 6. Wait for "uv installed successfully" or similar message
 7. Close the window and open a new one for the changes to take effect
-8. Open the myOfflineAi-v1.1 folder
+8. Navigate to the myOfflineAi-v1.1 folder thats on your desktop
 9. Double-click: start-windows-app.bat
 
 If Windows shows a security warning:
@@ -161,7 +164,8 @@ If you downloaded the gemma3:4b model you can submit images and pdf documents in
 
 The app does not stop running when you close the browser tab.
 To shut down the app simply close the terminal window.
-You can also close the terminal by selecting it and typing Crl+C on Mac or Alt+F4 on Windows.
+You can also close the terminal by selecting it and typing Ctrl+C on Mac or Ctrl+C on Windows.
+
 
 6. Future startup
 --------------------------------------------------------------
@@ -178,6 +182,13 @@ You could start the app and leave it running in the background all day.
 Then whenever you want to use it, enter the following url in your browser:
 http://127.0.0.1:5000/
 Your browser will remember this local address so you won't have to.
+
+
+Quick Troubleshooting
+--------------------------------------------------------------
+- If the app doesn't start, make sure Ollama is running (look for its icon in your system tray/menu bar)
+- If you see "connection refused", restart Ollama
+- Make sure you've downloaded at least one model in Ollama before using the app
 
 ```
 
