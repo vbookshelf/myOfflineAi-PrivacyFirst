@@ -583,7 +583,6 @@ This project is about more than just privacy. It's a shift in mindset. It's abou
 
 Version 1.1<br>
 6-Oct-2025<br>
-Prototype. Released for testing and education.<br>
 Fixed macOS security blocking issue. Added LaTeX support.
 
 Version 1.0<br>
