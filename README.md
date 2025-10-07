@@ -386,6 +386,13 @@ To do a quick check, you can take the app.py file and submit it to an enterprise
 
 By using Ai to check the code, even if you don't know anything about programming, you can get a sophisticated privacy compliance report within minutes. But it's important to use enterprise grade level models and not the consumer models like Gemini 2.5 Flash.
 
+### Ollama
+
+1- The Ollama app goes online to check for updates. It automatically downloads updates and then prompts the user to install them. There’s no way to disable automatic updates. Automatically downloading updates without user consent introduces potential privacy and security risks and erodes trust.
+
+2- Ollama does not have a public, formal privacy policy that fully addresses scenarios like telemetry or auto-updates.
+
+
 <br>
 
 ## FAQ
@@ -567,7 +574,7 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
 
 <br>
 
-## Limitations/Concerns/Risks
+## Limitations
 
 1- Hardware<br>
 To run Ai locally you need good hardware - preferably a GPU or a fast CPU with enough RAM to run your chosen models. I used an M4 Macbook Air with 16GB RAM. Models with sizes around 10GB ran reasonably fast on it. Tasks involving files and images were slow. 
@@ -576,10 +583,6 @@ To run Ai locally you need good hardware - preferably a GPU or a fast CPU with e
 Ai is not a reliable, robust and trustworthy technology yet. It should not be applied to uses that require high pecision. It's suitable for uses where you don't need a definitive answer e.g. generating stories, or for uses where humans can quickly check the output -  generating images or code. The user can check image quality at a glance. In code generation the programmer can instantly run the code to see if it works. However, manually checking the accuracy of Ai generated summaries of large legal or medical documents is not easy. Any time savings you get by using Ai could be lost because of the amount the time needed to check the work that Ai has generated. There will also be "accuracy anxiety."
 
 Even tho the technology is not perfect, it's important to begin experimenting with it. This will position you well for the day on which Ai is ready. At the pace of current tech development - that day is coming fast.
-
-3- The Ollama app goes online to check for updates. It automatically downloads updates and then prompts the user to install them. There’s no way to disable automatic updates. Automatically downloading updates without user consent introduces potential privacy and security risks and erodes trust.
-
-4- Ollama does not have a public, formal privacy policy that fully addresses scenarios like telemetry or auto-updates.
 
 <br>
 
