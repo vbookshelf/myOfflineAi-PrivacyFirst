@@ -400,7 +400,7 @@ By using Ai to check the code, even if you don't know anything about programming
 <br>
 
 ### 1- Is it essential to switch off the internet connection?<br>
-Yes it's essential for total privacy. By design, no data leaves your computer via myOfflineAi. But, the Ollama app does have the capability to go online silently to check for updates.
+Yes it's essential for total privacy. By design, no data leaves your computer via myOfflineAi. But, the Ollama app does have the capability to go online to check for updates. Also, I'm not certain if the "Airplane mode" only cuts off access to the Ollama Cloud service or if blocks all online access.
 
 ### 2- How do I add features, make changes or fix a bug?<br>
 This is a single-file app. It's designed to be reviewed and modified by Ai. All the code is in one file so the Ai sees the entire design. Simply take the app.py file and upload it to Gemini 2.5 Pro or Claude Sonnet. Tell it what bug to fix or what changes or new feature you want. Also tell it to output all the code on one page so you can copy and paste it. When the Ai outputs the revised code, copy it and replace all the code in the app.py file. Then put the app.py file back inside the project folder. Launch the app and check if your changes have been made.
