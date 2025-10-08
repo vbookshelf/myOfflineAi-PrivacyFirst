@@ -572,6 +572,9 @@ https://github.com/vbookshelf/Single-File-Flask-Web-App
   Grace Leung<br>
   https://www.youtube.com/watch?v=-era_Orh3TM
 
+- Chat Image Marker (Offline, privacy-focused image marker)<br>
+  https://github.com/vbookshelf/Chat-Image-Marker
+
 <br>
 
 ## Limitations
