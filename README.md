@@ -1,6 +1,6 @@
 <img src="myOfflineAi-v1.1/static/icon.png" alt="App screenshot" height="100">
 
-# myOfflineAi - Privacy-First Ai
+# myOfflineAi - PrivacyFirst
 > 
 > Prototype - For testing, education and inspiration
 
