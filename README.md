@@ -627,6 +627,16 @@ This project is about more than just privacy. It's a shift in mindset. It's abou
 
 ## Revision History
 
+Version 1.2<br>
+9-Oct-2025<br>
+Improved the UI:<br>
+Added drag and drop for images.<br> 
+Improved chat window.<br>
+Added ability to change tool order.<br>
+Improved chat text formatting.<br>
+This version is myOfflineAi-ChatHistory with chat saving disabled.
+Other minor changes.
+
 Version 1.1<br>
 6-Oct-2025<br>
 Fixed macOS security blocking issue. Added LaTeX support.
