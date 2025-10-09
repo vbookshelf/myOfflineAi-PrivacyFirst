@@ -7,8 +7,8 @@
 <br>
 
 YouTube Video:<br>
-Introducing myOfflineAi - Local and Auditable Privacy-First Ai powered by Ollama<br>
-https://www.youtube.com/watch?v=oecJfMUWy8M
+MyOfflineAi - Privacy-First Local Ai for Non-programmers<br>
+https://www.youtube.com/watch?v=m7NIjlvKLP8
 
 
 
