@@ -217,8 +217,6 @@ Quick Troubleshooting
 - Make sure you've downloaded at least one model in Ollama before using the app
 
 
-
-
 ```
 
 <br>
