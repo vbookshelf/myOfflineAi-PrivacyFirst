@@ -63,6 +63,11 @@ When you enter some text or you give the app a document, it reads the data strai
 
 You trade the convenience of being able to look back through old chats for the certainty that your data is private and secure.
 
+If you need a chat history then you should use the sister app:<br>
+myOfflineAi-ChatHistory<br>
+(Saves chats to a local file you control.)<br>
+https://github.com/vbookshelf/myOfflineAi-ChatHistory
+
 <br>
 
 ## How to Install and Run
