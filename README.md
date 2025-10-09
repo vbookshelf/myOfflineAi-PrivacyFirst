@@ -92,6 +92,7 @@ System Requirements:
 <br>
 
 ```
+
 1. Download and install the Ollama desktop application
 --------------------------------------------------------------
 
@@ -122,8 +123,8 @@ This model can handle text only.
 
 1. On GitHub click on "<> Code". The select "Download Zip"
 2. Download the project folder and unzip it
-3. Inside you will find a folder named myOfflineAi-v1.1
-4. Place myOfflineAi-v1.1 on your desktop.
+3. Inside you will find a folder named: myOfflineAi-PrivacyFirst-v1.2
+4. Place myOfflineAi-PrivacyFirst-v1.2 on your desktop.
 
 
 4. Initial Setup
@@ -133,15 +134,23 @@ This model can handle text only.
 
 1. Open Terminal (Command+Space, type "Terminal")
 2. Paste this command into the terminal to install uv:
+
 wget -qO- https://astral.sh/uv/install.sh | sh
+
 3. Wait for uv installation to finish
 4. Type 'cd ' in the terminal (with a space after cd)
-5. Drag the myOfflineAi-v1.1 folder into the Terminal window
+5. Drag the folder into the Terminal window. A file path will appear.
 6. Press Enter
+If you get an error, then type in these commands in the terminal to manually cd into myOfflineAi-PrivacyFirst-v1.2 folder:
+cd Desktop
+cd myOfflineAi-PrivacyFirst-v1.2
+
 7. Paste this command into the terminal:
+
 cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x start-mac-app.command
+
 8. Press Enter
-9. Open the myOfflineAi-v1.1 folder
+9. Open the myOfflineAi-PrivacyFirst-v1.2 folder
 10. Double-click: start-mac-app.command
 
 
@@ -150,12 +159,14 @@ cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x st
 1. Press the Windows key on your keyboard
 2. Type cmd and press Enter (a black window will open)
 3. Copy this entire command:
+
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
 4. Right-click in the black window to paste
 5. Press Enter
 6. Wait for "uv installed successfully" or similar message
 7. Close the window and open a new one for the changes to take effect
-8. Navigate to the myOfflineAi-v1.1 folder thats on your desktop
+8. Navigate to the myOfflineAi-PrivacyFirst-v1.2 folder that's on your desktop
 9. Double-click: start-windows-app.bat
 
 If Windows shows a security warning:
@@ -193,7 +204,9 @@ start-windows-app.bat
 
 You could start the app and leave it running in the background all day.
 Then whenever you want to use it, enter the following url in your browser:
+
 http://127.0.0.1:5000/
+
 Your browser will remember this local address so you won't have to.
 
 
@@ -202,6 +215,9 @@ Quick Troubleshooting
 - If the app doesn't start, make sure Ollama is running (look for its icon in your system tray/menu bar)
 - If you see "connection refused", restart Ollama
 - Make sure you've downloaded at least one model in Ollama before using the app
+
+
+
 
 ```
 
