@@ -595,6 +595,17 @@ This project is about more than just privacy. It's a shift in mindset. It's abou
 
 <br>
 
+## App Family - Offline-First, Privacy-First
+
+- myOfflineAi-PrivacyFirst<br>
+  https://github.com/vbookshelf/myOfflineAi-PrivacyFirst<br>
+- myOfflineAi-ChatHistory<br>
+  https://github.com/vbookshelf/myOfflineAi-ChatHistory<br>
+- Chat-Image-Marker<br>
+  https://github.com/vbookshelf/Chat-Image-Marker<br>
+
+<br>
+
 ## Revision History
 
 Version 1.1<br>
