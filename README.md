@@ -629,6 +629,12 @@ This project is about more than just privacy. It's a shift in mindset. It's abou
 
 ## Revision History
 
+Version 1.3<br>
+14-Oct-2025<br>
+Added a webcam photo capability.<br>
+The webcam can be used to quickly snap photos of homework problems, hand written notes, hand written math solutions, hand drawn diagrams etc.<br>
+The photo is auto attached to the chat after being taken.
+
 Version 1.2<br>
 9-Oct-2025<br>
 Improved the UI:<br>
