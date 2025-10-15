@@ -360,6 +360,13 @@ Max pdf upload size is set to 20MB
 MAX_UPLOAD_FILE_SIZE = 20 * 1024 * 1024
 
 ```
+
+## Context size
+
+<br>
+
+Please note that the context limit is set to 16000 tokens. You can change this setting in the app.py file. Many models, including Gemma3, have a context limit that's over 100k tokens. However, setting a large context size slows down the model. You may need to increase the context size if your work involves long conversations, reviewing many documents, reviewing many images, and other token heavy tasks. The conversation token count is continuously printed in the terminal.
+
 <br>
 
 ## What app settings are stored locally
