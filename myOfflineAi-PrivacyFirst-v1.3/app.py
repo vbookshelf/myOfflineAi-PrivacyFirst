@@ -39,10 +39,10 @@ NUM_CTX = 16000
 
 
 TEMPERATURE = 0.4
-TOP_K = 60
 TOP_P = 0.95
-FREQUENCY_PENALTY = 1.0
-REPEAT_PENALTY = 1.0
+TOP_K = 50 # Not necessary when top_p is set
+FREQUENCY_PENALTY = 0
+REPEAT_PENALTY = 0
 
 
 # Max number of pdf pages allowed per pdf file
