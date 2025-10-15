@@ -234,7 +234,7 @@ Example:<br>
 On Mac if the project folder is on your desktop type the following commands in the terminal:
 ```
 % cd Desktop
-% cd myOfflineAi-v1.0
+% cd myOfflineAi-PrivacyFirst-v1.3
 % uv run python app.py
 ```
 
