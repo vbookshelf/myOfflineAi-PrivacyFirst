@@ -632,7 +632,9 @@ This project is about more than just privacy. It's a shift in mindset. It's abou
 - Chat-Image-Marker<br>(A simple, offline tool for marking up images.)<br>
   https://github.com/vbookshelf/Chat-Image-Marker<br>
 - myOfflineAi-VoiceAssistant<br>(An offline full-featured Ai voice assistant.)<br>
-  https://github.com/vbookshelf/myOfflineAi-VoiceAssistant
+  https://github.com/vbookshelf/myOfflineAi-VoiceAssistant<br>
+-  myOfflineAi-ChatConsole<br>(Desktop multimodal chat console that supports both text chat and voice chat.)<br>
+  https://github.com/vbookshelf/myOfflineAi-ChatConsole
 
 <br>
 
