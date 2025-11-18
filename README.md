@@ -1,4 +1,4 @@
-<img src="myOfflineAi-v1.1/static/icon.png" alt="App screenshot" height="100">
+<img src="myOfflineAi-v1.1/static/icon.png" alt="Lock" height="100">
 
 # myOfflineAi - PrivacyFirst
 > 
